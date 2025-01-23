@@ -230,7 +230,7 @@ nav {
     display: flex;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
     overflow: hidden;
     max-width: 1300px;
     width: 90%;
@@ -244,15 +244,15 @@ nav {
     flex: 2;
     padding: 20px;
     position: relative;
-    margin-left: 130px;
+    margin-left: 237px;
     transform: translateX(-50px);
     animation: slideInLeft 1s ease-out forwards 0.5s;
 }
 
 .left h1 {
-    font-size: 2rem;
-    color: #003d73;
-    text-align: center;
+    font-size: 48px;
+    color: #005599;
+    text-align: left;
     margin-bottom: 20px;
 }
 
@@ -321,9 +321,11 @@ nav {
 
 .client-h {
     justify-content: center;
-    text-align: center;
-    font-size: 25px;
-    color: #003d73;
+    text-align: left;
+    font-size: 48px;
+    color: #005599;
+    margin-left: 122px;
+    margin-right: 146px;
 }
 
 .clients-container {
@@ -471,6 +473,7 @@ nav {
     padding: 10px;
     color: #2E3D49;
     font-weight: bold;
+    font-size: 22px;
 }
 .rev-cont #content {
     padding: 10px;
@@ -524,18 +527,21 @@ nav {
 
         .card h3 {
             margin: 10px 0;
-            font-size: 1.2rem;
+            font-size: 22px;
+            text-align: left;
         }
 
         .card p {
-            font-size: 0.9rem;
+            font-size: 15px;
             color: #555;
+            text-align: left;
+        
         }
 
 
 
         /*changing expactation*/
-         .body {
+        .body {
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
@@ -543,46 +549,47 @@ nav {
             min-height: 100vh;
             margin: 0;
             background-color: #eaf6fc;
-
         }
-
+        
         .carousel {
             width: 1237px;
             overflow: hidden;
             position: relative;
-            background-color: #bad0e4;
-            margin-left: 143px;
             background-color: #e0f7fa;
+            margin: 0 auto;
+            border-radius: 15px;
+            padding: 20px;
         }
-
+        
         .carousel-track {
             display: flex;
             transition: transform 0.5s ease-in-out;
-                margin-left: 194px;
+            margin: 0 auto;
         }
-
+        
         .carousel-item {
             min-width: 340px;
-            margin: 26px;
+            margin: 15px;
             padding: 29px;
             background-color: #efefef;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-size: 16px;
         }
-
+        
         .carousel-item:hover {
             transform: scale(1.1);
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
         }
-
+        
         .carousel-item img {
             width: 100px;
             height: auto;
             margin-bottom: 10px;
         }
-
+        
         .carousel-button {
             position: absolute;
             top: 50%;
@@ -590,22 +597,24 @@ nav {
             background-color: #007bff;
             color: white;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 13px 20px;
+            border-radius: 50%;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            z-index: 10; /* Ensure buttons are on top */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
-
+        
         .carousel-button:hover {
             background-color: #0056b3;
         }
-
+        
         .carousel-button.prev {
-            left: 10px;
+            left: 7px; /* Adjust to move inside the carousel */
         }
-
+        
         .carousel-button.next {
-            right: 10px;
+            right: 10px; /* Adjust to move inside the carousel */
         }
 
 
@@ -695,6 +704,9 @@ nav {
 
 
         
+      
+
+        
 
     /*Our solutions*/
     .body {
@@ -710,7 +722,7 @@ nav {
         }
         .heading {
             /*text-align: center;*/
-            font-size: 58px;
+            font-size: 48px;
             font-weight: bold;
             margin-bottom: 39px;
             border-bottom: 4px solid #000;
@@ -764,7 +776,7 @@ nav {
 
         h1 {
             color: #333;
-                font-size: 58px;
+                font-size: 48px;
                     border-bottom: 4px solid #000;
                     color: #005599;
 
@@ -897,9 +909,6 @@ nav {
       text-decoration: none;
     }
 
-  
-  /*Bottom to top button*/
-
   .carousel-item .row {
     display: flex;
     justify-content: center;
@@ -912,3 +921,77 @@ nav {
 }
 
 
+/* enquire button*/
+.body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 200vh; /* For demonstration purposes */
+  }
+  
+  .enquire-button {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #093360;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .enquire-link {
+    display: block;
+    color: #d9dcf1;
+    text-align: center;
+    padding: 12px 11px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .enquire-link:hover {
+    background-color: #003d80;
+    transition: background-color 0.3s ease;
+  }
+
+
+  /*bottom to top button */
+   /* Button Styles */
+   .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #4a6fa5; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .back-to-top:hover {
+    background-color: #3b5a8e; /* Darker blue on hover */
+  }
+
+  /* Arrow Icon */
+  .back-to-top::before {
+    content: "▲"; /* Upward arrow */
+    font-size: 16px;
+  }
+
+  

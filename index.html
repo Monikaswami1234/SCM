@@ -11,7 +11,7 @@
 	<!-- Navigation Bar -->
 	<header id="header">
 		<nav>
-			<div class="logo"><img src="./images/SCM1.png" alt="logo" width="100px"></div>
+			<div class="logo"><a href="index.html"><img src="./images/SCM1.png" alt="logo" width="100px"></a></div>
 			<div class="navbar">
        
         <div>
@@ -20,7 +20,7 @@
             	<a href="solution(scaas).html">Supply Chain As a Service<br> (SCAAS)</a>
 
                 <div>
-                    <a href="#">Supply Chain Optimization</a>
+                    <a href="chain-opitmization.html">Supply Chain Optimization</a>
                     <div class="nested-dropdown">
                         <a href="solution(freight).html">Freight Optimization</a>
                         <a href="solution(packaging).html">packaging Optimization</a>
@@ -94,7 +94,7 @@
             <a href="#">About Us</a>
             <div class="dropdown">
                 <a href="about(scm).html">About SMC Connect </a>
-                <a href="about(allience).html">Alliances</a>
+               <!-- <a href="about(allience).html">Alliances</a>-->
                 <a href="about(career).html">Careers </a>
                 <a href="about(contact).html">Contact Us </a>
             </div>
@@ -418,9 +418,48 @@
     </div><br>
 
     
-   
 
-    
+    <!--our alliance -->
+    <div style=" padding-bottom: 40px;  justify-content: center;
+    text-align: center;
+    font-size: 48px;
+    color: #005599;
+    margin-left: 130px;">
+        <p style="        margin-right: 143px;"> OUR ALLIANCES</p>
+    </div>
+    <div class="slider-container" style="margin-left: 295px;">
+        <div class="slider" id="slider">
+            <div class="slider-item">
+                <img src="./images/flip.jpg" alt="flip" >
+
+                <img src="./images/ennova.jpg" alt="ennova" >
+            </div>
+            <div class="slider-item">
+                <img src="./images/palms.jpg" alt="palms" >
+                <img src="./images/ny.png" alt="PALMS" >
+            </div>
+            <div class="slider-item">
+                <img src="./images/sp.png" alt="PALMS">
+                <img src="./images/hub.jpg" alt="Intelizest" >
+            </div>
+            <div class="slider-item">
+                <img src="./images/pashu.jpg" alt="PALMS" >
+                <img src="./images/watsoo.jpg" alt="Intelizest">
+            </div>
+        </div>
+        <div class="slider-buttons">
+            <button id="prevBtn">&#8249;</button>
+            <button id="nextBtn">&#8250;</button>
+        </div>
+        <div class="slider-indicators" id="sliderIndicators">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
    
 
 
@@ -774,8 +813,36 @@
         setInterval(autoRotate, 3000); // Rotate every 3 seconds
     </script>
 
+    <!--our alliances-->
+    <script>
+        const slider = document.getElementById('slider');
+        const sliderIndicators = document.getElementById('sliderIndicators').children;
+        const totalSliderItems = slider.children.length;
+        let currentSliderIndex = 0;
 
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentSliderIndex * 100}%)`;
+            for (let i = 0; i < sliderIndicators.length; i++) {
+                sliderIndicators[i].classList.remove('active');
+            }
+            sliderIndicators[currentSliderIndex].classList.add('active');
+        }
 
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            currentSliderIndex = (currentSliderIndex - 1 + totalSliderItems) % totalSliderItems;
+            updateSlider();
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentSliderIndex = (currentSliderIndex + 1) % totalSliderItems;
+            updateSlider();
+        });
+
+        setInterval(() => {
+            currentSliderIndex = (currentSliderIndex + 1) % totalSliderItems;
+            updateSlider();
+        }, 5000);
+    </script>
 
 
 

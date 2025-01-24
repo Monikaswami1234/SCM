@@ -350,13 +350,13 @@ nav {
       }
 
       .container2 {
-          max-width: 1397px;
+          max-width: 1281px;
           width: 100%;
           display: flex;
           gap: 20px;
           padding: 20px;
           background-color: #005f99;
-          margin-left: 50px;
+          margin-left: 100px;
       }
 
       .left-section {

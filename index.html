@@ -15,35 +15,33 @@
 			<div class="logo"><a href="index.html"><img src="./images/SCM1.png" alt="logo" width="100px"></a></div>
 			<div class="navbar">
        
-        <div id="">
-            <a href="#">Solutions</a>
-            <div class="dropdown">
-            	<a href="solution(scaas).html">Supply Chain As a Service<br> (SCAAS)</a>
-
                 <div>
-                    <a href="chain-opitmization.html">Supply Chain Optimization</a>
-                    <div class="nested-dropdown">
-                        <a href="solution(freight).html">Freight Optimization</a>
-                        <a href="solution(packaging).html">packaging Optimization</a>
-                        <a href="solution(route).html">Route Optimization</a>
-                        <a href="solution(workforce).html">Workforce Scheduling</a>
-                        <a href="solution(price).html">Price Optimization and<br> Revenue Management </a>
+                    <a href="#" class="dropdown-item">Solutions</a>
+                    <div class="dropdown">
+                        <a href="solution(scaas).html" class="dropdown-item dropdown-list">Supply Chain As a Service (SCAAS)</a>
+                        <div>
+                            <a href="chain-optimization.html" class="dropdown-item">Supply Chain Optimization</a>
+                            <div class="nested-dropdown">
+                                <a href="solution(freight).html" class="dropdown-item">Freight Optimization</a>
+                                <a href="solution(packaging).html" class="dropdown-item">Packaging Optimization</a>
+                                <a href="solution(route).html" class="dropdown-item">Route Optimization</a>
+                                <a href="solution(workforce).html" class="dropdown-item">Workforce Scheduling</a>
+                                <a href="solution(price).html" class="dropdown-item">Price Optimization and Revenue Management</a>
+                            </div>
+                        </div>
+                        <a href="solution(sales).html" class="dropdown-item">Sales & Operations Planning</a>
+                        <a href="solution(tms).html" class="dropdown-item">Transport Management System (TMS)</a>
+                        <a href="solution(wms).html" class="dropdown-item">Warehouse Management System (WMS)</a>
+                        <div>
+                            <a href="visibility.html" class="dropdown-item">Supply Chain Visibility</a>
+                            <div class="nested-dropdown">
+                                <a href="solution(tracking).html" class="dropdown-item">Asset/Inventory Tracking</a>
+                                <a href="solution(anti).html" class="dropdown-item">Anti-Counterfeit Solutions</a>
+                            </div>
+                        </div>
+                        <a href="solution(digitization).html" class="dropdown-item">Supply Chain Digitization</a>
                     </div>
                 </div>
-                <a href="solution(sales).html">Sales & Operations Planning</a>
-                
-                <a href="solution(tms).html">Transport Management<br> System (TMS)</a>
-                <a href="solution(wms).html">Warehouse Management<br> System (WMS)</a>
-                                <div>
-                    <a href="visiblity.html">Supply Chain Visibility</a>
-                    <div class="nested-dropdown">
-                        <a href="solution(tracking).html">Asset/Inventory Tracking</a>
-                        <a href="solution(anti).html">Anti-Counterfeit Solutions</a>
-                    </div>
-                </div>
-                <a href="solution(digitization).html">Supply Chain Digitization</a>
-            </div>
-        </div>
         <div>
             <a href="#">Services</a>
             <div class="dropdown">
@@ -102,14 +100,18 @@
         </div>
     </div>
 
+    
+    <div class="search-container srch">
+        <input
+            type="text"
+            class="search"
+            placeholder="Search here..."
+            onchange="filterDropdown(this.value)"
+        />
+        <img src="./images/search.webp" alt="search" onclick="slide()" />
 
-   <div class="menu">
-    <button><i class="fa-solid fa-bars"></i></button>
-   </div>
-
-
-			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img
-					src=".\images\search.webp" alt="search" onclick=slide()></div>			
+        <div id="dropdown-list" class="dropdown-list"></div>
+    </div>
 		</nav><br>
     </header>
 		<!--About us -->
@@ -907,11 +909,81 @@
             currentSliderIndex = (currentSliderIndex + 1) % totalSliderItems;
             updateSlider();
         });
+ // List of dropdown items and their links
+ const dropdownItems = [
+        { name: "Supply Chain As a Service (SCAAS)", url: "solution(scaas).html" },
+        { name: "Supply Chain Optimization", url: "chain-optimization.html" },
+        { name: "Freight Optimization", url: "solution(freight).html" },
+        { name: "Packaging Optimization", url: "solution(packaging).html" },
+        { name: "Route Optimization", url: "solution(route).html" },
+        { name: "Workforce Scheduling", url: "solution(workforce).html" },
+        { name: "Price Optimization and Revenue Management", url: "solution(price).html" },
+        { name: "Sales & Operations Planning", url: "solution(sales).html" },
+        { name: "Transport Management System (TMS)", url: "solution(tms).html" },
+        { name: "Warehouse Management System (WMS)", url: "solution(wms).html" },
+        { name: "Supply Chain Visibility", url: "visibility.html" },
+        { name: "Asset/Inventory Tracking", url: "solution(tracking).html" },
+        { name: "Anti-Counterfeit Solutions", url: "solution(anti).html" },
+        { name: "Supply Chain Digitization", url: "solution(digitization).html" },
+        { name: "Demand Management", url: "#" },
+        { name: "Supply Chain Planning", url: "chain-planning.html" },
+        { name: "Supply Chain Design", url: "supply-chain-design.html" },
+        { name: "Inventory Design", url: "inventory.html" },
+        { name: "Demand Planning", url: "demand-planning.html" },
+        { name: "Production Planning & Scheduling", url: "production-planning.html" },
+        { name: "Logistics Planning & Sourcing", url: "logistics-planning.html" },
+        { name: "RFQ Design", url: "logistics(RFQ).html" },
+        { name: "Vendor Selection", url: "logistics(vendor).html" },
+        { name: "Load Allocation Planning", url: "logistics(load-allocation).html" },
+        { name: "Supply Chain Diagnostics", url: "diagnostics.html" },
+        { name: "Performance Dashboard Design", url: "services(dashboard).html" },
+        { name: "Supply Chain Risk Assessment", url: "services(assessment).html" },
+        { name: "Supply Chain Modelling & Simulation", url: "modelling.html" },
+        { name: "Supply Chain Analytics", url: "analytics.html" },
+        { name: "Case Studies on Supply Chain Management", url: "training(management).html" },
+        { name: "Managing Logistics Effectively", url: "training(manging).html" },
+        { name: "Demand planning & Management", url: "training(demand).html" },
+        { name: "Case Studies", url: "resource(case-study).html" },
+        { name: "E-Book", url: "resource(E-book).html" },
+        { name: "About SCM Connect", url: "about(scm).html" },
+        { name: "Careers", url: "about(career).html" },
+        { name: "Contact Us", url: "about(contact).html" },
+    ];
+
+function filterDropdown(query) {
+    const dropdownList = document.getElementById("dropdown-list");
+    dropdownList.innerHTML = ""; // Clear previous items
+    if (!query.trim()) {
+        dropdownList.style.display = "none";
+        return;
+    }
+
+    const filteredItems = dropdownItems.filter((item) =>
+        item.name.toLowerCase().includes(query.toLowerCase())
+    );
+
+    if (filteredItems.length === 0) {
+        dropdownList.style.display = "none";
+        return;
+    }
+
+    dropdownList.style.display = "block";
+
+    filteredItems.forEach((item) => {
+        const listItem = document.createElement("div");
+        listItem.className = "dropdown-item";
+        listItem.textContent = item.name;
+        listItem.onclick = () => {
+            window.location.href = item.url; // Navigate to the selected item's URL
+        };
+        dropdownList.appendChild(listItem);
+    });
+}
 
         setInterval(() => {
             currentSliderIndex = (currentSliderIndex + 1) % totalSliderItems;
             updateSlider();
-        }, 5000);
+        }, 1000);
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 

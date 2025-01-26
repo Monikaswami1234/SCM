@@ -116,8 +116,11 @@ nav {
 	border-radius: 20px;
 }
 .srch img {
-	width: 25px;
-	cursor: pointer;
+  width: 24px;
+  cursor: pointer;
+  height: 21px;
+  position: relative;
+  top: 6px;
 }
 .srch .search {
 	/* padding: 2px 10px; */
@@ -398,4 +401,46 @@ border: 1px solid #ccc ;
     }
 
 
+      
+  .search-container {
+    padding: 2px 10px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* background: #0066ff; */
+    border: 1px solid;
+    border-radius: 20px;
+    position: relative;
+}
+
+.search {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+}
+
+.dropdown-item {
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
 

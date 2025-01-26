@@ -169,7 +169,10 @@ nav {
 
 .content-img{
 	    /*margin: -7px;*/
-	    padding: 200px;
+	    /* padding: 200px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
 	     padding-top: 67px;
          padding-bottom: 56px;
 }

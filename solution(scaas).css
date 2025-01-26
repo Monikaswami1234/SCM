@@ -97,7 +97,13 @@ nav {
         .navbar > div > a {
             font-weight: bold;
         }
-
+.container-1{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 
 

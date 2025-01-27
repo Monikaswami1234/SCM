@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 <body>
+
 	<!-- Navigation Bar -->
 	<header id="header">
 		<nav>
@@ -99,6 +100,13 @@
             </div>
         </div>
     </div>
+    <!-- <div class="menu" id="">
+        <Button id="menu-button"><i class="fa-solid fa-bars"></i></Button>
+    </div> -->
+
+    <div class="side-pannel" id="pannel">
+
+    </div>
 
     
     <div class="search-container srch">
@@ -137,12 +145,9 @@
 
 
 	<!--Supply Chain desgin-->
-    <div style=" padding-bottom: 40px;  justify-content: center;
-    text-align: left;
-    font-size: 48px;
-    color: #005599;
-    margin-left: 70px;">
-            <p style="border-bottom: 4px solid #000; margin-right: 100px;"><b>ABOUT US</b></p>
+    <div class="about-main">
+        <div class="">
+            <p style="border-bottom: 4px solid #000;font-size: 5vh;"><b>ABOUT US</b></p>
         </div>
     <div class="container1" >
         <div class="left">
@@ -167,29 +172,30 @@
             </p>
             
         </div>
-    </div><br><br><br><br>
+    </div></div><br><br><br><br>
 
 
 
 
     <!--core values-->
-    <div style=" padding-bottom: 30px;  justify-content: center;
-    text-align: left;
-    font-size: 48px;
-    color: #005599;
-    margin-left: 70px;">
-            <p style="     border-bottom: 4px solid #000; margin-right: 100px; "><b>WHY SCM CONNECT ?</b></p>
+    <div class="core-values-main">
+        <div class="core-values-head">
+            <p style="border-bottom: 4px solid #000;  "><b>WHY SCM CONNECT ?</b></p>
         </div>
-<div class="core-values">
+      <div class="core-values">
     
     <div class="values-container">
         <div class="value-card" class="value-card img">
             <img src="./images/domain.png" alt="domain">
             <h2>Domain expertise</h2>
+            <div class="value-card-para">
             <p class="value-description">Extensive experience and know-how of managing and improving solutions through converged supply chain operations, data, technology and business expertise</p>
+        </div>
+        <div class="value-card-button">
             <a href="solution(freight).html">
                 <button class="read-more-btn">Read More</button>
             </a>
+        </div>  
         </div>
         <div class="value-card" class="value-card-img">
             <img src="./images/success.png" alt="domain">
@@ -223,7 +229,7 @@
                 <button class="read-more-btn">Read More</button>
             </a>
         </div>
-    </div>
+    </div></div>
 </div><br>
 
 
@@ -273,12 +279,15 @@
 
      <!--services-->
      <div class="services-container" >
-            <p style="border-bottom: 4px solid #000; margin-right: 100px; "><b>SERVICES</b></p>
-        </div>
+        <div>
+            <p style="border-bottom: 4px solid #000; padding: 10px;font-size: 5vh; "><b>SERVICES</b></p>
+     </div>
          <div class="cardss-container1">
          <div class="cardss">
              <h3>Supply Chain Strategy & Planning</h3>
+             <div class="card-image">
              <img src="./images/planning.jpg" alt="Mentorship">
+            </div>
              <div class="cardss-content">
                  <h3>Supply Chain Strategy &<br> Planning</h3>
                  <ul>
@@ -355,107 +364,108 @@
                  </ul>
              </div>
          </div>
-     </div>
+     </div> </div>
      <br><br>
  
     
 
     <!--changing expactation-->
-    <div style=" padding-bottom: 30px;  justify-content: center;
-    text-align: left;
-    font-size: 48px;
-    color: #005599;
-    margin-left: 70px;">
-            <p style="border-bottom: 4px solid #000; margin-right: 100px; "><b>CHANGING EXPECTATIONS OF STACKHOLDER</b></p>
+    <div class="carousel-main">
+        <div>
+            <p style="border-bottom: 4px solid #000;font-size: 5vh;padding: 10px; "><b>CHANGING EXPECTATIONS OF STAKEHOLDER</b></p>
+        </div>
+    
+        <div class="carousel">
+            <button class="carousel-button prev">&#10094;</button>
+            <div class="carousel-track">
+                <!-- Duplicate first item at the end for infinite loop -->
+                <div class="carousel-item">
+                    <img src="./images/shocks.jpg" alt="Logo 1">
+                    <h2>Business shocks</h2>
+                    <p>
+                        More frequent business shocks due to interplay of climate change, pandemics, geo-political tensions. <br>
+                        Recent conflicts in easter Europe and the Middle East has disrupted global supply chains significantly
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/bg.jpg" alt="Logo 2">
+                    <h2>Economic uncertainties</h2>
+                    <p>
+                        Economic uncertainties continues. Post pandemic recovery in global growth and falling inflation rates is surprisingly resilient<br>
+                        However, high interest rates will continue to weigh heavily on growth momentum
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/shocks.jpg" alt="Logo 3">
+                    <h2>Global operating complexity</h2>
+                    <p>
+                        Evolving ‘China + many’ strategy offers significant opportunity<br>
+                        However, labor and logistics capacity constraints coupled with need for omni-channel presence and evolving ecosystem of players are increasing the complexity of supply chain
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/bg.jpg" alt="Logo 4">
+                    <h2>Changing customer expectations</h2>
+                    <p>
+                        Customers expectations in terms of quality, timeliness and sustainability are evolving faster than expected<br>
+                        This is likely to put innovation and collaboration high on agenda within supply chain management
+                    </p>
+                </div>
+                <!---->
+                <div class="carousel-item">
+                    <img src="./images/bg.jpg" alt="Logo 5">
+                    <h2>Sustainability</h2>
+                    <p>
+                       Rising expectations from regulators, customers and investors to minimize the environmental impact <br>
+                        High focus on sustainable supply chains in pursuit of “net zero”
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/bg.jpg" alt="Logo 6">
+                    <h2>Supply Chain As A Service</h2>
+                    <p>
+                       Need for agility, best practice adoption, end-to-end visibility, cost savings and resiliency is driving faster adoption of SCaaS<br>
+                        The global SCaaS market is expected to grow at 8.65% CAGR between 2024 and 2031
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/bg.jpg" alt="Logo 7">
+                    <h2>Data Analytics and AI</h2>
+                    <p>
+                        Customers expectations in terms of quality, timeliness and sustainability are evolving faster than expected<br>
+                        This is likely to put innovation and collaboration high on agenda within supply chain management
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/bg.jpg" alt="Logo 9">
+                    <h2>Digitalization</h2>
+                    <p>
+                        Digital transformation of supply chain has become top priority to support new business, improve efficiency and productivity, enhance decision making and improve resiliency/agility amid ongoing supply chain disruption
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/bg.jpg" alt="Logo 10">
+                    <h2>Circular Supply Chain</h2>
+                    <p>
+                        Circular supply chain is likely to be a major trend driven by sustainability goals of reducing carbon emissions across the supply chain coupled with need to mitigate inflation risks, reduce wastage and respond to the return logistics requirements
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/bg.jpg" alt="Logo 11">
+                    <h2>Risk Management</h2>
+                    <p>
+                        Being resilient and mitigating the risk is critical in an environment of economic uncertainties, increasing frequency of globally disruptive events, growing operational complexity, and rising instances of cybersecurity breaches and loss of IPs
+                    </p>
+                </div>
+    
+            </div>
+            <button class="carousel-button next">&#10095;</button>
         </div>
     </div>
-    <div class="carousel">
-        <button class="carousel-button prev">&#10094;</button>
-        <div class="carousel-track">
-            <div class="carousel-item">
-                <img src="./images/shocks.jpg" alt="Logo 1">
-                <h2>Business shocks</h2>
-                <p>
-                    More frequent business shocks due to interplay of climate change, pandemics, geo-political tensions. <br>
-                    Recent conflicts in easter Europe and the Middle East has disrupted global supply chains significantly
-                </p>
-            </div>
-            <div class="carousel-item">
-                <img src="./images/bg.jpg" alt="Logo 2">
-                <h2>Economic uncertainties</h2>
-                <p>
-                    Economic uncertainties continues. Post pandemic recovery in global growth and falling inflation rates is surprisingly resilient<br>
-                    However, high interest rates will continue to weigh heavily on growth momentum
-                </p>
-            </div>
-            <div class="carousel-item">
-                <img src="./images/shocks.jpg" alt="Logo 3">
-                <h2>Global operating complexity</h2>
-                <p>
-                    Evolving ‘China + many’ strategy offers significant opportunity<br>
-                    However, labor and logistics capacity constraints coupled with need for omni-channel presence and evolving ecosystem of players are increasing the complexity of supply chain
-                </p>
-            </div>
-            <div class="carousel-item">
-                <img src="./images/bg.jpg" alt="Logo 4">
-                <h2>Changing customer expectations</h2>
-                <p>
-                    Customers expectations in terms of quality, timeliness and sustainability are evolving faster than expected<br>
-                    This is likely to put innovation and collaboration high on agenda within supply chain management
-                </p>
-            </div>
-            <!---->
-            <div class="carousel-item">
-                <img src="./images/bg.jpg" alt="Logo 5">
-                <h2>Sustainability</h2>
-                <p>
-                   Rising expectations from regulators, customers and investors to minimize the environmental impact <br>
-                    High focus on sustainable supply chains in pursuit of “net zero”
-                </p>
-            </div>
-            <div class="carousel-item">
-                <img src="./images/bg.jpg" alt="Logo 6">
-                <h2>Supply Chain As A Service</h2>
-                <p>
-                   Need for agility, best practice adoption, end-to-end visibility, cost savings and resiliency is driving faster adoption of SCaaS<br>
-                    The global SCaaS market is expected to grow at 8.65% CAGR between 2024 and 2031
-                </p>
-            </div>
-            <div class="carousel-item">
-                <img src="./images/bg.jpg" alt="Logo 7">
-                <h2>Data Analytics and AI</h2>
-                <p>
-                    Customers expectations in terms of quality, timeliness and sustainability are evolving faster than expected<br>
-                    This is likely to put innovation and collaboration high on agenda within supply chain management
-                </p>
-            </div>
-            <div class="carousel-item">
-                <img src="./images/bg.jpg" alt="Logo 9">
-                <h2>Digitalization</h2>
-                <p>
-                    Digital transformation of supply chain has become top priority to support new business, improve efficiency and productivity, enhance decision making and improve resiliency/agility amid ongoing supply chain disruption
-                </p>
-            </div>
-            <div class="carousel-item">
-                <img src="./images/bg.jpg" alt="Logo 10">
-                <h2>Circular Supply Chain</h2>
-                <p>
-                    Circular supply chain is likely to be a major trend driven by sustainability goals of reducing carbon emissions across the supply chain coupled with need to mitigate inflation risks, reduce wastage and respond to the return logistics requirements
-                </p>
-            </div>
-            <div class="carousel-item">
-                <img src="./images/bg.jpg" alt="Logo 11">
-                <h2>Risk Management</h2>
-                <p>
-                    Being resilient and mitigating the risk is critical in an environment of economic uncertainties, increasing frequency of globally disruptive events, growing operational complexity, and rising instances of cybersecurity breaches and loss of IPs
-                </p>
-            </div>
-        </div>
-        <button class="carousel-button next">&#10095;</button>
-    </div><br><br>
 
 
      <!--clients-->
+     <div class="client-main">
      <div class="client-h">
         <h1>OUR CLIENTS</h1>
     </div>
@@ -486,22 +496,16 @@
                 <!-- Add all logos similarly -->
             </ul>
         </div>
-    </div><br>
+    </div></div><br>
 
     
 
     <!--our alliance -->
-    <div style=" padding-bottom: 30px;  justify-content: center;
-    text-align: left;
-    font-size: 48px;
-    color: #005599;
-    /* margin-left: 70px; */
-    padding: 22px 7rem;
-    "
-    >
-            <p style="border-bottom: 4px solid #000; "><b>OUR ALLIANCES</b></p>
+    <div class="ALLIANCES-main">
+        <div>
+            <p style="border-bottom: 4px solid #000; font-weight: bold;font-size: 5vh;"><b>OUR ALLIANCES</b></p>
         </div>
-    </div>
+   
     <div class="slider-container" >
         <div class="slider" id="slider">
             <div class="slider-item">
@@ -535,6 +539,7 @@
             <span></span>
         </div>
     </div>
+</div>
    
 
 
@@ -542,7 +547,9 @@
     
         <div class="container">
             <hr><br>
+            <div>
             <h1 class="heading">OUR SOLUTIONS</h1>
+        </div>
             <div class="solutions">
                 <div class="solution">
                     <a href="solution(tracking).html"> <img src="./images/tracking.jpg" alt="Asset Tracking"></a>
@@ -600,11 +607,12 @@
         <!--Related services-->
         <div class="container">
             <hr>
+            <div class="content-related">
             <h1>RELATED SERVICES</h1>
             <p style="font-size: 20px;">As a performance-driven supply chain consulting organization, SCM Connect helps
                 enterprises improve visibility across their supply chain, enhance supply chain efficiencies, and reduce
                 overall supply chain costs.</p>
-
+            </div>
             <div class="services">
                 <div class="service">
                     <a href="supply-chain-design.html"><img src="./images/1.jpg" alt="Data Collection"></a>
@@ -677,13 +685,7 @@
     </div>
     <div class="review">
         <div class="diffSection" id="review_section">
-            <center>
-                <p style=" padding: 20px;   border-bottom: 4px solid #000; ;  justify-content: center;
-    text-align: left;
-    font-size: 48px;
-    color: #005599;
-"><b>ENGAGEMENT MODELS</b></p>
-            </center>
+                <p><b>ENGAGEMENT MODELS</b></p>
         </div><br<br><br>
         <div class="rev-container">
             <div class="rev-card">
@@ -862,29 +864,55 @@
         const prevButton = document.querySelector('.carousel-button.prev');
         const nextButton = document.querySelector('.carousel-button.next');
         const itemWidth = items[0].getBoundingClientRect().width + 20; // Include margin
-
-        let currentIndex = 0;
-
+        let currentIndex = -1;
+      console.log(items)
+        // Function to update the position of the carousel
         function updateCarousel() {
+            track.style.transition = 'transform 0.5s ease';
             track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
         }
-
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
-            updateCarousel();
-        });
-
+    
+        // Function to move to the next item
         nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+            currentIndex++;
+            if (currentIndex === items.length - 1) {
+                setTimeout(() => {
+                    currentIndex = 1;
+                    track.style.transition = 'none'; // Disable transition for immediate jump
+                    updateCarousel();
+                }, 500); // Wait for the slide transition to complete before jumping
+            }
             updateCarousel();
         });
-
+    
+        // Function to move to the previous item
+        prevButton.addEventListener('click', () => {
+            currentIndex--;
+            if (currentIndex < 0) {
+                setTimeout(() => {
+                    currentIndex = items.length - 2;
+                    track.style.transition = 'none'; // Disable transition for immediate jump
+                    updateCarousel();
+                }, 500); // Wait for the slide transition to complete before jumping
+            }
+            updateCarousel();
+        });
+    
+        // Function for auto-rotation
         function autoRotate() {
-            currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+            currentIndex++;
+            if (currentIndex === items.length - 3) {
+                setTimeout(() => {
+                    currentIndex = 0;
+                    track.style.transition = 'none'; // Disable transition for immediate jump
+                    updateCarousel();
+                }, 500);
+            }
             updateCarousel();
         }
-
-        setInterval(autoRotate, 1000); // Rotate every 3 seconds
+    
+        // Set auto-rotation to run every 3 seconds
+        setInterval(autoRotate, 3000); // Rotate every 3 seconds
     </script>
 
     <!--our alliances-->
@@ -985,7 +1013,7 @@ function filterDropdown(query) {
         setInterval(() => {
             currentSliderIndex = (currentSliderIndex + 1) % totalSliderItems;
             updateSlider();
-        }, 1000);
+        }, 3000);
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 

@@ -1,190 +1,112 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>SCM CONNECT</title>
-  <link rel="shortcut icon" type="" href="./images/smc.png">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href=".\about(contact).css">
-  <script src="/filter.js"></script>
-  <script>
-    async function sendEmail(event) {
-        event.preventDefault();
-
-        // Gather form data
-        const formData = new FormData(event.target);
-        const payload = {
-            service_id: "",
-            template_id: "",
-            user_id: "",
-            template_params: {
-                name: formData.get("name"),
-                organization: formData.get("organization"),
-                designation: formData.get("designation"),
-                mobile: formData.get("mobile"),
-                email: formData.get("email"),
-                comments: formData.get("comments"),
-                solutions: Array.from(
-                    document.querySelectorAll('input[name="solutions"]:checked')
-                ).map((input) => input.value).join(", "),
-                services: Array.from(
-                    document.querySelectorAll('input[name="services"]:checked')
-                ).map((input) => input.value).join(", "),
-            },
-        };
-
-        try {
-            const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(payload),
-            });
-
-            if (response.ok) {
-                // alert("Email sent successfully!");
-            } else {
-                const error = await response.json();
-                alert(`Failed to send email: ${error.text}`);
-            }
-        } catch (err) {
-            console.error("Error:", err);
-            alert("Failed to send email. Please try again later.");
-        }
-    }
-</script>
+	<title>SCM CONNECT</title>
+	<link rel="shortcut icon" type="" href="./images/smc.png">
+	<link rel="stylesheet" type="text/css" href=".\about(contact).css">
 </head>
-
 <body>
-  <!-- Navigation Bar -->
-  <header id="header">
-    <nav>
-      <div class="logo"><img src="./images/SCM1.png" alt="logo" width="100px"></div>
-      <div class="navbar">
-
-        <div>
-          <a href="#">Solutions</a>
-          <div class="dropdown">
-            <a href="solution(scaas).html">Supply Chain As a Service<br> (SCAAS)</a>
-
+	 <!-- Navigation Bar -->
+     <header id="header">
+        <nav>
+          <div class="logo"><a href="index.html"><img src="./images/SCM1.png" alt="logo" width="100px"></a></div>
+          <div class="navbar">
+           
             <div>
-              <a href="chain-opitmization.html">Supply Chain Optimization</a>
-              <div class="nested-dropdown">
-                <a href="solution(freight).html">Freight Optimization</a>
-                <a href="solution(packaging).html">packaging Optimization</a>
-                <a href="solution(route).html">Route Optimization</a>
-                <a href="solution(workforce).html">Workforce Scheduling</a>
-                <a href="solution(price).html">Price Optimization and<br> Revenue Management </a>
-              </div>
-            </div>
-            <a href="solution(sales).html">Sales & Operations Planning</a>
-
-            <a href="solution(tms).html">Transport Management<br> System (TMS)</a>
-            <a href="solution(wms).html">Warehouse Management<br> System (WMS)</a>
-            <div>
-              <a href="visiblity.html">Supply Chain Visibility</a>
-              <div class="nested-dropdown">
-                <a href="solution(tracking).html">Asset/Inventory Tracking</a>
-                <a href="solution(anti).html">Anti-Counterfeit Solutions</a>
-              </div>
-            </div>
-            <a href="solution(digitization).html">Supply Chain Digitization</a>
-          </div>
-        </div>
-        <div>
-            <a href="#">Services</a>
-            <div class="dropdown">
-              <a href="demand-management.html">Demand Management</a>
-                 <div>
-                    <a href="chain-planning.html">Supply Chain Planning</a>
-                    <div class="nested-dropdown">
-                        <a href="supply-chain-design.html">Supply Chain Design </a>
-                        <a href="inventory.html">Inventory Design</a>
-                         <a href="demand-planning.html">Demand Planning </a>
-                          <a href="production-planning.html">Production Planning &<br> Scheduling</a>
+                <a href="#">Solutions</a>
+                <div class="dropdown">
+                  <a href="solution(scaas).html">Supply Chain As a Service<br> (SCAAS)</a>
+    
+                    <div>
+                        <a href="chain-opitmization.html">Supply Chain Optimization</a>
+                        <div class="nested-dropdown">
+                            <a href="solution(freight).html">Freight Optimization</a>
+                            <a href="solution(packaging).html">packaging Optimization</a>
+                            <a href="solution(route).html">Route Optimization</a>
+                            <a href="solution(workforce).html">Workforce Scheduling</a>
+                            <a href="solution(price).html">Price Optimization and<br> Revenue Management </a>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <a href="logistics-planning.html">Logistics Planning &<br> Sourcing</a>
-                    <div class="nested-dropdown">
-                        <a href="logistics(RFQ).html">RFQ Design</a>
-                        <a href="logistics(vendor).html">Vendor Selection</a>
-                        <a href="logistics(load-allocation).html">Load allocation Planning</a>
+                    <a href="solution(sales).html">Sales & Operations Planning</a>
+                    
+                    <a href="solution(tms).html">Transport Management<br> System (TMS)</a>
+                    <a href="solution(wms).html">Warehouse Management<br> System (WMS)</a>
+                                    <div>
+                        <a href="visiblity.html">Supply Chain Visibility</a>
+                        <div class="nested-dropdown">
+                            <a href="solution(tracking).html">Asset/Inventory Tracking</a>
+                            <a href="solution(anti).html">Anti-Counterfeit Solutions</a>
+                        </div>
                     </div>
+                    <a href="solution(digitization).html">Supply Chain Digitization</a>
                 </div>
-                 <div>
-                    <a href="diagnostics.html">Supply Chain Diagnostics</a>
-                    <div class="nested-dropdown">
-                        <a href="services(dashboard).html">Performance Dashboard Design </a>
-                        <a href="services(assessment).html">Supply Chain Risk Assessment</a>
-                    </div>
-                </div>
-                <a href="modelling.html">Supply Chain Modelling &<br> Simulation</a>
-                <a href="analytics.html">Supply Chain Analytics</a>
             </div>
             <div>
-              <a href="logistics-planning.html">Logistics Planning &<br> Sourcing</a>
-              <div class="nested-dropdown">
-                <a href="logistics(RFQ).html">RFQ Design</a>
-                <a href="logistics(vendor).html">Vendor Selection</a>
-                <a href="logistics(load-allocation).html">Load allocation Planning</a>
-              </div>
+                <a href="#">Services</a>
+                <div class="dropdown">
+                  <a href="demand-management.html">Demand Management</a>
+                     <div>
+                        <a href="chain-planning.html">Supply Chain Planning</a>
+                        <div class="nested-dropdown">
+                            <a href="supply-chain-design.html">Supply Chain Design </a>
+                            <a href="inventory.html">Inventory Design</a>
+                             <a href="demand-planning.html">Demand Planning </a>
+                              <a href="production-planning.html">Production Planning &<br> Scheduling</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="logistics-planning.html">Logistics Planning &<br> Sourcing</a>
+                        <div class="nested-dropdown">
+                            <a href="logistics(RFQ).html">RFQ Design</a>
+                            <a href="logistics(vendor).html">Vendor Selection</a>
+                            <a href="logistics(load-allocation).html">Load allocation Planning</a>
+                        </div>
+                    </div>
+                     <div>
+                        <a href="diagnostics.html">Supply Chain Diagnostics</a>
+                        <div class="nested-dropdown">
+                            <a href="services(dashboard).html">Performance Dashboard Design </a>
+                            <a href="services(assessment).html">Supply Chain Risk Assessment</a>
+                        </div>
+                    </div>
+                    <a href="modelling.html">Supply Chain Modelling &<br> Simulation</a>
+                    <a href="analytics.html">Supply Chain Analytics</a>
+                </div>
             </div>
             <div>
-              <a href="diagnostics.html">Supply Chain Diagnostics</a>
-              <div class="nested-dropdown">
-                <a href="services(dashboard).html">Performance Dashboard Design </a>
-                <a href="services(assessment).html">Supply Chain Risk Assessment</a>
-              </div>
+                <a href="#">Training</a>
+                <div class="dropdown">
+                    <a href="training(management).html">Case Studies on<br> Supply Chain Management </a>
+                    <a href="training(manging).html">Managing Logistics Effectively</a>
+                    <a href="training(demand).html">Demand planning & Management</a>
+                </div>
             </div>
-            <a href="modelling.html">Supply Chain Modelling &<br> Simulation</a>
-            <a href="analytics.html">Supply Chain Analytics</a>
-          </div>
+            <div>
+                <a href="#">Resources</a>
+                <div class="dropdown">
+                    <a href="resource(case-study).html">Case Studies</a>
+                    <a href="resource(E-book).html">E-Book</a>
+                </div>
+            </div>
+            <div>
+                <a href="#">About Us</a>
+                <div class="dropdown">
+                    <a href="about(scm).html">About SMC Connect </a>
+                    <!--<a href="#">Alliances</a>-->
+                    <a href="about(career).html">Careers </a>
+                    <a href="about(contact).html">Contact Us </a>
+                </div>
+            </div>
         </div>
-        <div>
-          <a href="#">Training</a>
-          <div class="dropdown">
-            <a href="training(management).html">Case Studies on<br> Supply Chain Management </a>
-            <a href="training(manging).html">Managing Logistics Effectively</a>
-            <a href="training(demand).html">Demand planning & Management</a>
-          </div>
-        </div>
-        <div>
-          <a href="#">Resources</a>
-          <div class="dropdown">
-            <a href="resource(case-study).html">Case Studies</a>
-            <a href="resource(E-book).html">E-Book</a>
-          </div>
-        </div>
-        <div>
-          <a href="#">About Us</a>
-          <div class="dropdown">
-            <a href="about(scm).html">About SMC Connect </a>
-            <!--<a href="#">Alliances</a>-->
-            <a href="about(career).html">Careers </a>
-            <a href="about(contact).html">Contact Us </a>
-          </div>
-        </div>
-      </div>
 
 
 
 
 
-      <div class="search-container srch">
-        <input
-            type="text"
-            class="search"
-            placeholder="Search here..."
-            onchange="filterDropdown(this.value)"
-        />
-        <img src="./images/search.webp" alt="search" onclick="slide()" />
-
-        <div id="dropdown-list" class="dropdown-list"></div>
-    </div>
-    </nav><br>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img
+					src=".\images\search.webp" alt="search" onclick=slide()></div>			
+		</nav><br>
+  
 
     <!--About us -->
     <div class="service-swipe">
@@ -216,11 +138,20 @@
 
 
     <!-- Form Section -->
+     <div class="form"> 
+      <h1>CONTACT US </h1>
+     </div>
     <div class="form-container">
-      <h1>CONTACT US</h1>
+      <!--<h1>CONTACT US</h1>-->
       <form onsubmit="sendEmail(event)">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="mobile">Mobile</label>
+          <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+          <label for="email">Email ID</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
           <label for="organization">Organization</label>
           <input type="text" id="organization" name="organization" placeholder="Enter your organization">
@@ -228,11 +159,7 @@
           <label for="designation">Designation</label>
           <input type="text" id="designation" name="designation" placeholder="Enter your designation">
 
-          <label for="mobile">Mobile</label>
-          <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
-
-          <label for="email">Email ID</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          
 
           <div class="checkbox-group">
               <label>Solutions</label>
@@ -246,7 +173,8 @@
               <label><input type="checkbox" name="solutions" value="Supply Chain Digitization"> Supply Chain Digitization</label>
           </div>
 
-          <div class="checkbox-group">
+          <div style="    margin-left: 361px;
+    margin-top: -269px;" class="checkbox-group">
               <label>Services</label>
               <label><input type="checkbox" name="services" value="Supply Chain Design"> Supply Chain Design</label>
               <label><input type="checkbox" name="services" value="Inventory Strategy"> Inventory Strategy</label>
@@ -263,13 +191,14 @@
 
           <button type="submit">Submit</button>
       </form>
-  </div>
+  </div><br>
 
     <div style="    margin-left: 90px;" class="map-container mt-4">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14009.812926630814!2d77.20523001562127!3d28.69382038239448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d016f9dcf6b15%3A0x6bc9a5b99a52a55!2sHudson%20Lane%2C%20GTB%20Nagar%2C%20Delhi!5e0!3m2!1sen!2sin!4v1610624909235!5m2!1sen!2sin"
-        allowfullscreen="" loading="lazy">
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.835039123259!2d77.08997201108097!3d28.664657575545736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05953106bb77%3A0x3752bed1fa5c78c2!2s4U%20Coworks!5e0!3m2!1sen!2sin!4v1737965306879!5m2!1sen!2sin" 
+       allowfullscreen="" loading="lazy">
       </iframe>
+  
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7119803976734!2d77.06472141121857!3d28.45809749187928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19c7e90ca71f%3A0x24d722d75e372ede!2sDesq%20Worx%20-%20Club%20Patio!5e0!3m2!1sen!2sin!4v1737704277657!5m2!1sen!2sin"
         allowfullscreen="" loading="lazy">
@@ -343,5 +272,54 @@
     </div>
 
 
-  </header>
-</body>
+    <!--form data-->
+    <script>
+      async function sendEmail(event) {
+          event.preventDefault();
+  
+          // Gather form data
+          const formData = new FormData(event.target);
+          const payload = {
+              service_id: "",
+              template_id: "",
+              user_id: "",
+              template_params: {
+                  name: formData.get("name"),
+                  organization: formData.get("organization"),
+                  designation: formData.get("designation"),
+                  mobile: formData.get("mobile"),
+                  email: formData.get("email"),
+                  comments: formData.get("comments"),
+                  solutions: Array.from(
+                      document.querySelectorAll('input[name="solutions"]:checked')
+                  ).map((input) => input.value).join(", "),
+                  services: Array.from(
+                      document.querySelectorAll('input[name="services"]:checked')
+                  ).map((input) => input.value).join(", "),
+              },
+          };
+  
+          try {
+              const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+                  method: "POST",
+                  headers: {
+                      "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(payload),
+              });
+  
+              if (response.ok) {
+                  // alert("Email sent successfully!");
+              } else {
+                  const error = await response.json();
+                  alert(`Failed to send email: ${error.text}`);
+              }
+          } catch (err) {
+              console.error("Error:", err);
+              alert("Failed to send email. Please try again later.");
+          }
+      }
+  </script>
+
+  </body>
+  </html>

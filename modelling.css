@@ -17,7 +17,7 @@ body {
 }
 
 header {
-	height: 90vh;
+	/*height: 90vh;*/
 	/* background: #000; */
 }
 .black {
@@ -304,7 +304,7 @@ nav {
         }
         .heading {
             /*text-align: center;*/
-            font-size: 58px;
+            font-size: 48px;
             font-weight: bold;
             margin-bottom: 39px;
             border-bottom: 4px solid #000;
@@ -358,7 +358,7 @@ nav {
 
         h1 {
             color: #333;
-                font-size: 58px;
+                font-size: 48px;
                     border-bottom: 4px solid #000;
                     color: #005599;
 
@@ -493,5 +493,85 @@ nav {
 
   
   /*Bottom to top button*/
+    
+  /*Bottom to top button*/
+
+  .enquire-button {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #093360 !important;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .diffSection {
+    position: relative;
+  }
+  
+  .enquire-link {
+    display: block;
+    color: #d9dcf1;
+    text-align: center;
+    padding: 12px 11px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #093360 !important;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .enquire-link:hover {
+    background-color: #003d80;
+    transition: background-color 0.3s ease;
+  }
+
+
+  /*bottom to top button */
+   /* Button Styles */
+   .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #4a6fa5; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .back-to-top:hover {
+    background-color: #3b5a8e; /* Darker blue on hover */
+  }
+
+  /* Arrow Icon */
+  .back-to-top::before {
+    content: "▲"; /* Upward arrow */
+    font-size: 16px;
+  }
 
 

@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    height: 90vh;
+   /* height: 90vh;*/
     /* background: #000; */
 }
 .black {
@@ -337,7 +337,45 @@ nav {
         }
 
 
-        /*upload resume*/
+        /*resume*/
+        .scm h1{
+            font-size: 48px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #005599;
+    border-bottom: 4px solid #000;
+    margin-left: 92px;
+    margin-right: 86px;
+}
+    .scm p{
+        padding-left: 94px;
+        font-size: 16px;
+    }
+
+    .upload-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: white;
+        background-color: #007acc;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .upload-button:hover {
+        background-color: #005f99;
+    }
+
+    .upload-button input {
+        display: none;
+    }
+
+
+
+
+        /*upload resume
         .body {
           font-family: Arial, sans-serif;
           margin: 0;
@@ -422,7 +460,7 @@ nav {
 
       .upload-button input {
           display: none;
-      }
+      }*/
 
 
 

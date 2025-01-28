@@ -671,6 +671,8 @@ nav {
     align-items: center;
     font-size: 5vh;
     font-weight: bold;
+    font-size: 48px;
+    color: #005599;
 }
 .rev-container {
     /* padding: 10px 10%; */
@@ -1155,12 +1157,13 @@ nav {
             border-bottom: 4px solid #000;
             /*display: inline-block;*/
             /* padding-bottom: 5px; */
-            /* color: #005599; */
+             color: #005599; 
+             font-size: 48px;
         }
         .solutions {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
+            gap: 92px;
             text-align: center;
         }
         .solution {
@@ -1205,7 +1208,7 @@ nav {
             color: #333;
                 font-size: 48px;
                     border-bottom: 4px solid #000;
-                    /* color: #005599; */
+                     color: #005599; 
 
         }
 
@@ -1213,7 +1216,7 @@ nav {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 38px;
             margin-top: 30px;
         }
 

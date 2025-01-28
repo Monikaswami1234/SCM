@@ -231,9 +231,103 @@ nav {
     }
 
 
+/*form */
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+       }
+       .form h1 {
+         font-size: 48px;
+         margin-bottom: 10px;
+         text-align: left;
+         color: #005599;
+         border-bottom: 4px solid #000;
+         margin-left: 363px;
+         margin-right: 413px;
+       }
+       .form-container {
+           width: 736px;
+           background: #e8e8e8;
+           padding: 20px;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+           border-radius: 8px;
+           /* margin-left: 364px; */
+       }
+       .form-main{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+       }
+       .form-container h1 {
+           font-size: 24px;
+           margin-bottom: 20px;
+           text-align: center;
+       }
+       .form-container label {
+           display: block;
+           margin-bottom: 8px;
+           font-weight: bold;
+       }
+       .form-container input[type="text"],
+       .form-container input[type="email"],
+       .form-container textarea {
+           width: 100%;
+           padding: 10px;
+           margin-bottom: 15px;
+           border: 1px solid #ccc;
+           border-radius: 4px;
+           font-size: 14px;
+       }
+       .form-container textarea {
+           resize: none;
+           height: 100px;
+       }
+       .form-container .checkbox-group {
+           margin-bottom: 15px;
+           
+       }
+       .form-container .checkbox-group label {
+           display: flex;
+           align-items: center;
+           font-weight: normal;
+           margin-bottom: 8px;
+       }
+       .form-container .checkbox-group input {
+           margin-right: 10px;
+       }
+       .form-container button {
+           width: 100%;
+           padding: 10px;
+           background: #93979c;
+           color: #fff;
+           border: none;
+           border-radius: 4px;
+           font-size: 16px;
+           cursor: pointer;
+       }
+       .form-container button:hover {
+           background: #0056b3;
+       }
+       .map-container{
+         display: flex;
+         gap: 10px;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+       }
+     
+     
+     .map-container iframe {
+     width: 550px;
+     height: 300px;
+     border: 1px solid #ccc ;
+     }
 
-    /*contact form */
-    
+
+
+    /*contact form 
     .body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -320,7 +414,7 @@ width: 665px;
 height: 300px;
 border: 1px solid #ccc ;
 }
-  
+  */
 
 
 

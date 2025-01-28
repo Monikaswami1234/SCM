@@ -135,15 +135,85 @@
     </div><br><br><br>
 
 
-
-
-
-    <!-- Form Section -->
-     <div class="form"> 
+    <!--form -->
+    <div class="form-main">     
+      <div class="form"> 
       <h1>CONTACT US </h1>
      </div>
     <div class="form-container">
       <!--<h1>CONTACT US</h1>-->
+      <form onsubmit="sendEmail(event)">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="mobile">Mobile</label>
+          <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+          <label for="email">Email ID</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="organization">Organization</label>
+          <input type="text" id="organization" name="organization" placeholder="Enter your organization">
+
+          <label for="designation">Designation</label>
+          <input type="text" id="designation" name="designation" placeholder="Enter your designation">
+
+          
+
+          <div class="checkbox-group">
+              <label>Solutions</label>
+              <label><input type="checkbox" name="solutions" value="Asset/Inventory tracking"> Asset/Inventory Tracking</label>
+              <label><input type="checkbox" name="solutions" value="Anti-Counterfeit Solutions"> Anti-Counterfeit Solutions</label>
+              <label><input type="checkbox" name="solutions" value="Supply Chain Optimization"> Supply Chain Optimization</label>
+              <label><input type="checkbox" name="solutions" value="Sales & Operations Planning"> Sales & Operations Planning</label>
+              <label><input type="checkbox" name="solutions" value="Supply Chain As a Service (SCAAS)"> Supply Chain As a Service (SCAAS)</label>
+              <label><input type="checkbox" name="solutions" value="Transport Management System (TMS)"> Transport Management System (TMS)</label>
+              <label><input type="checkbox" name="solutions" value="Warehouse Management System (WMS)"> Warehouse Management System (WMS)</label>
+              <label><input type="checkbox" name="solutions" value="Supply Chain Digitization"> Supply Chain Digitization</label>
+          </div>
+
+          <div style="    margin-left: 361px;
+    margin-top: -269px;" class="checkbox-group">
+              <label>Services</label>
+              <label><input type="checkbox" name="services" value="Supply Chain Design"> Supply Chain Design</label>
+              <label><input type="checkbox" name="services" value="Inventory Strategy"> Inventory Strategy</label>
+              <label><input type="checkbox" name="services" value="Demand Planning"> Demand Planning</label>
+              <label><input type="checkbox" name="services" value="Production Planning & Scheduling"> Production Planning & Scheduling</label>
+              <label><input type="checkbox" name="services" value="Logistics Planning & Sourcing"> Logistics Planning & Sourcing</label>
+              <label><input type="checkbox" name="services" value="Supply Chain Diagnostics"> Supply Chain Diagnostics</label>
+              <label><input type="checkbox" name="services" value="Supply Chain Modelling & Simulation"> Supply Chain Modelling & Simulation</label>
+              <label><input type="checkbox" name="services" value="Supply Chain Analytics"> Supply Chain Analytics</label>
+          </div>
+
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+
+          <button type="submit">Submit</button>
+      </form>
+  </div><br>
+
+    <div class="map-container mt-4">
+      <iframe
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.835039123259!2d77.08997201108097!3d28.664657575545736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05953106bb77%3A0x3752bed1fa5c78c2!2s4U%20Coworks!5e0!3m2!1sen!2sin!4v1737965306879!5m2!1sen!2sin" 
+       allowfullscreen="" loading="lazy">
+      </iframe>
+  
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7119803976734!2d77.06472141121857!3d28.45809749187928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19c7e90ca71f%3A0x24d722d75e372ede!2sDesq%20Worx%20-%20Club%20Patio!5e0!3m2!1sen!2sin!4v1737704277657!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+    </div>
+
+
+
+
+    <!-- Form Section 
+     <div class="form"> 
+      <h1>CONTACT US </h1>
+     </div>
+    <div class="form-container">
+      <h1>CONTACT US</h1>
       <form onsubmit="sendEmail(event)">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -204,7 +274,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7119803976734!2d77.06472141121857!3d28.45809749187928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19c7e90ca71f%3A0x24d722d75e372ede!2sDesq%20Worx%20-%20Club%20Patio!5e0!3m2!1sen!2sin!4v1737704277657!5m2!1sen!2sin"
         allowfullscreen="" loading="lazy">
       </iframe>
-    </div><br><br>
+    </div><br><br>-->
 
 
 

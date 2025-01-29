@@ -1013,6 +1013,113 @@ nav {
         }
 
 
+
+
+        /*testimonials*/
+        
+/*TEAM SECTION*/
+.totalcard {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.totalcard .card {
+	margin: 50px;
+	width: 300px;
+	border-radius: 10px;
+	background: #fff;
+}
+.totalcard .card{
+	box-shadow: inset 0 0 10px rgba(0,0,0,0.4),
+					0 0 10px rgba(0,0,0,0.3);
+}
+.card:nth-child(1){
+	/*border-top: 5px solid green;*/
+    width: 537px;
+}
+.card:nth-child(2){
+	/*border-top: 5px solid blue;*/
+    width: 537px;
+    height: 351px;
+}
+.card:nth-child(3){
+	border-top: 5px solid rgb(255, 0, 0);
+}
+.card:nth-child(1):hover {
+	box-shadow: inset 0px 0px 10px rgba(138, 140, 138, 0.5),
+    1px 1px 30px rgba(156, 156, 157, 0.5);
+}
+.card:nth-child(2):hover {
+	box-shadow: inset 0px 0px 10px rgba(173, 173, 175, 0.5),
+				1px 1px 30px rgba(156, 156, 157, 0.5);
+}
+.card:nth-child(3):hover {
+	box-shadow: inset 0px 0px 10px rgba(255, 0, 0, 0.5),
+				1px 1px 30px rgba(255, 0, 0, 0.5);
+}
+.totalcard .card img {
+	width: 100px;
+	height: 100px;
+	margin-top: 5px;
+	cursor: pointer;
+	border-radius: 50px;
+	transition-duration: .8s;
+}
+.totalcard .card img:hover {
+	transform: scale(3.5);
+	border-radius: 0;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+#detail p{
+	/*font-size: 15px;
+	line-height: 25px;
+	font-variant: small-caps;*/
+	text-align: center;
+	margin: 25px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+#detail button {
+	outline: none;
+	border-radius: 10px;
+	border-style: none;
+	border: 1px solid black;
+	padding: 9px 65px;
+	cursor: pointer;
+	transition-duration: .4s;
+	border-radius: 6px;
+	margin-left: 10rem;
+}
+#detail a {
+	bottom: 80px;
+	text-decoration: none;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	margin-left: 90px;
+	align-self: center;
+}
+.btn-roshan:hover {
+	background: rgba(0,255,0,0.7);
+	color: #fff;
+}
+.btn-roshan2:hover {
+	background: rgba(0,0,255,0.5);
+	color: #fff;
+}
+.card-title {
+	font-size: 17px;
+	color: #343A40;
+	padding: 20px;
+	font-weight: 700;
+}
+
+
+
+
+
         
            /* carousel
            body {
@@ -1061,6 +1168,7 @@ nav {
             min-width: 100%;
             text-align: center;
             padding: 20px;
+            width: 269px;
         }
 
         .slider-item img {
@@ -1106,7 +1214,7 @@ nav {
 
         .slider-indicators {
             text-align: center;
-            margin-top: 10px;
+            margin-top: 162px;
         }
 
         .slider-indicators span {

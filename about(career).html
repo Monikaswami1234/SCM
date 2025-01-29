@@ -4,13 +4,13 @@
 	<title>SCM CONNECT</title>
 	<link rel="shortcut icon" type="" href="./images/smc.png">
 	<link rel="stylesheet" type="text/css" href=".\about(career).css">
-    
+    <link rel="stylesheet" type="text/css" href=".\commnNavbar.css">
    
 </head>
 <body>
 	<!-- Navigation Bar -->
 	<header id="header">
-		<nav>
+		<nav class="MainHeader">
 			<div class="logo"><a href="index.html"><img src="./images/SCM1.png" alt="logo" width="100px"></a></div>
 			<div class="navbar">
        
@@ -100,15 +100,127 @@
             </div>
         </div>
     </div>
-
-
-
-
-
 			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img
 					src=".\images\search.webp" alt="search" onclick=slide()></div>			
 		</nav><br>
-</header>
+
+         <!--mobile-->
+         <div class="mobileHeader">
+            <nav class="navbarTset">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/SCM1.png" alt="logo" width="100px"></a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+          
+            <div class="drawer" id="drawer">
+          
+                <ul>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-target="solutions-dropdown">Solutions</a>
+                        <ul id="solutions-dropdown" class="dropdown-content" style="list-style-type:disc">
+                            <li><a href="solution(scaas).html">Supply Chain As a Service (SCAAS)</a></li>
+                            <li>
+                                <a href="#" class="nested-toggle" data-target="optimization-dropdown">Supply Chain
+                                    Optimization</a>
+                                <ul id="optimization-dropdown" class="nested-dropdown-content" style="list-style-type:circle">
+                                    <li><a href="solution(freight).html">Freight Optimization</a></li>
+                                    <li><a href="solution(packaging).html">Packaging Optimization</a></li>
+                                    <li><a href="solution(route).html">Route Optimization</a></li>
+                                    <li><a href="solution(workforce).html">Workforce Scheduling</a></li>
+                                    <li><a href="solution(price).html">Price Optimization and<br> Revenue Management </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="solution(sales).html">Sales & Operations Planning</a></li>
+                            <li><a href="solution(tms).html">Transport Management<br> System (TMS)</a></li>
+                             <li><a href="solution(wms).html">Warehouse Management<br> System (WMS)</a></li>
+                             <li>
+                                <a href="visiblity.html" class="nested-toggle" data-target="visibility">Supply Chain Visibility</a>
+                                <ul id="optimization-dropdown" class="nested-dropdown-content" style="list-style-type:circle">
+                                    <li><a href="solution(tracking).html">Asset/Inventory Tracking</a></li>
+                                    <li><a href="solution(anti).html">Anti-Counterfeit Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="solution(digitization).html">Supply Chain Digitization</a></li>
+                            </ul>
+                    </li>
+          
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-target="services-dropdown">Services</a>
+                        <ul id="services-dropdown" class="dropdown-content" style="list-style-type:disc">
+                            <li><a href="demand-management.html">Demand Management</a></li>
+                            <li>
+                                <a href="#" class="nested-toggle" data-target="chain-planning-dropdown">Supply Chain
+                                    Planning</a>
+                                <ul id="chain-planning-dropdown" class="nested-dropdown-content" style="list-style-type:circle">
+                                    <li><a href="supply-chain-design.html">Supply Chain Design</a></li>
+                                    <li><a href="inventory.html">Inventory Design</a></li>
+                                    <li><a href="demand-planning.html">Demand Planning</a></li>
+                                    <li><a href="production-planning.html">Production Planning &amp; Scheduling</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="nested-toggle" data-target="logistics-planning-dropdown">Logistics Planning
+                                    &amp; Sourcing</a>
+                                <ul id="logistics-planning-dropdown" class="nested-dropdown-content"
+                                    style="list-style-type:circle">
+                                    <li><a href="logistics(RFQ).html">RFQ Design</a></li>
+                                    <li><a href="logistics(vendor).html">Vendor Selection</a></li>
+                                    <li><a href="logistics(load-allocation).html">Load Allocation Planning</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="nested-toggle" data-target="diagnostics-dropdown">Supply Chain
+                                    Diagnostics</a>
+                                <ul id="diagnostics-dropdown" class="nested-dropdown-content" style="list-style-type:circle">
+                                    <li><a href="services(dashboard).html">Performance Dashboard Design</a></li>
+                                    <li><a href="services(assessment).html">Supply Chain Risk Assessment</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="modelling.html">Supply Chain Modelling &amp; Simulation</a></li>
+                            <li><a href="analytics.html">Supply Chain Analytics</a></li>
+                        </ul>
+                    </li>
+                </ul>
+          
+                <ul>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-target="training-dropdown">Training</a>
+                        <ul id="training-dropdown" class="dropdown-content" style="list-style-type:disc">
+                            <li><a href="training(management).html">Case Studies on<br>Supply Chain Management</a></li>
+                            <li><a href="training(manging).html">Managing Logistics Effectively</a></li>
+                            <li><a href="training(demand).html">Demand Planning &amp; Management</a></li>
+                        </ul>
+                    </li>
+                </ul>
+          
+                <ul>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-target="resources-dropdown">Resources</a>
+                        <ul id="resources-dropdown" class="dropdown-content" style="list-style-type:disc">
+                            <li><a href="resource(case-study).html">Case Studies</a></li>
+                            <li><a href="resource(E-book).html">E-Book</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-target="about-dropdown">About Us</a>
+                        <ul id="about-dropdown" class="dropdown-content" style="list-style-type:disc">
+                            <li><a href="about(scm).html">About SCM Connect</a></li>
+                            <!-- Uncomment the line below if needed -->
+                            <!-- <li><a href="about(allience).html">Alliances</a></li> -->
+                            <li><a href="about(career).html">Careers</a></li>
+                            <li><a href="about(contact).html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+          </div>
 
 
 
@@ -305,6 +417,6 @@
 
 
 
-
+  <script src=".\navbar.js"></script>
 </header>
 </body>

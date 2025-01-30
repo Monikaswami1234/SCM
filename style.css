@@ -1759,58 +1759,150 @@ list-style:decimal!important;
   }
   
 
-  @media all and (min-width:320px) and (max-width:520px)  {
-    .dropdown-menu.show {
-        display: block;
+  @media all and (min-width:320px) and (max-width:520px) {
+      .dropdown-menu.show {
+          display: block;
+      }
+
+      .MainHeader {
+          display: none;
+      }
+
+      .mobileHeader {
+          display: block;
+      }
+
+      .dropdown {
+          position: relative;
+          display: inline-block;
+      }
+
+      .dropdown-menu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: transparent;
+          border: 1px solid #ccc;
+          padding: 10px;
+          z-index: 1000;
+          min-width: 200px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .dropdown-menu .dropdown-item {
+          padding: 5px 10px;
+          color: white;
+          text-decoration: none;
+          display: block;
+      }
+
+      .dropdown-menu .dropdown-item:hover {
+          background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-menu {
+          display: block;
+      }
+
+      .nested-dropdown {
+          margin-left: 15px;
+      }
+
+      .dropdown-submenu:hover .nested-dropdown {
+          display: block;
+      }
+
+      .service-swipe {
+          padding: 7rem 2rem !important;
+
+      }
+
+      .service-swipe h2,
+      .service-swipe p {
+          text-align: center !important;
+      }
+      .service-swipe h2{
+        font-size: 26px !important;
+      }
+
+      .service-swipe p {
+        font-size: 22px !important;
     }
-    
-.MainHeader {
-    display: none;
-}
-.mobileHeader {
-    display: block;
-}
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
+      .sidebar {
+          width: 100%;
+          display: flex;
+          justify-content: center;
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: transparent;
-    border: 1px solid #ccc;
-    padding: 10px;
-    z-index: 1000;
-    min-width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+      }
+      .container1 {
+        width: 100% !important;
+        margin-top: -56px;
+      }
+      .container1 .left img {
+        height: 300px;
+      }
+      .container1 .right  {
+        padding: 1rem 0rem !important;
+    text-align: center;
+      }
+      .core-values-head p{
+        font-size: 30px !important;
+        text-align: center;
+      }
 
-.dropdown-menu .dropdown-item {
-    padding: 5px 10px;
-    color: white;
-    text-decoration: none;
-    display: block;
-}
+      .value-card {
+        text-align: center;
+      }
 
-.dropdown-menu .dropdown-item:hover {
-    background-color: #f1f1f1;
-}
+      .sevice_tag {
+        font-size: 38px !important;
+        text-align: center;
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
+      }
+      .carousel-main {
+        margin-top: -3rem;
+      }
 
-.nested-dropdown {
-    margin-left: 15px;
-}
+      .clients-container img {
+        height: 300px !important;
+      }
 
-.dropdown-submenu:hover .nested-dropdown {
-    display: block;
-}
+      .clients-container {
+        padding: 2rem 0.5rem;
+      }
+      .client-h {
+        text-align: center;
+      }
 
+      .serviceFont {
+        text-align: center;
+        font-size: 36px !important;
+      }
+
+      .paraGraphFont {
+        text-align: center;
+        font-size: 18px !important;
+      }
+
+      .totalcard .card {
+        margin:2rem 2rem 0rem 2rem;
+        height: max-content;
+      }
+
+          .service {
+              width: 41%;
+              padding: 1px;
+          }
+
+          .service img {
+            width: 136px;
+            height: 91px; 
+          }
+          .service h3 {
+            text-align: center;
+            font-size: 15px !important;
+          }
   }
 

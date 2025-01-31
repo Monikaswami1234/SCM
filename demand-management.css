@@ -242,8 +242,8 @@ nav {
     }
 
     .container1 {
-        max-width: 1200px;
-        margin: 20px auto;
+       /* max-width: 1200px;
+        margin: 20px auto;*/
         padding: 66px;
         background-color: #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

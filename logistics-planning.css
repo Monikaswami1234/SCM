@@ -342,7 +342,7 @@ nav {
         background-color: #f9f9f9;
     }
     .container {
-        max-width: 1200px;
+        /*max-width: 1200px;*/
         margin: 0 auto;
         padding: 20px;
     }
@@ -359,7 +359,7 @@ nav {
     .solutions {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 20px;
+        gap: 72px;
         text-align: center;
     }
     .solution {
@@ -412,7 +412,7 @@ nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        gap: 37px;
         margin-top: 30px;
     }
 

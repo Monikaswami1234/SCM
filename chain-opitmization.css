@@ -18,6 +18,7 @@ body {
 
 header {
    /* height: 90vh;*/
+   display: inline;
     /* background: #000; */
 }
 .black {
@@ -223,7 +224,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    
 }
 
 .core-values {
@@ -335,36 +336,41 @@ nav {
 
 
     /*Our solutions*/
-    .body {
+    /*.body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
         background-color: #f9f9f9;
-    }
+    }*/
     .container {
        /* max-width: 1200px;*/
         margin: 0 auto;
         padding: 20px;
+        display: block;
     }
     .heading {
         /*text-align: center;*/
         font-size: 48px;
         font-weight: bold;
-        margin-bottom: 39px;
+       /* margin-bottom: 39px;*/
         border-bottom: 4px solid #000;
         /*display: inline-block;*/
         padding-bottom: 5px;
         color: #005599;
+        width: auto;
     }
     .solutions {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 72px;
-        text-align: center;
+        display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+         width: 100%;
+         height:auto ;
+         gap: 72px;
     }
     .solution {
         background-color: #fff;
         padding: 20px;
+        width: 150px;
         /*border-radius: 8px;*/
         /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
         /*transition: transform 0.3s, box-shadow 0.3s;*/
@@ -387,13 +393,13 @@ nav {
 
 
     /*Related services*/
-    .body {
+   /* .body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
         background-color: #f9f9f9;
         line-height: 1.6;
-    }
+    }*/
 
     .container2 {
         padding: 20px;
@@ -405,7 +411,13 @@ nav {
             font-size: 48px;
                 border-bottom: 4px solid #000;
                 color: #005599;
+                text-align: left;
 
+    }
+    .container2 p{
+        font-size: 1rem !important;
+        text-align: justify;
+        padding: 20px;
     }
 
     .services {
@@ -414,6 +426,7 @@ nav {
         justify-content: center;
         gap: 37px;
         margin-top: 30px;
+        width: auto;
     }
 
     .service {
@@ -455,15 +468,15 @@ nav {
 
 
 /*Footer*/
-.body1 {
+/*.body1 {
   margin: 0;
   font-family: Arial, sans-serif;
-}
+}*/
 
 .footer {
   background-color: #485766; /* Dark blue background */
   color: white;
-  padding: 30px 50px;
+ /* padding: 30px 50px;*/
 }
 
 .footer .container {
@@ -580,6 +593,18 @@ nav {
     transition: background-color 0.3s ease;
   }
 
+  .carousel-item .row {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+   
+}
+
+.carousel-item .col-4 img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
 
   /*bottom to top button */
    /* Button Styles */
@@ -617,3 +642,6 @@ nav {
     content: "▲"; /* Upward arrow */
     font-size: 16px;
   }
+
+
+  

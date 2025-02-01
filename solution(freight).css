@@ -251,6 +251,7 @@ nav {
             font-weight: bold;
             margin-bottom: 20px;
             color: #005599;
+            border-bottom: 4px solid #000;
         }
 
         .main-content p {
@@ -325,7 +326,7 @@ nav {
       .solutions {
          display: flex;
          justify-content: center;
-         
+         gap: 72px;
          flex-wrap: wrap;
          width: 100%;
          height:auto ;
@@ -378,7 +379,7 @@ nav {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          gap: 38px;
+          gap: 37px;
           margin-top: 30px;
           width: auto;
       }
@@ -387,7 +388,7 @@ nav {
           background: #fff;
           border-radius: 8px;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          width: 320px;
+          width: 216px;
           padding: 15px;
           text-align: center;
           transition: transform 0.3s;
@@ -441,7 +442,7 @@ nav {
 
     .footer .column {
       flex: 1;
-      /* min-width: 200px; */
+      min-width: 265px;
       margin: 10px;
     }
 

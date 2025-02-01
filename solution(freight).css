@@ -17,7 +17,8 @@ body {
 }
 
 header {
-	/*height: 90vh;*/
+	/* height: 90vh; */
+  display: inline;
 	/* background: #000; */
 }
 .black {
@@ -179,8 +180,11 @@ nav {
             padding: 20px;
             text-align: left;
             border: 0px solid #ddd;
-            padding-left: 180px;
-    padding-bottom: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding-left: 180px;
+    padding-bottom: 55px; */
         }
 
        
@@ -215,7 +219,7 @@ nav {
 
 
 /*Supply chain design*/
- .body {
+ .body { 
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -225,13 +229,16 @@ nav {
         }
 
         .container1 {
-          /*  max-width: 1200px;
-            margin: 20px auto;*/
+            /* max-width: 1200px; */
+            /* width: 100%; */
+            flex-wrap: wrap;
+            margin: 20px auto;
             padding: 66px;
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             gap: 20px;
         }
 
@@ -291,122 +298,126 @@ nav {
 
 
     /*Our solutions*/
-    .body {
+    /* .body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
-        }
+        } */
         .container {
-            /*max-width: 1200px;*/
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .heading {
-            /*text-align: center;*/
-            font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 39px;
-            border-bottom: 4px solid #000;
-            /*display: inline-block;*/
-            padding-bottom: 5px;
-            color: #005599;
-        }
-        .solutions {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 72px;
-            text-align: center;
-        }
-        .solution {
-            background-color: #fff;
-            padding: 20px;
-            /*border-radius: 8px;*/
-            /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
-            /*transition: transform 0.3s, box-shadow 0.3s;*/
-        }
-        .solution:hover {
-            transform: translateY(-5px);
-    		background-color: #0056A1;
-    		color: #fff;
-        }
-        .solution img {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 10px;
-        }
-        .solution h3 {
-             font-size: 16px;
-    		margin: 10px 0 0;
-    		color: inherit;
-        }
+          /* max-width: 1200px; */
+          width: 100%;
+          display: block;
+          padding: 20px ;
+      }
+      .heading {
+          /*text-align: center;*/
+          font-size: 5vh;
+          font-weight: bold;
+          /* margin-bottom: 39px; */
+          border-bottom: 4px solid #000;
+          /*display: inline-block;*/
+          /* padding-bottom: 5px; */
+           color: #005599; 
+           font-size: 48px;
+           width: auto;
+      }
+      .solutions {
+         display: flex;
+         justify-content: center;
+         
+         flex-wrap: wrap;
+         width: 100%;
+         height:auto ;
+      }
+      .solution {
+          background-color: #fff;
+          padding: 20px;
+          width: 150px;
+          /*border-radius: 8px;*/
+          /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+          /*transition: transform 0.3s, box-shadow 0.3s;*/
+      }
+      .solution:hover {
+          transform: translateY(-5px);
+          background-color: #0056A1;
+          color: #fff;
+      }
+      .solution img {
+          width: 50px;
+          height: 50px;
+          margin-bottom: 10px;
+      }
+      .solution h3 {
+           font-size: 16px;
+          margin: 10px 0 0;
+          color: inherit;
+      }
 
 
-        /*Related services*/
-        .body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            line-height: 1.6;
-        }
+      .container2 {
+          padding: 20px;
+          text-align: center;
+          /* display: flex; */
+      }
 
-        .container2 {
-            padding: 20px;
-            text-align: center;
-        }
+      .container2 h1 {
+          color: #333;
+              font-size: 48px;
+                  border-bottom: 4px solid #000;
+                   color: #005599; 
+                   text-align: left;
 
-        h1 {
-            color: #333;
-                font-size: 48px;
-                    border-bottom: 4px solid #000;
-                    color: #005599;
+      }
+      .container2 p{
+          font-size: 1rem !important;
+          text-align: justify;
+          padding: 20px;
+      }
+      .services {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 38px;
+          margin-top: 30px;
+          width: auto;
+      }
 
-        }
+      .service {
+          background: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          width: 320px;
+          padding: 15px;
+          text-align: center;
+          transition: transform 0.3s;
+      }
 
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 37px;
-            margin-top: 30px;
-        }
+      .service:hover {
+          transform: translateY(-5px);
+      }
 
-        .service {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 216px;
-            padding: 15px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
+      .service img {
+          width: 172px;
+          height: 110px;
+          margin-bottom: 15px;
+      }
 
-        .service:hover {
-            transform: translateY(-5px);
-        }
+      .service h3 {
+          font-size: 18px;
+          color: #333;
+          margin-bottom: 10px;
+      }
 
-        .service img {
-            width: 172px;
-            height: 110px;
-            margin-bottom: 15px;
-        }
+      .service p {
+          font-size: 14px;
+          color: #666;
+      }
 
-        .service h3 {
-            font-size: 18px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .service p {
-            font-size: 14px;
-            color: #666;
-        }
-
-        .service a {
-            text-decoration: none;
-            color: inherit;
-        }
+      .service a {
+          text-decoration: none;
+          color: inherit;
+      }
 
 
 
@@ -430,7 +441,7 @@ nav {
 
     .footer .column {
       flex: 1;
-      min-width: 200px;
+      /* min-width: 200px; */
       margin: 10px;
     }
 

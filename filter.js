@@ -13,7 +13,7 @@ const dropdownItems = [
         { name: "Asset/Inventory Tracking", url: "solution(tracking).html" },
         { name: "Anti-Counterfeit Solutions", url: "solution(anti).html" },
         { name: "Supply Chain Digitization", url: "solution(digitization).html" },
-        { name: "Demand Management", url: "#" },
+        { name: "Demand Management", url: "demand-management.html" },
         { name: "Supply Chain Planning", url: "chain-planning.html" },
         { name: "Supply Chain Design", url: "supply-chain-design.html" },
         { name: "Inventory Design", url: "inventory.html" },
@@ -67,4 +67,3 @@ function filterDropdown(query) {
         dropdownList.appendChild(listItem);
     });
 }
-

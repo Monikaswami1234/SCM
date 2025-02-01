@@ -101,8 +101,17 @@
                 </div>
             </div>
         </div>
-			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img
-					src=".\images\search.webp" alt="search" onclick=slide()></div>			
+			 <div class="search-container srch">
+                    <input
+                        type="text"
+                        class="search"
+                        placeholder="Search here..."
+                        oninput="filterDropdown(this.value)"
+                    />
+                    <img src="./images/search.webp" alt="search" onclick="slide()" />
+            
+                    <div id="dropdown-list" class="dropdown-list"></div>
+                </div>			
 		</nav><br>
 
           <!--mobile-->

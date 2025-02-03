@@ -216,77 +216,82 @@ nav {
 
 
 /*Supply chain design*/
- .body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
-        }
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
 
-        .container1 {
-            /* max-width: 1200px; */
-            margin: 20px auto;
-            padding: 66px;
-            background-color: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
+.container-1 {
+  /*max-width: 1200px;*/
+  margin: 20px auto;
+  padding: 55px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  
+}
 
-        .main-content {
-            flex: 2;
-        }
+.main-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-        .main-content h1 {
-            font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #005599;
-        }
+.main-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #005599;
+}
 
-        .main-content p {
-            margin-bottom: 20px;
-            text-align: justify;
-        }
+.main-content p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
 
-        .main-content ul {
-            margin: 0;
-            padding: 0 20px;
-            list-style-type: disc;
-        }
+.main-content ul {
+  margin: 0;
+  padding: 0 20px;
+  list-style-type: disc;
+}
 
-        .main-content ul li {
-            margin-bottom: 10px;
-        }
+.main-content ul li {
+  margin-bottom: 10px;
+}
 
 
-        .toggle-button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1rem;
-            color: #fafafa;
-            background-color: #005599;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+.toggle-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fafafa;
+  background-color: #005599;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+}
 
-        .toggle-button:hover {
-            background-color: #175ebef5;
-        }
+.toggle-button:hover {
+  background-color: #175ebef5;
+}
 
-        .toggle-content {
-            display: none;
-            margin-top: 20px;
-            background-color: #c8ddf0;
-            color: #191a1b;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: left;
-        }
+.toggle-content {
+  display: none;
+  margin-top: 20px;
+  background-color: #c8ddf0;
+  color: #191a1b;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
 
        
 

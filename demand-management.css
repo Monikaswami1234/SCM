@@ -279,8 +279,8 @@ height: auto;
     /* margin-left: 15px; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;
+    align-items: center;*/
 }
 
 .core-values h1 {

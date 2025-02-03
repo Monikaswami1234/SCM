@@ -231,69 +231,78 @@ nav {
             color: #333;
         }
 
+       
         .container-1 {
-          /*  max-width: 1200px;*/
-            margin: 20px auto;
-            padding: 55px;
-            background-color: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            
-        }
+          max-width: 1200px;
+          margin: 20px auto;
+          padding: 55px;
+          background-color: #fff;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+          
+      }
 
-        .main-content {
-            flex: 2;
-        }
+      .main-content {
+          flex: 2;
+      }
 
-        .main-content h1 {
-            font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #005599;
-        }
+      .main-content h1 {
+          font-size: 48px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          color: #005599;
+      }
 
+      .main-content p {
+          margin-bottom: 20px;
+          text-align: justify;
+          
+      }
+      @media  all and (max-width:720px){
         .main-content p {
-            margin-bottom: 20px;
-            text-align: justify;
-        }
+          margin-bottom: 20px;
+          text-align: justify;
+          font-size: 0.4rem;
+      }
+    }
 
-        .main-content ul {
-            margin: 0;
-            padding: 0 20px;
-            list-style-type: disc;
-        }
+      .main-content ul {
+          margin: 0;
+          padding: 0 20px;
+          list-style-type: disc;
+      }
 
-        .main-content ul li {
-            margin-bottom: 10px;
-        }
+      .main-content ul li {
+          margin-bottom: 10px;
+      }
 
 
-        .toggle-button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1rem;
-            color: #fafafa;
-            background-color: #005599;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+      .toggle-button {
+          margin-top: 20px;
+          padding: 10px 20px;
+          font-size: 1rem;
+          color: #fafafa;
+          background-color: #005599;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
 
-        .toggle-button:hover {
-            background-color: #175ebef5;
-        }
+      .toggle-button:hover {
+          background-color: #175ebef5;
+      }
 
-        .toggle-content {
-            display: none;
-            margin-top: 20px;
-            background-color: #c8ddf0;
-            color: #191a1b;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: left;
-        }
+      .toggle-content {
+          display: none;
+          margin-top: 20px;
+          background-color: #c8ddf0;
+          color: #191a1b;
+          padding: 10px;
+          border-radius: 5px;
+          text-align: left;
+      }
 
        
 

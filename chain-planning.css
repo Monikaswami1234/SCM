@@ -179,8 +179,13 @@ nav {
             padding: 20px;
             text-align: left;
             border: 0px solid #ddd;
-            padding-left: 180px;
-    padding-bottom: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding-left: 180px;
+            
+
+    padding-bottom: 55px; */
         }
 
        
@@ -231,7 +236,7 @@ nav {
     max-width: 1485px;
     padding: 20px;
     background-color: #cdddec;
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
 
 .core-values h1 {
@@ -342,7 +347,7 @@ nav {
         background-color: #f9f9f9;
     }
     .container {
-       /* max-width: 1200px;*/
+        /*max-width: 1200px;*/
         margin: 0 auto;
         padding: 20px;
     }

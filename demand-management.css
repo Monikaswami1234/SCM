@@ -219,6 +219,8 @@ nav {
     background-color: #003d73;
 }
 
+
+/*demand management*/
 .container1{
 
 display: flex;
@@ -253,6 +255,7 @@ height: auto;
     width: 100%;
     font-size: 48px;
     border-bottom: 4px solid #000;
+    color: #005599;
 
    
 }

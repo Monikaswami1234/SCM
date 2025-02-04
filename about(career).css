@@ -17,8 +17,7 @@ body {
 }
 
 header {
-   /* height: 90vh;*/
-   display: inline;
+   height: 90vh;
     /* background: #000; */
 }
 .black {

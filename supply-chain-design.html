@@ -5,7 +5,6 @@
     <link rel="shortcut icon" type="" href="./images/smc.png">
     <link rel="stylesheet" type="text/css" href=".\supply-chain-design.css">
     <link rel="stylesheet" type="text/css" href=".\commnNavbar.css">
-    <link rel="stylesheet" type="text/css" href=".\commnNavbar.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -107,8 +106,12 @@
 
 
 
-            <div class="srch"><input type="text" class="search" placeholder="Search here..."><img
-                    src=".\images\search.webp" alt="search" onclick=slide()></div>          
+            <div class="search-container srch">
+                <input type="text" class="search" placeholder="Search here..." oninput="filterDropdown(this.value)" />
+                <img src="./images/search.webp" alt="search" onclick="slide()" />
+
+                <div id="dropdown-list" class="dropdown-list"></div>
+            </div>	
         </nav><br>
 
         <div class="mobileHeader">

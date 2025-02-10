@@ -369,7 +369,7 @@ nav {
     .solutions {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 72px;
+        gap: 100px;
         text-align: center;
     }
     .solution {
@@ -422,7 +422,7 @@ nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 37px;
+        gap: 77px;
         margin-top: 30px;
     }
 
@@ -549,7 +549,13 @@ nav {
 /*bottom to top */
 
   /*Bottom to top button*/
-
+/* enquire button*/
+/* .body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 200vh; /* For demonstration purposes */
+  /* } */ */
+  
   .enquire-button {
     position: fixed;
     top: 50%;

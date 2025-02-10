@@ -330,7 +330,7 @@ nav {
           flex-wrap: wrap;
           width: 100%;
           height:auto ;
-          gap: 72px;
+          gap: 100px;
         }
         .solution {
             background-color: #fff;
@@ -389,7 +389,7 @@ nav {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 37px;
+            gap: 77px;
             margin-top: 30px;
             width: auto;
         }
@@ -517,7 +517,13 @@ nav {
   /*Bottom to top button*/
 
   /*Bottom to top button*/
-
+/* enquire button*/
+/* .body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 200vh; /* For demonstration purposes */
+  /* } */ */
+  
   .enquire-button {
     position: fixed;
     top: 50%;
@@ -557,16 +563,6 @@ nav {
     background-color: #003d80;
     transition: background-color 0.3s ease;
   }
-  .carousel-item .row {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-   
-}
-.carousel-item .col-4 img {
-  max-height: 300px;
-  object-fit: cover;
-}
 
 
   /*bottom to top button */

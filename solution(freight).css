@@ -327,7 +327,7 @@ nav {
       .solutions {
          display: flex;
          justify-content: center;
-         gap: 72px;
+         gap: 100px;
          flex-wrap: wrap;
          width: 100%;
          height:auto ;
@@ -380,7 +380,7 @@ nav {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          gap: 37px;
+          gap: 77px;
           margin-top: 30px;
           width: auto;
       }

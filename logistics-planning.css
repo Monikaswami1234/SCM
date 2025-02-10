@@ -423,7 +423,7 @@ nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 37px;
+        gap: 77px;
         margin-top: 30px;
     }
 
@@ -549,7 +549,13 @@ nav {
 /*BOTTOM TO TOP*/
 
   /*Bottom to top button*/
-
+/* enquire button*/
+/* .body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 200vh; /* For demonstration purposes */
+  /* } */ */
+  
   .enquire-button {
     position: fixed;
     top: 50%;

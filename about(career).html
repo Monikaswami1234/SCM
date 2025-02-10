@@ -280,7 +280,7 @@
 
         <!-- Sidebar -->
         <div>
-            <img src="./images/career.jpg" alt="Infographic" height="700">
+            <img src="./images/career.jpg" alt="Infographic" height="600">
         </div>
     </div>
         
@@ -389,7 +389,7 @@
           <li><a href="inventory.html">Inventory Strategy</a></li>
           <li><a href="demand-planning.html">Demand Planning</a></li>
           <li><a href="production-planning.html">Production Planning & Scheduling</a></li>
-          <li><a href="logistics(RFQ).html">Logistics Planning & Sourcing</a></li>
+          <li><a href="logistics-planning.html">Logistics Planning & Sourcing</a></li>
           <li><a href="services(dashboard).html">Performance Dashboard Design</a></li>
           <li><a href="services(assessment).html">Supply Chain Risk Assessment</a></li>
           <li><a href="modelling.html">Supply Chain Modelling & Simulation</a></li>
@@ -421,7 +421,40 @@
     </div>
   </div>
 
-
+    
+    
+          <!--enquire buttom-->
+          <div class="enquire-button">
+            <a href="about(contact).html" class="enquire-link">ENQUIRE NOW </a>
+          </div>
+    
+        <!--Bottom to top button-->
+       
+          <!-- Back to Top Button -->
+          <button class="back-to-top" id="backToTop"></button>
+        
+          <script>
+            const backToTopButton = document.getElementById('backToTop');
+        
+            // Show button when scrolling down
+            window.addEventListener('scroll', () => {
+              if (window.scrollY > 200) {
+                backToTopButton.classList.add('show');
+              } else {
+                backToTopButton.classList.remove('show');
+              }
+            });
+        
+            // Scroll to top when button is clicked
+            backToTopButton.addEventListener('click', () => {
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              });
+            });
+          </script>
+    
+    
 
 
 

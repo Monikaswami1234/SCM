@@ -899,9 +899,185 @@ list-style:decimal!important;
     color: #f4a261;
   }
   
+ *{
+/* border: 1px solid red; */
+  }
 
   @media screen and (min-device-width: 321px) and (max-device-width: 520px) {
-          .dropdown-menu.show {
+    .sidebar {
+      width: 100% !important;
+      display: flex !important;
+      justify-content: center !important;
+      padding-left: 0 !important; 
+  }
+.sidebar button {
+  font-size: 33px !important;
+}
+    .heading,
+      .relatedheading {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+    
+      .solutions,
+      .services {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+    
+      .solutions h3,
+      .service h3 {
+        font-size: 33px;
+        word-wrap: break-word !important;
+        text-align: center;
+      }
+    
+      .detail p {
+        word-wrap: break-word !important;
+        font-size: 32px !important;
+        text-align: center;
+        padding-top: 34px;
+      }
+    
+      .solution img {
+        width: 8rem;
+        height: 8rem;
+      }
+    
+      .solution,
+      .service {
+        width: 48%;
+        border: 1px solid #d4cfcf;
+        border-radius: 25px;
+        padding: 2rem 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    
+      .detail img {
+        width: 20rem;
+        height: 18rem !important;
+      }
+
+      .detail-item {
+        width: 100% !important;
+      }
+
+      .container-light {
+        padding: 0;
+      }
+    
+      .mobileProgramDetails {
+        border: 1px solid #d4cfcf;
+        border-radius: 25px;
+        padding: 2rem 3rem;
+        line-height: 1.6;
+        margin-bottom: 3rem;
+        width: 100% !important;
+
+      }
+    
+      .detail-item:not(:last-child) {
+        border-right: none !important;
+      }
+    
+      .common-detail {
+        background: #005599;
+        padding-bottom: 4rem;
+        margin-top: 4rem;
+      }
+    
+      .details-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+      }
+    
+      .detail {
+        flex-wrap: wrap !important;
+      }
+    
+      .containePragraph {
+        text-align: center !important;
+        font-size: 25px !important;
+      }
+    
+      .main-content ul li {
+        margin-bottom: 10px;
+        font-size: 35px;
+      }
+    
+      .mobileProgramm img {
+        width: 100%;
+      }
+    
+      .mobileSubheading {
+        font-size: 61px !important;
+        text-align: center !important;
+      }
+    
+      .toggle-button {
+        margin-top: 38px;
+        padding: 23px 20px;
+        font-size: 37px;
+        color: #fafafa;
+        background-color: #005599;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    
+      .mobileDiv {
+        padding: 161px 12px !important;
+        padding-bottom: 9px !important;
+        text-align: center !important;
+      }
+    
+      .service-swipe {
+        padding: 1rem 2rem !important
+      }
+    
+      .logo img {
+        height: 54px;
+        width: 53%;
+    }
+    
+      .container1 {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .service-swipe h2,
+      .service-swipe p {
+        text-align: center !important;
+        font-size: 51px !important;
+      }
+    
+      .hamburger span {
+        width: 58px !important;
+        height: 9px !important;
+        background-color: black;
+      }
+    
+      .main-content h1 {
+        font-size: 61px !important;
+        text-align: center !important;
+      }
+    
+    
+      .details {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .dropdown-menu.show {
         display: block;
       }
   

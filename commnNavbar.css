@@ -290,7 +290,7 @@ list-style:decimal!important;
   border-radius: 8px;
 }
 
-button {
+buttons {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

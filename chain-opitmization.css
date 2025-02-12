@@ -250,15 +250,15 @@ nav {
     text-align: left;
     color: #005599;
     border-bottom: 4px solid #000;
-    margin-left: 92px;
-    margin-right: 86px;
+    /*margin-left: 92px;
+    margin-right: 86px;*/
 }
 
 .values-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 70px;
     animation: fadeIn 1s ease-in-out;
 }
 

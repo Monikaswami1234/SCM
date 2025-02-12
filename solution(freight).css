@@ -181,8 +181,9 @@ nav {
             text-align: left;
             border: 0px solid #ddd;
             display: flex;
-            justify-content: center;
+           /* justify-content: center;*/
             align-items: center;
+            margin-left: 79px;
             /* padding-left: 180px;
     padding-bottom: 55px; */
         }
@@ -505,8 +506,17 @@ nav {
     }
 
   
-  /*Bottom to top button*/
 
+/*bottom to top */
+
+  /*Bottom to top button*/
+/* enquire button*/
+/* .body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 200vh; /* For demonstration purposes */
+  /* } */ */
+  
   .enquire-button {
     position: fixed;
     top: 50%;

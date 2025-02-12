@@ -34,13 +34,15 @@ nav {
     padding-top: 20px;
     padding-bottom: 20px;
     top: 0;
-    position: sticky;
+    position: fixed;
     display: flex;
-    /* width: 100%; */
+    width: 100%;
     z-index: 1000;
     background: #fff;
     justify-content: space-around;
-    /* align-items: center; */
+    transition: 1.5s;
+    align-items: center;
+    
 }
  .navbar {
             display: flex;

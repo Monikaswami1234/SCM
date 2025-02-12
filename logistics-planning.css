@@ -180,8 +180,9 @@ nav {
             text-align: left;
             border: 0px solid #ddd;
             display: flex;
-            justify-content: center;
+            /*justify-content: center;*/
             align-items: center;
+            margin-left: 62px;
             /* padding-left: 180px;
             
 

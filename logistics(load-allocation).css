@@ -499,12 +499,13 @@ nav {
             font-family: Arial, sans-serif;
           } */
       
+
           /* enquire button*/
       /* .body {
           margin: 0;
           font-family: Arial, sans-serif;
           height: 200vh; /* For demonstration purposes */
-        /* } */ 
+        /* } */ */
         
         .enquire-button {
           position: fixed;
@@ -679,4 +680,6 @@ nav {
     font-size: 16px;
   }
 
+
+  
 

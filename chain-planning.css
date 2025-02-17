@@ -182,9 +182,11 @@ nav {
             display: flex;
             /*justify-content: center;*/
             align-items: center;
-            /* padding-left: 180px;*/
-            margin-left: 82px;
-            padding-bottom: 55px;
+            margin-left: 62px;
+            /* padding-left: 180px;
+            
+
+    padding-bottom: 55px; */
         }
 
        
@@ -232,10 +234,16 @@ nav {
 
 .core-values {
     text-align: center;
-    max-width: 1485px;
+    /* max-width: 1485px; */
     padding: 20px;
     background-color: #cdddec;
     /* margin-left: 15px; */
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    flex-direction: column;
+    width: 100%;
+
 }
 
 .core-values h1 {
@@ -244,8 +252,8 @@ nav {
     text-align: left;
     color: #005599;
     border-bottom: 4px solid #000;
-    margin-left: 40px;
-    margin-right: 41px;
+    /* margin-left: 92px;
+    margin-right: 86px; */
 }
 
 .values-container {
@@ -261,13 +269,13 @@ nav {
     border: 2px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 327px;
+    width: 345px;
     padding: 20px;
     text-align: left;
     transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
     opacity: 0;
     animation: slideUp 1s ease forwards;
-    height: 280px;
+    height: auto;
 }
 
 .value-card:hover {
@@ -346,7 +354,7 @@ nav {
         background-color: #f9f9f9;
     }
     .container {
-        /*max-width: 1200px;*/
+        /* max-width: 120/0px; */
         margin: 0 auto;
         padding: 20px;
     }
@@ -539,6 +547,7 @@ nav {
   text-decoration: none;
 }
 
+/*BOTTOM TO TOP*/
 
   /*Bottom to top button*/
 /* enquire button*/
@@ -625,3 +634,4 @@ nav {
     content: "▲"; /* Upward arrow */
     font-size: 16px;
   }
+

@@ -181,7 +181,7 @@ nav {
             padding: 20px;
             text-align: left;
             border: 0px solid #ddd;
-            padding-left: 180px;
+            padding-left: 150px;
     padding-bottom: 55px;
         }
 
@@ -243,8 +243,8 @@ nav {
          text-align: left;
          color: #005599;
          border-bottom: 4px solid #000;
-         margin-left: 363px;
-         margin-right: 413px;
+         /*margin-left: 363px;
+         margin-right: 413px;*/
        }
        .form-container {
            width: 736px;

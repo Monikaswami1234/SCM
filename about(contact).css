@@ -234,8 +234,9 @@ nav {
 /*form */
     .form{
         display: flex;
-        justify-content: center;
-        align-items: center; 
+        width: 736px; 
+        /* justify-content: center; */
+        /* align-items: center;  */
        }
        .form h1 {
          font-size: 48px;
@@ -243,6 +244,8 @@ nav {
          text-align: left;
          color: #005599;
          border-bottom: 4px solid #000;
+         width: 100% !important;
+
          /*margin-left: 363px;
          margin-right: 413px;*/
        }
@@ -253,12 +256,15 @@ nav {
            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
            border-radius: 8px;
            /* margin-left: 364px; */
+           margin-bottom: 2rem;
+
        }
        .form-main{
          display: flex;
          justify-content: center;
          align-items: center;
          flex-direction: column;
+         margin-bottom: 2rem;
        }
        .form-container h1 {
            font-size: 24px;

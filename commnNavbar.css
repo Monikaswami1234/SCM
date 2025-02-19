@@ -303,3 +303,10 @@ buttons {
 
 .alliance-prev { left: 10px; }
 .alliance-next { right: 10px; }
+
+.readMoreButton {
+  position: absolute;
+  bottom: 1.2rem;
+}
+
+

@@ -180,7 +180,7 @@ list-style:decimal!important;
   }
   .carousel-container {
     position: relative;
-    width: 90%;
+    width: 95%;
     margin: auto;
     overflow: hidden;
 }
@@ -192,10 +192,10 @@ list-style:decimal!important;
     display: flex;
 }
 .carousel-item {
-    min-width: 20.33%;
+    min-width: 19.33%;
     box-sizing: border-box;
     padding: 10px;
-    text-align: center;
+    text-align: left;
 }
 .carousel-item img {
     width: 100%;

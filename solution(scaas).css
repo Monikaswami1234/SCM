@@ -186,7 +186,7 @@ nav {
             padding: 20px;
             text-align: left;
             border: 0px solid #ddd;
-            padding-left: 180px;
+            padding-left: 154px;
     padding-bottom: 55px;
         }
 
@@ -265,7 +265,7 @@ nav {
 .main-content ul {
   margin: 0;
   padding: 0 20px;
-  list-style-type: disc;
+  list-style-type: circle;
 }
 
 .main-content ul li {
@@ -276,14 +276,22 @@ nav {
 .toggle-button {
   margin-top: 20px;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 28px;
   color: #fafafa;
   background-color: #005599;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 200px;
+  width: 257px;
+  text-align: left;
+  margin-bottom: 15px;
 }
+.list{
+  padding: 10px;
+  background-color: #c8ddf0;
+  list-style-type: circle;
+}
+
 
 .toggle-button:hover {
   background-color: #175ebef5;
@@ -311,6 +319,7 @@ nav {
             margin: 0 auto;
             padding: 20px;
             display: block;
+            
         }
         .container h1 {
             /*text-align: center;*/
@@ -323,10 +332,13 @@ nav {
             /*padding-bottom: 5px;*/
             color: #005599;
             width: auto;
+            margin-left: 33px;
+            margin-right: 39px;
         }
         .solutions {
           display: flex;
           justify-content: center;
+          text-align: center;
           flex-wrap: wrap;
           width: 100%;
           height:auto ;
@@ -377,12 +389,16 @@ nav {
                     border-bottom: 4px solid #000;
                     color: #005599;
                     text-align: left;
+                    margin-left: 33px;
+                    margin-right: 39px;
         }
 
         .container2 p{
-          font-size: 1rem !important;
+          margin-left: 23px;
           text-align: justify;
-          padding: 20px;
+          font-size: 20px;
+          padding: 15px;
+          margin-right: 20px;
       }
 
         .services {
@@ -415,7 +431,7 @@ nav {
         }
 
         .service h3 {
-            font-size: 18px;
+            font-size: 16px;
             color: #333;
             margin-bottom: 10px;
         }

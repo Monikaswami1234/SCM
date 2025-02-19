@@ -104,6 +104,7 @@ nav {
 
         .navbar > div > a {
             font-weight: bold;
+            font-size: 16px;
         }
 
 .menu{
@@ -276,6 +277,7 @@ nav {
             text-transform: uppercase;
             border-radius: 4px;
             transition: background-color 0.3s ease;
+            margin-top: 77px;
         }
 
         .sidebar button:hover {
@@ -303,7 +305,7 @@ nav {
     border-radius: 10px;
     /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
     overflow: hidden;
-    max-width: 1300px;
+    /*max-width: 1300px;*/
     width: 90%;
     opacity: 0;
     transform: translateY(50px);
@@ -318,7 +320,7 @@ nav {
     flex: 2;
     /* padding: 20px; */
     position: relative;
-    margin-left: 65px;
+   /* margin-left: 65px;*/
     transform: translateX(-50px);
     animation: slideInLeft 1s ease-out forwards 0.5s;
 }
@@ -338,15 +340,16 @@ nav {
     flex: 1;
     padding: 30px;
     color: #333;
-    padding-left: 56px;
+   /* padding-left: 56px;*/
     opacity: 0;
     transform: translateX(50px);
     animation: slideInRight 1s ease-out forwards 0.8s;
 }
 
-.right p {
+.right ul {
     line-height: 1.6;
     margin-bottom: 15px;
+    width: 462px;
 }
 
 /* Keyframes for Animations */
@@ -650,7 +653,7 @@ nav {
 
 
 
-/*REVIEW SECTION*/
+/*REVIEW SECTION*
 #makeitfull {
     display: flex;
     justify-content: center;
@@ -663,7 +666,7 @@ nav {
     background: #F8F8F8;
     width: 100%;
     padding: 20px ;
-    /* margin: 20px; */
+    /* margin: 20px; *
     display: block;
 
 }
@@ -677,7 +680,7 @@ nav {
     color: #005599;
 }
 .rev-container {
-    /* padding: 10px 10%; */
+    /* padding: 10px 10%; *
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -685,10 +688,10 @@ nav {
     align-items: center;
 }
 .rev-container .rev-card {
-    /*overflow: hidden;*/
+    /*overflow: hidden;*
     width: 550px;
     height: 240px;
-    /* margin-bottom: 40px; */
+    /* margin-bottom: 40px; *
     background: #fff;
     display: flex;
     padding: 10px;
@@ -742,8 +745,52 @@ nav {
     padding: 10px;
     font-size: 13px;
     color: #2E3D49;
-    /*line-height: 22px;*/
+    /*line-height: 22px;*
     text-align: left;
+}*/
+/*
+.body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}*/
+.containe {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px;
+}
+.cards {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 329px;
+}
+.headers {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+}
+.managed { border-top: 10px solid #a64d00; }
+.project { border-top: 10px solid #003366; }
+.embedded { border-top: 10px solid #3d5c2a; }
+.subscription { border-top: 10px solid #290a81; }
+.benefits {
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 
@@ -869,10 +916,10 @@ nav {
             font-size: 16px;
         }
         
-        .carousel-item:hover {
+       /* .carousel-item:hover {
             transform: scale(1.1);
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-        }
+        }*/
         
         .carousel-item img {
             width: 100px;
@@ -950,7 +997,7 @@ nav {
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgb(0 0 0 / 95%);
             color: white;
             display: flex;
             flex-direction: column;
@@ -1107,7 +1154,7 @@ nav {
 	padding: 20px;
 	font-weight: 700;
 }
-
+*/
 
 
 
@@ -1253,7 +1300,7 @@ flex-direction: column;
         }
         .heading {
             /*text-align: center;*/
-            font-size: 5vh;
+            /*font-size: 5vh;*/
             font-weight: bold;
             /* margin-bottom: 39px; */
             border-bottom: 4px solid #000;
@@ -1261,6 +1308,7 @@ flex-direction: column;
             /* padding-bottom: 5px; */
              color: #005599; 
              font-size: 48px;
+             margin-left: 13px;
         }
         .solutions {
             display: grid;
@@ -1343,7 +1391,7 @@ flex-direction: column;
         }
 
         .service h3 {
-            font-size: 18px;
+            font-size: 16px;
             color: #333;
             margin-bottom: 10px;
         }

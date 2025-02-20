@@ -14,7 +14,7 @@ hamburger.addEventListener("click", () => {
 // search bar 
 const dropdownItems = [
     { name: "Supply Chain As a Service (SCAAS)", url: "solution(scaas).html" },
-    { name: "Supply Chain Optimization", url: "chain-optimization.html" },
+    { name: "Supply Chain Optimization", url: "chain-opitmization.html" },
     { name: "Freight Optimization", url: "solution(freight).html" },
     { name: "Packaging Optimization", url: "solution(packaging).html" },
     { name: "Route Optimization", url: "solution(route).html" },

@@ -1,365 +1,599 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>SCM CONNECT</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="" href="./images/SCM.png">
-    <link rel="stylesheet" type="text/css" href=".\style.css">
-    <link rel="stylesheet" type="text/css" href=".\commnNavbar.css">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="" href="./images/SCM.png" />
+    <link rel="stylesheet" type="text/css" href=".\style.css" />
+    <link rel="stylesheet" type="text/css" href=".\commnNavbar.css" />
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+  </head>
 
-</head>
-
-
-<body>
-
+  <body>
     <!-- Navigation Bar -->
 
-
     <header id="header" class="MainHeader">
-        <nav>
-            <div class="logo"><a href="index.html"><img src="./images/SCM1.png" alt="logo" width="100px"></a></div>
-            <div class="navbar">
+      <nav>
+        <div class="logo">
+          <a href="index.html"
+            ><img src="./images/SCM1.png" alt="logo" width="100px"
+          /></a>
+        </div>
+        <div class="navbar">
+          <div>
+            <a href="#" class="dropdown-item">Solutions</a>
 
-                <div>
-                    <a href="#" class="dropdown-item">Solutions</a>
-                    
-                    <div class="dropdown">
-                        <a href="solution(scaas).html" class="dropdown-item">Supply Chain As a Service (SCAAS)</a>
-                        <div>
-                            <a href="chain-optimization.html" class="dropdown-item">Supply Chain Optimization</a>
-                            <div class="nested-dropdown">
-                                <a href="solution(freight).html" class="dropdown-item">Freight Optimization</a>
-                                <a href="solution(packaging).html" class="dropdown-item">Packaging Optimization</a>
-                                <a href="solution(route).html" class="dropdown-item">Route Optimization</a>
-                                <a href="solution(workforce).html" class="dropdown-item">Workforce Scheduling</a>
-                                <a href="solution(price).html" class="dropdown-item">Price Optimization and Revenue
-                                    Management</a>
-                            </div>
-                        </div>
-                        <a href="solution(sales).html" class="dropdown-item">Sales & Operations Planning</a>
-                        <a href="solution(tms).html" class="dropdown-item">Transport Management System (TMS)</a>
-                        <a href="solution(wms).html" class="dropdown-item">Warehouse Management System (WMS)</a>
-                        <div>
-                            <a href="visibility.html" class="dropdown-item">Supply Chain Visibility</a>
-                            <div class="nested-dropdown">
-                                <a href="solution(tracking).html" class="dropdown-item">Asset/Inventory Tracking</a>
-                                <a href="solution(anti).html" class="dropdown-item">Anti-Counterfeit Solutions</a>
-                            </div>
-                        </div>
-                        <a href="solution(digitization).html" class="dropdown-item">Supply Chain Digitization</a>
-                    </div>
+            <div class="dropdown">
+              <a href="solution(scaas).html" class="dropdown-item"
+                >Supply Chain As a Service (SCAAS)</a
+              >
+              <div>
+                <a href="chain-optimization.html" class="dropdown-item"
+                  >Supply Chain Optimization</a
+                >
+                <div class="nested-dropdown">
+                  <a href="solution(freight).html" class="dropdown-item"
+                    >Freight Optimization</a
+                  >
+                  <a href="solution(packaging).html" class="dropdown-item"
+                    >Packaging Optimization</a
+                  >
+                  <a href="solution(route).html" class="dropdown-item"
+                    >Route Optimization</a
+                  >
+                  <a href="solution(workforce).html" class="dropdown-item"
+                    >Workforce Scheduling</a
+                  >
+                  <a href="solution(price).html" class="dropdown-item"
+                    >Price Optimization and Revenue Management</a
+                  >
                 </div>
-                <div>
-                    <a href="#">Services</a>
-                    <div class="dropdown">
-                        <a href="demand-management.html">Demand Management</a>
-                        <div>
-                            <a href="chain-planning.html">Supply Chain Planning</a>
-                            <div class="nested-dropdown">
-                                <a href="supply-chain-design.html">Supply Chain Design </a>
-                                <a href="inventory.html">Inventory Design</a>
-                                <a href="demand-planning.html">Demand Planning </a>
-                                <a href="production-planning.html">Production Planning &<br> Scheduling</a>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="logistics-planning.html">Logistics Planning &<br> Sourcing</a>
-                            <div class="nested-dropdown">
-                                <a href="logistics(RFQ).html">RFQ Design</a>
-                                <a href="logistics(vendor).html">Vendor Selection</a>
-                                <a href="logistics(load-allocation).html">Load allocation Planning</a>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="diagnostics.html">Supply Chain Diagnostics</a>
-                            <div class="nested-dropdown">
-                                <a href="services(dashboard).html">Performance Dashboard Design </a>
-                                <a href="services(assessment).html">Supply Chain Risk Assessment</a>
-                            </div>
-                        </div>
-                        <a href="modelling.html">Supply Chain Modelling &<br> Simulation</a>
-                        <a href="analytics.html">Supply Chain Analytics</a>
-                    </div>
+              </div>
+              <a href="solution(sales).html" class="dropdown-item"
+                >Sales & Operations Planning</a
+              >
+              <a href="solution(tms).html" class="dropdown-item"
+                >Transport Management System (TMS)</a
+              >
+              <a href="solution(wms).html" class="dropdown-item"
+                >Warehouse Management System (WMS)</a
+              >
+              <div>
+                <a href="visibility.html" class="dropdown-item"
+                  >Supply Chain Visibility</a
+                >
+                <div class="nested-dropdown">
+                  <a href="solution(tracking).html" class="dropdown-item"
+                    >Asset/Inventory Tracking</a
+                  >
+                  <a href="solution(anti).html" class="dropdown-item"
+                    >Anti-Counterfeit Solutions</a
+                  >
                 </div>
-                <div>
-                    <a href="#">Training</a>
-                    <div class="dropdown">
-                        <a href="training(management).html">Case Studies on<br> Supply Chain Management </a>
-                        <a href="training(manging).html">Managing Logistics Effectively</a>
-                        <a href="training(demand).html">Demand planning & Management</a>
-                    </div>
-                </div>
-                <div>
-                    <a href="#">Resources</a>
-                    <div class="dropdown">
-                        <a href="resource(case-study).html">Case Studies</a>
-                        <a href="resource(E-book).html">E-Book</a>
-                    </div>
-                </div>
-                <div>
-                    <a href="#">About Us</a>
-                    <div class="dropdown">
-                        <a href="about(scm).html">About SCM Connect </a>
-                        <!-- <a href="about(allience).html">Alliances</a>-->
-                        <a href="about(career).html">Careers </a>
-                        <a href="about(contact).html">Contact Us </a>
-                    </div>
-                </div>
+              </div>
+              <a href="solution(digitization).html" class="dropdown-item"
+                >Supply Chain Digitization</a
+              >
             </div>
-            <!-- <div class="menu" id="">
+          </div>
+          <div>
+            <a href="#">Services</a>
+            <div class="dropdown">
+              <a href="demand-management.html">Demand Management</a>
+              <div>
+                <a href="chain-planning.html">Supply Chain Planning</a>
+                <div class="nested-dropdown">
+                  <a href="supply-chain-design.html">Supply Chain Design </a>
+                  <a href="inventory.html">Inventory Design</a>
+                  <a href="demand-planning.html">Demand Planning </a>
+                  <a href="production-planning.html"
+                    >Production Planning &<br />
+                    Scheduling</a
+                  >
+                </div>
+              </div>
+              <div>
+                <a href="logistics-planning.html"
+                  >Logistics Planning &<br />
+                  Sourcing</a
+                >
+                <div class="nested-dropdown">
+                  <a href="logistics(RFQ).html">RFQ Design</a>
+                  <a href="logistics(vendor).html">Vendor Selection</a>
+                  <a href="logistics(load-allocation).html"
+                    >Load allocation Planning</a
+                  >
+                </div>
+              </div>
+              <div>
+                <a href="diagnostics.html">Supply Chain Diagnostics</a>
+                <div class="nested-dropdown">
+                  <a href="services(dashboard).html"
+                    >Performance Dashboard Design
+                  </a>
+                  <a href="services(assessment).html"
+                    >Supply Chain Risk Assessment</a
+                  >
+                </div>
+              </div>
+              <a href="modelling.html"
+                >Supply Chain Modelling &<br />
+                Simulation</a
+              >
+              <a href="analytics.html">Supply Chain Analytics</a>
+            </div>
+          </div>
+          <div>
+            <a href="#">Training</a>
+            <div class="dropdown">
+              <a href="training(management).html"
+                >Case Studies on<br />
+                Supply Chain Management
+              </a>
+              <a href="training(manging).html"
+                >Managing Logistics Effectively</a
+              >
+              <a href="training(demand).html">Demand planning & Management</a>
+            </div>
+          </div>
+          <div>
+            <a href="#">Resources</a>
+            <div class="dropdown">
+              <a href="resource(case-study).html">Case Studies</a>
+              <a href="resource(E-book).html">E-Book</a>
+            </div>
+          </div>
+          <div>
+            <a href="#">About Us</a>
+            <div class="dropdown">
+              <a href="about(scm).html">About SCM Connect </a>
+              <!-- <a href="about(allience).html">Alliances</a>-->
+              <a href="about(career).html">Careers </a>
+              <a href="about(contact).html">Contact Us </a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="menu" id="">
         <Button id="menu-button"><i class="fa-solid fa-bars"></i></Button>
     </div> -->
 
-            <div class="search-container srch">
-                <input type="text" class="search" placeholder="Search here..." oninput="filterDropdown(this.value)" />
-                <img src="./images/search.webp" alt="search" onclick="slide()" />
+        <div class="search-container srch">
+          <input
+            type="text"
+            class="search"
+            placeholder="Search here..."
+            oninput="filterDropdown(this.value)"
+          />
+          <img src="./images/search.webp" alt="search" onclick="slide()" />
 
-                <div id="dropdown-list" class="dropdown-list"></div>
-            </div>
-        </nav><br>
+          <div id="dropdown-list" class="dropdown-list"></div>
+        </div>
+      </nav>
+      <br />
     </header>
 
     <!-- mobile navbar -->
     <div class="mobileHeader">
-        <nav class="navbarTset">
-            <div class="logo">
-                <a href="index.html"><img src="./images/SCM1.png" alt="logo" width="100px"></a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-
-        <div class="drawer" id="drawer">
-
-            <ul>
-                <li>
-                    <a href="#" class="dropdown-toggle" data-target="solutions-dropdown">Solutions</a>
-                    <ul id="solutions-dropdown" class="dropdown-content" style="list-style-type:disc">
-                        <li><a href="solution(scaas).html">Supply Chain As a Service (SCAAS)</a></li>
-                        <li>
-                            <a href="chain-opitmization.html" class="nested-toggle"
-                                data-target="optimization-dropdown">Supply Chain
-                                Optimization</a>
-                            <ul id="optimization-dropdown" class="nested-dropdown-content"
-                                style="list-style-type:circle">
-                                <li><a href="solution(freight).html">Freight Optimization</a></li>
-                                <li><a href="solution(packaging).html">Packaging Optimization</a></li>
-                                <li><a href="solution(route).html">Route Optimization</a></li>
-                                <a href="solution(workforce).html">Workforce Scheduling</a>
-                                <a href="solution(price).html">Price Optimization and<br> Revenue Management </a>
-                            </ul>
-                        </li>
-                        <li><a href="solution(sales).html">Sales & Operations Planning</a></li>
-                        <li><a href="solution(tms).html">Transport Management<br> System (TMS)</a></li>
-                        <li><a href="solution(wms).html">Warehouse Management<br> System (WMS)</a></li>
-                        <li>
-                            <a href="visiblity.html" class="nested-toggle" data-target="visibility">visiblity</a>
-                            <ul id="visiblity" class="nested-dropdown-content" style="list-style-type:circle">
-                                <li><a href="solution(tracking).html">Asset/Inventory Tracking</a></li>
-                                <li><a href="solution(anti).html">Anti-Counterfeit Solutions</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-
-            </ul>
-            <ul>
-                <li>
-                    <a href="#" class="dropdown-toggle" data-target="services-dropdown">Services</a>
-                    <ul id="services-dropdown" class="dropdown-content" style="list-style-type:disc">
-                        <li><a href="demand-management.html">Demand Management</a></li>
-                        <li>
-                            <a href="chain-planning.html" class="nested-toggle" data-target="chain-planning-dropdown">Supply Chain
-                                Planning</a>
-                            <ul id="chain-planning-dropdown" class="nested-dropdown-content"
-                                style="list-style-type:circle">
-                                <li><a href="supply-chain-design.html">Supply Chain Design</a></li>
-                                <li><a href="inventory.html">Inventory Design</a></li>
-                                <li><a href="demand-planning.html">Demand Planning</a></li>
-                                <li><a href="production-planning.html">Production Planning &amp; Scheduling</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="logistics-planning.html" class="nested-toggle" data-target="logistics-planning-dropdown">Logistics
-                                Planning
-                                &amp; Sourcing</a>
-                            <ul id="logistics-planning-dropdown" class="nested-dropdown-content"
-                                style="list-style-type:circle">
-                                <li><a href="logistics(RFQ).html">RFQ Design</a></li>
-                                <li><a href="logistics(vendor).html">Vendor Selection</a></li>
-                                <li><a href="logistics(load-allocation).html">Load Allocation Planning</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="diagnostics.html" class="nested-toggle" data-target="diagnostics-dropdown">Supply Chain
-                                Diagnostics</a>
-                            <ul id="diagnostics-dropdown" class="nested-dropdown-content"
-                                style="list-style-type:circle">
-                                <li><a href="services(dashboard).html">Performance Dashboard Design</a></li>
-                                <li><a href="services(assessment).html">Supply Chain Risk Assessment</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="modelling.html">Supply Chain Modelling &amp; Simulation</a></li>
-                        <li><a href="analytics.html">Supply Chain Analytics</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <a href="#" class="dropdown-toggle" data-target="training-dropdown">Training</a>
-                    <ul id="training-dropdown" class="dropdown-content" style="list-style-type:disc">
-                        <li><a href="training(management).html">Case Studies on<br>Supply Chain Management</a></li>
-                        <li><a href="training(manging).html">Managing Logistics Effectively</a></li>
-                        <li><a href="training(demand).html">Demand Planning &amp; Management</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <a href="#" class="dropdown-toggle" data-target="resources-dropdown">Resources</a>
-                    <ul id="resources-dropdown" class="dropdown-content" style="list-style-type:disc">
-                        <li><a href="resource(case-study).html">Case Studies</a></li>
-                        <li><a href="resource(E-book).html">E-Book</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" class="dropdown-toggle" data-target="about-dropdown">About Us</a>
-                    <ul id="about-dropdown" class="dropdown-content" style="list-style-type:disc">
-                        <li><a href="about(scm).html">About SCM Connect</a></li>
-                        <!-- Uncomment the line below if needed -->
-                        <!-- <li><a href="about(allience).html">Alliances</a></li> -->
-                        <li><a href="about(career).html">Careers</a></li>
-                        <li><a href="about(contact).html">Contact Us</a></li>
-                    </ul>
-                </li>
-            </ul>
+      <nav class="navbarTset">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="./images/SCM1.png" alt="logo" width="100px"
+          /></a>
         </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <div class="drawer" id="drawer">
+        <ul>
+          <li>
+            <a href="#" class="dropdown-toggle" data-target="solutions-dropdown"
+              >Solutions</a
+            >
+            <ul
+              id="solutions-dropdown"
+              class="dropdown-content"
+              style="list-style-type: disc"
+            >
+              <li>
+                <a href="solution(scaas).html"
+                  >Supply Chain As a Service (SCAAS)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="chain-opitmization.html"
+                  class="nested-toggle"
+                  data-target="optimization-dropdown"
+                  >Supply Chain Optimization</a
+                >
+                <ul
+                  id="optimization-dropdown"
+                  class="nested-dropdown-content"
+                  style="list-style-type: circle"
+                >
+                  <li>
+                    <a href="solution(freight).html">Freight Optimization</a>
+                  </li>
+                  <li>
+                    <a href="solution(packaging).html"
+                      >Packaging Optimization</a
+                    >
+                  </li>
+                  <li><a href="solution(route).html">Route Optimization</a></li>
+                  <a href="solution(workforce).html">Workforce Scheduling</a>
+                  <a href="solution(price).html"
+                    >Price Optimization and<br />
+                    Revenue Management
+                  </a>
+                </ul>
+              </li>
+              <li>
+                <a href="solution(sales).html">Sales & Operations Planning</a>
+              </li>
+              <li>
+                <a href="solution(tms).html"
+                  >Transport Management<br />
+                  System (TMS)</a
+                >
+              </li>
+              <li>
+                <a href="solution(wms).html"
+                  >Warehouse Management<br />
+                  System (WMS)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="visiblity.html"
+                  class="nested-toggle"
+                  data-target="visibility"
+                  >visiblity</a
+                >
+                <ul
+                  id="visiblity"
+                  class="nested-dropdown-content"
+                  style="list-style-type: circle"
+                >
+                  <li>
+                    <a href="solution(tracking).html"
+                      >Asset/Inventory Tracking</a
+                    >
+                  </li>
+                  <li>
+                    <a href="solution(anti).html">Anti-Counterfeit Solutions</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#" class="dropdown-toggle" data-target="services-dropdown"
+              >Services</a
+            >
+            <ul
+              id="services-dropdown"
+              class="dropdown-content"
+              style="list-style-type: disc"
+            >
+              <li><a href="demand-management.html">Demand Management</a></li>
+              <li>
+                <a
+                  href="chain-planning.html"
+                  class="nested-toggle"
+                  data-target="chain-planning-dropdown"
+                  >Supply Chain Planning</a
+                >
+                <ul
+                  id="chain-planning-dropdown"
+                  class="nested-dropdown-content"
+                  style="list-style-type: circle"
+                >
+                  <li>
+                    <a href="supply-chain-design.html">Supply Chain Design</a>
+                  </li>
+                  <li><a href="inventory.html">Inventory Design</a></li>
+                  <li><a href="demand-planning.html">Demand Planning</a></li>
+                  <li>
+                    <a href="production-planning.html"
+                      >Production Planning &amp; Scheduling</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="logistics-planning.html"
+                  class="nested-toggle"
+                  data-target="logistics-planning-dropdown"
+                  >Logistics Planning &amp; Sourcing</a
+                >
+                <ul
+                  id="logistics-planning-dropdown"
+                  class="nested-dropdown-content"
+                  style="list-style-type: circle"
+                >
+                  <li><a href="logistics(RFQ).html">RFQ Design</a></li>
+                  <li><a href="logistics(vendor).html">Vendor Selection</a></li>
+                  <li>
+                    <a href="logistics(load-allocation).html"
+                      >Load Allocation Planning</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="diagnostics.html"
+                  class="nested-toggle"
+                  data-target="diagnostics-dropdown"
+                  >Supply Chain Diagnostics</a
+                >
+                <ul
+                  id="diagnostics-dropdown"
+                  class="nested-dropdown-content"
+                  style="list-style-type: circle"
+                >
+                  <li>
+                    <a href="services(dashboard).html"
+                      >Performance Dashboard Design</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services(assessment).html"
+                      >Supply Chain Risk Assessment</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="modelling.html"
+                  >Supply Chain Modelling &amp; Simulation</a
+                >
+              </li>
+              <li><a href="analytics.html">Supply Chain Analytics</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#" class="dropdown-toggle" data-target="training-dropdown"
+              >Training</a
+            >
+            <ul
+              id="training-dropdown"
+              class="dropdown-content"
+              style="list-style-type: disc"
+            >
+              <li>
+                <a href="training(management).html"
+                  >Case Studies on<br />Supply Chain Management</a
+                >
+              </li>
+              <li>
+                <a href="training(manging).html"
+                  >Managing Logistics Effectively</a
+                >
+              </li>
+              <li>
+                <a href="training(demand).html"
+                  >Demand Planning &amp; Management</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#" class="dropdown-toggle" data-target="resources-dropdown"
+              >Resources</a
+            >
+            <ul
+              id="resources-dropdown"
+              class="dropdown-content"
+              style="list-style-type: disc"
+            >
+              <li><a href="resource(case-study).html">Case Studies</a></li>
+              <li><a href="resource(E-book).html">E-Book</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-target="about-dropdown"
+              >About Us</a
+            >
+            <ul
+              id="about-dropdown"
+              class="dropdown-content"
+              style="list-style-type: disc"
+            >
+              <li><a href="about(scm).html">About SCM Connect</a></li>
+              <!-- Uncomment the line below if needed -->
+              <!-- <li><a href="about(allience).html">Alliances</a></li> -->
+              <li><a href="about(career).html">Careers</a></li>
+              <li><a href="about(contact).html">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!--About us -->
-    <div class="service-swipe" style="padding: 163px;">
-        <div class="diffSection" id="services_section">
-            <div id="center">
-                <div style=" color: #f5f6f5;
-; font-size: 25px; text-align: left;">
-                    <h2 style="color: white;"> <b>Holistic Integration of Supply Chain Solutions</b></h2>
-                    <p>Digitization makes Supply Chains more efficient, agile and customer focused.</p>
-                </div>
-            </div>
-            <!--<p style=" padding: 163px; padding-bottom: 96px; color: #f5f6f5; padding-top: -1;
+    <div class="service-swipe" style="padding: 163px">
+      <div class="diffSection" id="services_section">
+        <div id="center">
+          <div style="color: #f5f6f5; font-size: 25px; text-align: left">
+            <h2 style="color: white">
+              <b>Holistic Integration of Supply Chain Solutions</b>
+            </h2>
+            <p>
+              Digitization makes Supply Chains more efficient, agile and
+              customer focused.
+            </p>
+          </div>
+        </div>
+        <!--<p style=" padding: 163px; padding-bottom: 96px; color: #f5f6f5; padding-top: -1;
 ; font-size: 25px; text-align: left;"><b>Demand Planning drives Supply Chain Planning</b><br> Demand Planning is the core of any Supply Chain Planning process. All other plans need to be aligned to Demand Planning.
 
 </p></div>-->
 
-            <div class="sidebar"> <button><a href="#"></a>Download Case study</button> </div>
+        <div class="sidebar">
+          <button><a href="#"></a>Download Case study</button>
+        </div>
 
-            <!-- Sidebar 
+        <!-- Sidebar 
         <div class="sidebar">
             <button><a href="#"></a> Download PDF</button>
 			</div>-->
-
-        </div>
-    </div><br><br>
+      </div>
+    </div>
+    <br /><br />
 
     <!--Supply Chain desgin-->
     <div class="about-main">
-        <div class="">
-            <p style="border-bottom: 4px solid #000;font-size: 5vh; font-size: 48px; color: #005599; margin-left: 33px;
-    margin-right: 39px;"><b>ABOUT US</b>
-            </p>
+      <div class="">
+        <p
+          style="
+            border-bottom: 4px solid #000;
+            font-size: 5vh;
+            font-size: 48px;
+            color: #005599;
+            margin-left: 33px;
+            margin-right: 39px;
+          "
+        >
+          <b>ABOUT US</b>
+        </p>
+      </div>
+      <div class="container1">
+        <div class="left">
+          <img
+            src="./images/tree.png"
+            alt="Icon"
+            height="450px"
+            width="700px"
+          />
         </div>
-        <div class="container1">
-            <div class="left">
-                <img src="./images/tree.png" alt="Icon" height="450px" width="700px">
-
-            </div>
-            <div class="right">
-                <ul>
-                    <ul>
-                        <li>Expertise in Supply chain Strategy and Planning, Supply chain-as-a-service, Data analytics & AI,
-                            Technology and Supply chain education</li><br>
-                        <li> Clients across industry segments Manufacturing, Retail, e-Commerce, Consulting and Logistics</li> <br>
-                        <li>Well networked with partner ecosystem comprising of Technology, Logistics and Academic players</li><br>
-                        <li>Multiple centers across India</li><br>
-                        <li>20+ Professionals; Expertise in Supply Chain domain, Operations, Data Analytics and Technology</li><br>
-                    </ul>
-                </ul>
-            </div>
+        <div class="right">
+          <ul>
+            <ul>
+              <li>
+                Expertise in Supply chain Strategy and Planning, Supply
+                chain-as-a-service, Data analytics & AI, Technology and Supply
+                chain education
+              </li>
+              <br />
+              <li>
+                Clients across industry segments Manufacturing, Retail,
+                e-Commerce, Consulting and Logistics
+              </li>
+              <br />
+              <li>
+                Well networked with partner ecosystem comprising of Technology,
+                Logistics and Academic players
+              </li>
+              <br />
+              <li>Multiple centers across India</li>
+              <br />
+              <li>
+                20+ Professionals; Expertise in Supply Chain domain, Operations,
+                Data Analytics and Technology
+              </li>
+              <br />
+            </ul>
+          </ul>
         </div>
-    </div><br><br><br><br>
+      </div>
+    </div>
+    <br /><br /><br /><br />
 
     <!--core values-->
     <div class="core-values-main">
-        <div class="core-values-head">
-            <p style="border-bottom: 4px solid #000; font-size: 48px; color: #005599;  "><b>WHY SCM CONNECT ?</b></p>
-        </div>
-        <div class="core-values">
-
-            <div class="values-container">
-                <div class="value-card" class="value-card img">
-                    <img src="./images/domain.png" alt="domain">
-                    <h2>Domain expertise</h2>
-                    <div class="value-card-para">
-                        <p class="value-description">Extensive experience and know-how of managing and improving
-                            solutions through converged supply chain operations, data, technology and business expertise
-                        </p>
-                    </div>
-                    <div class="value-card-button">
-                        <a href="solution(freight).html">
-                            <!--<button class="read-more-btn">Read More</button>-->
-                        </a>
-                    </div>
-                </div>
-                <div class="value-card" class="value-card-img">
-                    <img src="./images/success.png" alt="domain">
-                    <h2>Commitment to success</h2>
-                    <p class="value-description">Commitment and focus with the goal of “Work as One” team, having
-                        “courage”, “technical excellence” and “customer focused” as DNA</p>
-                    <a href="solution(packaging).html"><br>
-                        <!--<button class="read-more-btn">Read More</button>-->
-                    </a>
-                </div>
-                <div class="value-card" class="value-card-img">
-                    <img src="./images/high.png" alt="high">
-                    <h2>High performing team</h2>
-                    <p class="value-description">Skilled pool of resources, across supply chain domain; Matured
-                        processes to ensure talent management and development, and operations resilience</p>
-                    <a href="solution(route).html">
-                        <!--<button class="read-more-btn">Read More</button>-->
-                    </a>
-                </div>
-                <div class="value-card" class="value-card-img">
-                    <img src="./images/model.png" alt="model">
-                    <h2>Best suited engagement models</h2>
-                    <p class="value-description">Flexible engagement models as per client’s need with focus on outcome &
-                        continuous quality monitoring</p>
-                    <a href="solution(workforce).html">
-                        <!--<button class="read-more-btn">Read More</button>-->
-                    </a>
-                </div>
-                <div class="value-card" class="value-card-img">
-                    <img src="./images/base.png" alt="base">
-                    <h2>Delighted clients base</h2>
-                    <p class="value-description">High concentration of repeat engagements (~90% ) ; highly satisfied
-                        clients with high Net Promoter Score</p>
-                    <a href="solution(workforce).html"><br>
-                        <!--<button class="read-more-btn">Read More</button>-->
-                    </a>
-                </div>
+      <div class="core-values-head">
+        <p
+          style="border-bottom: 4px solid #000; font-size: 48px; color: #005599"
+        >
+          <b>WHY SCM CONNECT ?</b>
+        </p>
+      </div>
+      <div class="core-values">
+        <div class="values-container">
+          <div class="value-card" class="value-card img">
+            <img src="./images/domain.png" alt="domain" />
+            <h2>Domain Expertise</h2>
+            <div class="value-card-para">
+              <p class="value-description">
+                Extensive experience and know-how of managing and improving
+                solutions through converged supply chain operations, data,
+                technology and business expertise
+              </p>
             </div>
+            <div class="value-card-button">
+              <a href="solution(freight).html">
+                <!--<button class="read-more-btn">Read More</button>-->
+              </a>
+            </div>
+          </div>
+          <div class="value-card" class="value-card-img">
+            <img src="./images/success.png" alt="domain" />
+            <h2>Commitment to Success</h2>
+            <p class="value-description">
+              Commitment and focus with the goal of “Work as One” team, having
+              “courage”, “technical excellence” and “customer focused” as DNA
+            </p>
+            <a href="solution(packaging).html"
+              ><br />
+              <!--<button class="read-more-btn">Read More</button>-->
+            </a>
+          </div>
+          <div class="value-card" class="value-card-img">
+            <img src="./images/high.png" alt="high" />
+            <h2>High Performing Team</h2>
+            <p class="value-description">
+              Skilled pool of resources, across supply chain domain; Matured
+              processes to ensure talent management and development, and
+              operations resilience
+            </p>
+            <a href="solution(route).html">
+              <!--<button class="read-more-btn">Read More</button>-->
+            </a>
+          </div>
+          <div class="value-card" class="value-card-img">
+            <img src="./images/model.png" alt="model" />
+            <h2>Best Suited Engagement Models</h2>
+            <p class="value-description">
+              Flexible engagement models as per client’s need with focus on
+              outcome & continuous quality monitoring
+            </p>
+            <a href="solution(workforce).html">
+              <!--<button class="read-more-btn">Read More</button>-->
+            </a>
+          </div>
+          <div class="value-card" class="value-card-img">
+            <img src="./images/base.png" alt="base" />
+            <h2>Delighted Clients Base</h2>
+            <p class="value-description">
+              High concentration of repeat engagements (~90% ) ; highly
+              satisfied clients with high Net Promoter Score
+            </p>
+            <a href="solution(workforce).html"
+              ><br />
+              <!--<button class="read-more-btn">Read More</button>-->
+            </a>
+          </div>
         </div>
-    </div><br>
+      </div>
+    </div>
+    <br />
 
     <!--why scm
     <div style=" padding-bottom: 40px;  justify-content: center;
@@ -400,11 +634,22 @@
 
     <!--services-->
     <div class="services-container">
-        <div>
-            <p style="border-bottom: 4px solid #000; padding: 10px;font-size: 5vh; font-size: 48px; color: #005599; margin-left: 33px;
-    margin-right: 39px;"><b>SERVICES</b></p>
-     </div>
-        <!--<div class="cardss-container1">
+      <div>
+        <p
+          style="
+            border-bottom: 4px solid #000;
+            padding: 10px;
+            font-size: 5vh;
+            font-size: 48px;
+            color: #005599;
+            margin-left: 33px;
+            margin-right: 39px;
+          "
+        >
+          <b>SERVICES</b>
+        </p>
+      </div>
+      <!--<div class="cardss-container1">
          <div class="cardss">
              <h3>Supply Chain Strategy & Planning</h3>
              <div class="card-image">
@@ -488,77 +733,83 @@
          </div>
      </div> </div>
      <br><br>-->
-     <div class="contain">
-         <div class="card1-contain">
-            <div class="card1">
-                <div class="icon">🔍</div>
-                <h3>Supply Chain Strategy & Planning</h3>
-                <ul>
-                    <li>Supply Chain Strategy</li>
-                    <li>Network Strategy & optimization</li>
-                    <li>Inventory optimization</li>
-                    <li>Procurement strategy</li>
-                    <li>Supply Chain Risk Management</li>
-                    <li>Opportunity assessment</li>
-                    <li>Sustainability & ESG</li>
-                    <li>Research & Intelligence</li>
-                </ul>
-            </div>
-            <div class="card1">
-                <div class="icon">🎯</div>
-                <h3>Supply Chain-as-a-Service</h3>
-                <ul>
-                    <li>Demand Planning and Management</li>
-                    <li>Sales & Operations Planning & Management</li>
-                    <li>Inventory Planning & Management</li>
-                    <li>Production Planning & Scheduling</li>
-                    <li>Procurement Planning & Management</li>
-                </ul></div>
-            <div class="card1">
-                <div class="icon">💡</div>
-                <h3>Data Analytics & AI</h3>
-                <ul>
-                    <li>Supply Chain Data Strategy</li>
-                    <li>Supply Chain Diagnostics</li>
-                    <li>Supply Chain Analytics (AI, machine learning and advanced analytics)</li>
-                    <li>Procurement Analytics</li>
-                    <li>Supply Chain master data<br> management</li>
-                    <li>Data Governance</li>
-                    <li>Visualization</li>
-                    <li>AI adoption</li>
-                </ul></div>
-            <div class="card1">
-                <div class="icon">📢</div>
-                <h3>Supply Chain Technology</h3>
-                 <ul>
-                     <li>Digital Supply Chain</li>
-                     <li>Supply Chain Simulations</li>
-                     <li>Supply Chain Apps and APIs</li>
-                     <li>Supply Chain Visibility through RFID, QR codes and bar codes</li>
-                     <li>Telematics</li>
-                     <li>Solver Integrations for Optimization</li>
-                 </ul>
-                 </div>
-            <div class="card1">
-                <div class="icon">📝</div>
-                <h3 >Supply Chain Training & Development</h3>
-                <ul>
-                    <li>Supply Chain Master Class</li>
-                    <li>Bespoke learning programs</li>
-                    <li>Utilizing modern methods including Gamification and Case Study based</li>
-                    <li>Change Management</li>
-                </ul>
-            </div>
-         </div>
+      <div class="contain">
+        <div class="card1-contain">
+          <div class="card1">
+            <div class="icon">🔍</div>
+            <h3>Supply Chain Strategy & Planning</h3>
+            <ul>
+              <li>Supply Chain Strategy</li>
+              <li>Network Strategy & optimization</li>
+              <li>Inventory optimization</li>
+              <li>Procurement strategy</li>
+              <li>Supply Chain Risk Management</li>
+              <li>Opportunity assessment</li>
+              <li>Sustainability & ESG</li>
+              <li>Research & Intelligence</li>
+            </ul>
+          </div>
+          <div class="card1">
+            <div class="icon">🎯</div>
+            <h3>Supply Chain-as-a-Service</h3>
+            <ul>
+              <li>Demand Planning and Management</li>
+              <li>Sales & Operations Planning & Management</li>
+              <li>Inventory Planning & Management</li>
+              <li>Production Planning & Scheduling</li>
+              <li>Procurement Planning & Management</li>
+            </ul>
+          </div>
+          <div class="card1">
+            <div class="icon">💡</div>
+            <h3>Data Analytics & AI</h3>
+            <ul>
+              <li>Supply Chain Data Strategy</li>
+              <li>Supply Chain Diagnostics</li>
+              <li>
+                Supply Chain Analytics (AI, machine learning and advanced
+                analytics)
+              </li>
+              <li>Procurement Analytics</li>
+              <li>
+                Supply Chain master data<br />
+                management
+              </li>
+              <li>Data Governance</li>
+              <li>Visualization</li>
+              <li>AI adoption</li>
+            </ul>
+          </div>
+          <div class="card1">
+            <div class="icon">📢</div>
+            <h3>Supply Chain Technology</h3>
+            <ul>
+              <li>Digital Supply Chain</li>
+              <li>Supply Chain Simulations</li>
+              <li>Supply Chain Apps and APIs</li>
+              <li>
+                Supply Chain Visibility through RFID, QR codes and bar codes
+              </li>
+              <li>Telematics</li>
+              <li>Solver Integrations for Optimization</li>
+            </ul>
+          </div>
+          <div class="card1">
+            <div class="icon">📝</div>
+            <h3>Supply Chain Training & Development</h3>
+            <ul>
+              <li>Supply Chain Master Class</li>
+              <li>Bespoke learning programs</li>
+              <li>
+                Utilizing modern methods including Gamification and Case Study
+                based
+              </li>
+              <li>Change Management</li>
+            </ul>
+          </div>
         </div>
-    </div>  
-       
-
-
-
-
- 
-    
+      </div>
+    </div>
 
     <!--changing expactation-
     <div class="carousel-main">
@@ -660,137 +911,185 @@
     </div> -->
 
     <div class="carousel-main">
-        <div>
-            <p style="border-bottom: 4px solid #000;font-size: 48px;padding: 10px; color: #005599; margin-left: 35px; margin-right: 39px;"><b>CHANGING EXPECTATIONS
-                    OF STAKEHOLDER</b></p>
-        </div>
-        <div class="carousel-container">
-            <div class="carousel-wrapper">
-                <div class="carousel-slide">
-                    <div class="carousel-item">
-                        <img src="./images/sock.jpg" alt="Logo 1", height="80" width="90">
-                        <h2>Business shocks</h2>
-                        <p>More frequent business shocks due to interplay of climate change, pandemics, geo-political
-                            tensions.<br>
-                            Recent conflicts in Eastern Europe and the Middle East have disrupted global supply chains
-                            significantly.
-                        </p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/flower.webp" alt="Logo 2">
-                        <h2>Economic uncertainties</h2>
-                        <p>Economic uncertainties continue. Post-pandemic recovery in global growth and falling inflation
-                            rates is surprisingly resilient.<br>
-                            However, high interest rates will continue to weigh heavily on growth momentum.
-                        </p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/Op.png" alt="Logo 3">
-                        <h2>Global operating complexity</h2>
-                        <p>Evolving ‘China + many’ strategy offers significant opportunity.<br>
-                            However, labor and logistics capacity constraints coupled with the need for an omni-channel
-                            presence and evolving ecosystem of players are increasing the complexity of the supply chain.
-                        </p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/wasy.png" alt="Logo 4">
-                        <h2>Changing customer expectations</h2>
-                        <p>
-                            Customers expectations in terms of quality, timeliness and sustainability are evolving faster
-                            than expected<br>
-                            This is likely to put innovation and collaboration high on agenda within supply chain management
-                        </p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/sustainability.webp" alt="Logo 5">
-                        <h2>Sustainability</h2>
-                        <p>
-                            Rising expectations from regulators, customers and investors to minimize the environmental
-                            impact <br>
-                            High focus on sustainable supply chains in pursuit of “net zero”
-                        </p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/thh.jpg" alt="Logo 6">
-                        <h2>Supply Chain As A Service</h2>
-                        <p>Need for agility, best practice adoption, end-to-end visibility, cost savings, and resiliency is driving faster adoption of SCaaS.<br>
-                            The global SCaaS market is expected to grow at 8.65% CAGR between 2024 and 2031.
-                        </p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/aii.png" alt="Logo 7">
-                        <h2>Data Analytics and AI</h2>
-                        <p>Customers' expectations in terms of quality, timeliness, and sustainability are evolving faster than expected.<br>
-                            This is likely to put innovation and collaboration high on the agenda within supply chain management.
-                        </p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/digi.jpg" alt="Logo 9">
-                        <h2>Digitalization</h2>
-                        <p>Digital transformation of the supply chain has become a top priority to support new business, improve efficiency and productivity, enhance decision-making, and improve resiliency/agility amid ongoing supply chain disruption.
-                        </p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/circular.png" alt="Logo 10">
-                        <h2>Circular Supply Chain</h2>
-                        <p>Circular supply chain is likely to be a major trend driven by sustainability goals of reducing carbon emissions across the supply chain coupled with the need to mitigate inflation risks, reduce wastage, and respond to return logistics requirements.
-                        </p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/tth.jpg" alt="Logo 11">
-                        <h2>Risk Management</h2>
-                        <p>Being resilient and mitigating risk is critical in an environment of economic uncertainties, increasing frequency of globally disruptive events, growing operational complexity, and rising instances of cybersecurity breaches and loss of IPs.
-                        </p>
-                    </div>  
-                </div>
+      <div>
+        <p
+          style="
+            border-bottom: 4px solid #000;
+            font-size: 48px;
+            padding: 10px;
+            color: #005599;
+            margin-left: 35px;
+            margin-right: 39px;
+          "
+        >
+          <b>CHANGING EXPECTATIONS OF STAKEHOLDER</b>
+        </p>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel-wrapper">
+          <div class="carousel-slide">
+            <div class="carousel-item">
+              <img
+                src="./images/sock.jpg"
+                alt="Logo 1"
+                ,
+                height="80"
+                width="90"
+              />
+              <h2>Business Shocks</h2>
+              <p>
+                More frequent business shocks due to interplay of climate
+                change, pandemics, geo-political tensions.<br />
+                Recent conflicts in Eastern Europe and the Middle East have
+                disrupted global supply chains significantly.
+              </p>
             </div>
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <div class="carousel-item">
+              <img src="./images/flower.webp" alt="Logo 2" />
+              <h2>Economic Uncertainties</h2>
+              <p>
+                Economic uncertainties continue. Post-pandemic recovery in
+                global growth and falling inflation rates is surprisingly
+                resilient.<br />
+                However, high interest rates will continue to weigh heavily on
+                growth momentum.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Op.png" alt="Logo 3" />
+              <h2>Global Operating Complexity</h2>
+              <p>
+                Evolving ‘China + many’ strategy offers significant
+                opportunity.<br />
+                However, labor and logistics capacity constraints coupled with
+                the need for an omni-channel presence and evolving ecosystem of
+                players are increasing the complexity of the supply chain.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/wasy.png" alt="Logo 4" />
+              <h2>Changing Customer Expectations</h2>
+              <p>
+                Customers expectations in terms of quality, timeliness and
+                sustainability are evolving faster than expected<br />
+                This is likely to put innovation and collaboration high on
+                agenda within supply chain management
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/sustainability.webp" alt="Logo 5" />
+              <h2>Sustainability</h2>
+              <p>
+                Rising expectations from regulators, customers and investors to
+                minimize the environmental impact <br />
+                High focus on sustainable supply chains in pursuit of “net zero”
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/thh.jpg" alt="Logo 6" />
+              <h2>Supply Chain As A Service</h2>
+              <p>
+                Need for agility, best practice adoption, end-to-end visibility,
+                cost savings, and resiliency is driving faster adoption of
+                SCaaS.<br />
+                The global SCaaS market is expected to grow at 8.65% CAGR
+                between 2024 and 2031.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/aii.png" alt="Logo 7" />
+              <h2>Data Analytics and AI</h2>
+              <p>
+                Customers' expectations in terms of quality, timeliness, and
+                sustainability are evolving faster than expected.<br />
+                This is likely to put innovation and collaboration high on the
+                agenda within supply chain management.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/digi.jpg" alt="Logo 9" />
+              <h2>Digitalization</h2>
+              <p>
+                Digital transformation of the supply chain has become a top
+                priority to support new business, improve efficiency and
+                productivity, enhance decision-making, and improve
+                resiliency/agility amid ongoing supply chain disruption.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/circular.png" alt="Logo 10" />
+              <h2>Circular Supply Chain</h2>
+              <p>
+                Circular supply chain is likely to be a major trend driven by
+                sustainability goals of reducing carbon emissions across the
+                supply chain coupled with the need to mitigate inflation risks,
+                reduce wastage, and respond to return logistics requirements.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/tth.jpg" alt="Logo 11" />
+              <h2>Risk Management</h2>
+              <p>
+                Being resilient and mitigating risk is critical in an
+                environment of economic uncertainties, increasing frequency of
+                globally disruptive events, growing operational complexity, and
+                rising instances of cybersecurity breaches and loss of IPs.
+              </p>
+            </div>
+          </div>
         </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
     </div>
-
 
     <!--clients-->
     <div class="client-main">
-        <div class="client-h">
-            <h1 style="    border-bottom: 4px solid #000;
+      <div class="client-h">
+        <h1
+          style="
+            border-bottom: 4px solid #000;
             padding: 10px;
             font-size: 5vh;
             font-size: 48px;
             color: #005599;
             margin-left: 33px;
-            margin-right: 39px;">OUR CLIENTS</h1>
+            margin-right: 39px;
+          "
+        >
+          OUR CLIENTS
+        </h1>
+      </div>
+      <div class="clients-container">
+        <div class="clients-column manufacturing" id="manufacturing">
+          <h2>Manufacturing/Retail</h2>
+          <ul>
+            <li><img src="./images/retails.png" alt="SAF" /></li>
+
+            <!-- Add all logos similarly -->
+          </ul>
         </div>
-        <div class="clients-container">
-            <div class="clients-column manufacturing" id="manufacturing">
-                <h2>Manufacturing/Retail</h2>
-                <ul>
-                    <li><img src="./images/retails.png" alt="SAF"> </li>
 
-                    <!-- Add all logos similarly -->
-                </ul>
-            </div>
+        <div class="clients-column consulting" id="consulting">
+          <h2>Consulting</h2>
+          <ul>
+            <li><img src="./images/consulting.png" alt="Bain & Company" /></li>
 
-            <div class="clients-column consulting" id="consulting">
-                <h2>Consulting</h2>
-                <ul>
-                    <li><img src="./images/consulting.png" alt="Bain & Company"></li>
-
-                    <!-- Add all logos similarly -->
-                </ul>
-            </div>
-
-            <div class="clients-column logistics" id="logistics">
-                <h2>Logistics / 3PL</h2>
-                <ul>
-                    <li><img src="./images/3pl.png" alt="Safexpress"> </li>
-
-                    <!-- Add all logos similarly -->
-                </ul>
-            </div>
+            <!-- Add all logos similarly -->
+          </ul>
         </div>
-    </div><br>
 
+        <div class="clients-column logistics" id="logistics">
+          <h2>Logistics / 3PL</h2>
+          <ul>
+            <li><img src="./images/3pl.png" alt="Safexpress" /></li>
+
+            <!-- Add all logos similarly -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br />
 
     <!-- TEAM -
 	<div class="diffSection" id="team_section">
@@ -865,33 +1164,45 @@ color: #005599; margin-left: 27px; margin-right: 54px;"  ><b>TESTIMONIAL</b></p>
   </div>
 </div>-->
 
+    <div class="testimonialSection" id="testimonial_section">
+      <p class="testimonialTitle"><b>TESTIMONIALS</b></p>
 
-<div class="testimonialSection" id="testimonial_section">
-    <p class="testimonialTitle"><b>TESTIMONIALS</b></p>
-
-    <div class="customCarousel">
+      <div class="customCarousel">
         <div class="customCarouselWrapper">
-            <div class="customCarouselItem">
-                <center><img src="images/Hemango.jpg"></center>
-                <center>
-                    <div class="testimonialCardTitle">Hemango Gupta<br>
-                        Vice President<br> Strategy & Industrial Chemical Sales SRF Ltd
-                    </div>
-                    <div class="testimonialDetail">
-                        <p>"We hired SCM connect for our Supply Chain Optimization, and they did an exceptional job using the data given to<br> them by efficient analysis and finding gaps which helped us a lot in realizing what needs to be done."</p>
-                    </div>
-                </center>
-            </div>
-            <div class="customCarouselItem">
-                <center><img src="images/Kapil.jpg"></center>
-                <center>
-                    <div class="testimonialCardTitle">Kapil Singhal<br>Director<br>BP Refcool</div>
-                    <div class="testimonialDetail">
-                        <p>"The team of SCM Connect is a subject matter expert on Supply Chain. They successfully<br> partnered with our team to implement recommendations."</p>
-                    </div>
-                </center>
-            </div>
-            <!--<div class="customCarouselItem">
+          <div class="customCarouselItem">
+            <center><img src="images/Hemango.jpg" /></center>
+            <center>
+              <div class="testimonialCardTitle">
+                Hemango Gupta<br />
+                Vice President<br />
+                Strategy & Industrial Chemical Sales SRF Ltd
+              </div>
+              <div class="testimonialDetail">
+                <p>
+                  "We hired SCM connect for our Supply Chain Optimization, and
+                  they did an exceptional job using the data given to<br />
+                  them by efficient analysis and finding gaps which helped us a
+                  lot in realizing what needs to be done."
+                </p>
+              </div>
+            </center>
+          </div>
+          <div class="customCarouselItem">
+            <center><img src="images/Kapil.jpg" /></center>
+            <center>
+              <div class="testimonialCardTitle">
+                Kapil Singhal<br />Director<br />BP Refcool
+              </div>
+              <div class="testimonialDetail">
+                <p>
+                  "The team of SCM Connect is a subject matter expert on Supply
+                  Chain. They successfully<br />
+                  partnered with our team to implement recommendations."
+                </p>
+              </div>
+            </center>
+          </div>
+          <!--<div class="customCarouselItem">
                 <center><img src="images/Hemango.jpg"></center>
                 <center>
                     <div class="testimonialCardTitle">Hemango Gupta<br>Vice President<br>SRF Ltd</div>
@@ -902,18 +1213,33 @@ color: #005599; margin-left: 27px; margin-right: 54px;"  ><b>TESTIMONIAL</b></p>
             </div>-->
         </div>
 
-        <button class="customPrevBtn" onclick="moveCustomSlide(-1)">&#10094;</button>
-        <button class="customNextBtn" onclick="moveCustomSlide(1)">&#10095;</button>
+        <button class="customPrevBtn" onclick="moveCustomSlide(-1)">
+          &#10094;
+        </button>
+        <button class="customNextBtn" onclick="moveCustomSlide(1)">
+          &#10095;
+        </button>
+      </div>
     </div>
-</div>
-
 
     <!-- -our alliance  -->
     <div class="ALLIANCES-main">
-        <div>
-            <p style="border-bottom: 4px solid #000; font-weight: bold;font-size: 5vh; font-size: 48px; color: #005599; margin-left: 48px; margin-right: 39px;"><b>OUR ALLIANCES</b></p>
-        </div>
-        <!-- <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+      <div>
+        <p
+          style="
+            border-bottom: 4px solid #000;
+            font-weight: bold;
+            font-size: 5vh;
+            font-size: 48px;
+            color: #005599;
+            margin-left: 48px;
+            margin-right: 39px;
+          "
+        >
+          <b>OUR ALLIANCES</b>
+        </p>
+      </div>
+      <!-- <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner slider2-main">
                 <div class="carousel-item active slider2">
                     <img src="./images/flip.jpg" alt="flip" >
@@ -942,163 +1268,210 @@ color: #005599; margin-left: 27px; margin-right: 54px;"  ><b>TESTIMONIAL</b></p>
               <span class="visually-hidden">Next</span>
             </button>
           </div> -->
-          <div class="alliance-carousel-container">
-            <div class="alliance-carousel-wrapper">
-                <div class="alliance-carousel-item"><img src="images/flip.jpg" alt="flip"></div>
-                <!--<div class="alliance-carousel-item"><img src="images/ennova.jpg" alt="ennova"></div>--
+      <div class="alliance-carousel-container">
+        <div class="alliance-carousel-wrapper">
+          <div class="alliance-carousel-item">
+            <img src="images/flip.jpg" alt="flip" />
+          </div>
+          <!--<div class="alliance-carousel-item"><img src="images/ennova.jpg" alt="ennova"></div>--
                 <div class="alliance-carousel-item"><img src="images/palms.jpg" alt="palms"></div>-->
-                <div class="alliance-carousel-item"><img src="images/ny.png" alt="ny"></div>
-                <div class="alliance-carousel-item"><img src="images/sp.png" alt="sp"></div>
-                <div class="alliance-carousel-item"><img src="images/hub.jpg" alt="hub"></div>
-                <div class="alliance-carousel-item"><img src="images/pashu.jpg" alt="pashu"></div>
-                <div class="alliance-carousel-item"><img src="images/watsoo.jpg" alt="watsoo"></div>
-            </div>
-            <!--<button class="alliance-prev" onclick="moveAllianceSlide(-1)">❮</button>
+          <div class="alliance-carousel-item">
+            <img src="images/ny.png" alt="ny" />
+          </div>
+          <div class="alliance-carousel-item">
+            <img src="images/sp.png" alt="sp" />
+          </div>
+          <div class="alliance-carousel-item">
+            <img src="images/hub.jpg" alt="hub" />
+          </div>
+          <div class="alliance-carousel-item">
+            <img src="images/pashu.jpg" alt="pashu" />
+          </div>
+          <div class="alliance-carousel-item">
+            <img src="images/watsoo.jpg" alt="watsoo" />
+          </div>
+        </div>
+        <!--<button class="alliance-prev" onclick="moveAllianceSlide(-1)">❮</button>
             <button class="alliance-next" onclick="moveAllianceSlide(1)">❯</button>-->
-        </div>
-        </div>
-
-       
-        
-
-
+      </div>
+    </div>
 
     <!--Our Services-->
 
     <div class="container">
-        <hr style="margin-left: 33px; margin-right: 39px;"><br>
-        <div>
-            <h1 class="heading">OUR SOLUTIONS</h1>
+      <hr style="margin-left: 33px; margin-right: 39px" />
+      <br />
+      <div>
+        <h1 class="heading">OUR SOLUTIONS</h1>
+      </div>
+      <div class="solutions">
+        <div class="solution">
+          <a href="solution(tracking).html">
+            <img src="./images/tracking.jpg" alt="Asset Tracking"
+          /></a>
+          <h3>Asset Tracking</h3>
         </div>
-        <div class="solutions">
-            <div class="solution">
-                <a href="solution(tracking).html"> <img src="./images/tracking.jpg" alt="Asset Tracking"></a>
-                <h3>Asset Tracking</h3>
-            </div>
-            <div class="solution">
-                <a href="solution(anti).html"> <img src="./images/anti.jpg" alt="Anti Counterfeiting"></a>
-                <h3>Anti Counterfeiting</h3>
-            </div>
-            <div class="solution">
-                <a href="solution(freight).html"> <img src="./images/freight.jpg" alt="Freight Optimization"></a>
-                <h3>Freight Optimization</h3>
-            </div>
-            <div class="solution">
-                <a href="solution(packaging).html"> <img src="./images/package.jpg" alt="Packaging Optimization"></a>
-                <h3>Packaging Optimization</h3>
-            </div>
-            <div class="solution">
-                <a href="solution(route).html"> <img src="./images/root.jpg" alt="Route Optimization"></a>
-                <h3>Route Optimization</h3>
-            </div>
-            <div class="solution">
-                <a href="solution(workforce).html"> <img src="./images/work.jpg" alt="Workforce Scheduling"></a>
-                <h3>Workforce Scheduling</h3>
-            </div>
-            <div class="solution">
-                <a href="solution(price).html"> <img src="./images/price.jpg" alt="Price Optimization"></a>
-                <h3>Price Optimization and Revenue Management</h3>
-            </div>
-            <div class="solution">
-                <a href="solution(sales).html"> <img src="./images/sale.jpg" alt="Sales & Operations Planning"></a>
-                <h3>Sales & Operations Planning</h3>
-            </div>
-            <div class="solution">
-                <a href="solution(scaas).html"> <img src="./images/supply.jpg" alt="Supply Chain as a Service"> </a>
-                <h3>Supply Chain as a Service</h3>
-            </div>
-            <div class="solution">
-                <a href="solution(tms).html"> <img src="./images/transport.jpg" alt="Transport Management System"></a>
-                <h3>Transport Management System</h3>
-            </div>
-            <div class="solution">
-                <a href="solution(wms).html"> <img src="./images/warehouse.jpg" alt="Warehouse Management System"> </a>
-                <h3>Warehouse Management System</h3>
-            </div>
-            <div class="solution">
-                <a href="solution(digitization).html"> <img src="./images/chain.jpg"
-                        alt="Supply Chain Digitization"></a>
-                <h3>Supply Chain Digitization</h3>
-            </div>
-        </div><br>
-        <hr style="margin-left: 33px; margin-right: 39px;">
-    </div><br>
-
+        <div class="solution">
+          <a href="solution(anti).html">
+            <img src="./images/anti.jpg" alt="Anti Counterfeiting"
+          /></a>
+          <h3>Anti Counterfeiting</h3>
+        </div>
+        <div class="solution">
+          <a href="solution(freight).html">
+            <img src="./images/freight.jpg" alt="Freight Optimization"
+          /></a>
+          <h3>Freight Optimization</h3>
+        </div>
+        <div class="solution">
+          <a href="solution(packaging).html">
+            <img src="./images/package.jpg" alt="Packaging Optimization"
+          /></a>
+          <h3>Packaging Optimization</h3>
+        </div>
+        <div class="solution">
+          <a href="solution(route).html">
+            <img src="./images/root.jpg" alt="Route Optimization"
+          /></a>
+          <h3>Route Optimization</h3>
+        </div>
+        <div class="solution">
+          <a href="solution(workforce).html">
+            <img src="./images/work.jpg" alt="Workforce Scheduling"
+          /></a>
+          <h3>Workforce Scheduling</h3>
+        </div>
+        <div class="solution">
+          <a href="solution(price).html">
+            <img src="./images/price.jpg" alt="Price Optimization"
+          /></a>
+          <h3>Price Optimization and Revenue Management</h3>
+        </div>
+        <div class="solution">
+          <a href="solution(sales).html">
+            <img src="./images/sale.jpg" alt="Sales & Operations Planning"
+          /></a>
+          <h3>Sales & Operations Planning</h3>
+        </div>
+        <div class="solution">
+          <a href="solution(scaas).html">
+            <img src="./images/supply.jpg" alt="Supply Chain as a Service" />
+          </a>
+          <h3>Supply Chain as a Service</h3>
+        </div>
+        <div class="solution">
+          <a href="solution(tms).html">
+            <img src="./images/transport.jpg" alt="Transport Management System"
+          /></a>
+          <h3>Transport Management System</h3>
+        </div>
+        <div class="solution">
+          <a href="solution(wms).html">
+            <img
+              src="./images/warehouse.jpg"
+              alt="Warehouse Management System"
+            />
+          </a>
+          <h3>Warehouse Management System</h3>
+        </div>
+        <div class="solution">
+          <a href="solution(digitization).html">
+            <img src="./images/chain.jpg" alt="Supply Chain Digitization"
+          /></a>
+          <h3>Supply Chain Digitization</h3>
+        </div>
+      </div>
+      <br />
+      <hr style="margin-left: 33px; margin-right: 39px" />
+    </div>
+    <br />
 
     <!--Related services-->
     <div class="container2">
-        <hr style="margin-left: 33px; margin-right: 39px;">
-        <div class="content-related">
-            <h1>RELATED SERVICES</h1>
-            <p style="font-size: 17px;">As a performance-driven supply chain consulting organization, SCM Connect helps
-                enterprises improve visibility across their supply chain, enhance supply chain efficiencies, and reduce
-                overall supply chain costs.</p>
+      <hr style="margin-left: 33px; margin-right: 39px" />
+      <div class="content-related">
+        <h1>RELATED SERVICES</h1>
+        <p style="font-size: 17px">
+          As a performance-driven supply chain consulting organization, SCM
+          Connect helps enterprises improve visibility across their supply
+          chain, enhance supply chain efficiencies, and reduce overall supply
+          chain costs.
+        </p>
+      </div>
+      <div class="services">
+        <div class="service">
+          <a href="supply-chain-design.html"
+            ><img src="./images/1.jpg" alt="Data Collection"
+          /></a>
+          <h3>Supply Chain Design</h3>
         </div>
-        <div class="services">
-            <div class="service">
-                <a href="supply-chain-design.html"><img src="./images/1.jpg" alt="Data Collection"></a>
-                <h3>Supply Chain Design</h3>
 
-            </div>
+        <div class="service">
+          <a href="inventory.html"
+            ><img src="./images/3.jpg" alt="Data-Driven Decision"
+          /></a>
+          <h3>Inventory Strategy</h3>
+        </div>
 
-            <div class="service">
-                <a href="inventory.html"><img src="./images/3.jpg" alt="Data-Driven Decision"></a>
-                <h3>Inventory Strategy</h3>
+        <div class="service">
+          <a href="demand-planning.html"
+            ><img src="./images/4.jpg" alt="KPIs"
+          /></a>
+          <h3>Demand Planning</h3>
+        </div>
 
-            </div>
+        <div class="service">
+          <a href="production-planning.html"
+            ><img src="./images/5.jpg" alt="Predictive Analytics"
+          /></a>
+          <h3>Production Planning & Scheduling</h3>
+        </div>
 
-            <div class="service">
-                <a href="demand-planning.html"><img src="./images/4.jpg" alt="KPIs"></a>
-                <h3>Demand Planning</h3>
+        <div class="service">
+          <a href="logistics-planning.html"
+            ><img src="./images/6.jpg" alt="Customer Behavior"
+          /></a>
+          <h3>Logistics Planning & Sourcing</h3>
+        </div>
 
-            </div>
+        <div class="service">
+          <a href="services(dashboard).html"
+            ><img src="./images/7.jpg" alt="Market Research"
+          /></a>
+          <h3>Performance Dashboard Design</h3>
+        </div>
 
-            <div class="service">
-                <a href="production-planning.html"><img src="./images/5.jpg" alt="Predictive Analytics"></a>
-                <h3>Production Planning & Scheduling</h3>
+        <div class="service">
+          <a href="services(assessment).html"
+            ><img src="./images/8.jpg" alt="Data Visualization"
+          /></a>
+          <h3>Supply Chain Risk Assessment</h3>
+        </div>
 
-            </div>
+        <div class="service">
+          <a href="modelling.html"
+            ><img src="./images/9.jpg" alt="Data Security"
+          /></a>
+          <h3>Supply Chain Modelling & Simulation</h3>
+        </div>
 
-            <div class="service">
-                <a href="logistics-planning.html"><img src="./images/6.jpg" alt="Customer Behavior"></a>
-                <h3>Logistics Planning & Sourcing</h3>
+        <div class="service">
+          <a href="analytics.html"
+            ><img src="./images/10.jpg" alt="Real-Time Reporting"
+          /></a>
+          <h3>Supply Chain Analytics</h3>
+        </div>
 
-            </div>
-
-            <div class="service">
-                <a href="services(dashboard).html"><img src="./images/7.jpg" alt="Market Research"></a>
-                <h3>Performance Dashboard design</h3>
-
-            </div>
-
-            <div class="service">
-                <a href="services(assessment).html"><img src="./images/8.jpg" alt="Data Visualization"></a>
-                <h3>Supply Chain Risk Assessment</h3>
-
-            </div>
-
-            <div class="service">
-                <a href="modelling.html"><img src="./images/9.jpg" alt="Data Security"></a>
-                <h3>Supply Chain Modelling & Simulation</h3>
-
-            </div>
-
-            <div class="service">
-                <a href="analytics.html"><img src="./images/10.jpg" alt="Real-Time Reporting"></a>
-                <h3>Supply Chain Analytics</h3>
-
-            </div>
-
-            <div class="service">
-                <a href="training(management).html"><img src="./images/11.jpg" alt="Success Stories"></a>
-                <h3>Supply Chain Training</h3>
-
-            </div>
-        </div><br>
-        <hr style="margin-left: 33px; margin-right: 39px;">
+        <div class="service">
+          <a href="training(management).html"
+            ><img src="./images/11.jpg" alt="Success Stories"
+          /></a>
+          <h3>Supply Chain Training</h3>
+        </div>
+      </div>
+      <br />
+      <hr style="margin-left: 33px; margin-right: 39px" />
     </div>
-
-
 
     <!--ENGAGEMENT MODELS --
     <div id="makeitfull">
@@ -1181,173 +1554,246 @@ color: #005599; margin-left: 27px; margin-right: 54px;"  ><b>TESTIMONIAL</b></p>
                 </div>
             </div>
     </div><br>-->
-    <br>
+    <br />
     <div>
-        <h1 style="    font-size: 48px;
-        border-bottom: 4px solid #000;
-        color: #005599;
-        text-align: left;
-        margin-left: 45px;
-        margin-right: 39px;">ENGAGEMENT MODELS</h1>
+      <h1
+        style="
+          font-size: 48px;
+          border-bottom: 4px solid #000;
+          color: #005599;
+          text-align: left;
+          margin-left: 45px;
+          margin-right: 39px;
+        "
+      >
+        ENGAGEMENT MODELS
+      </h1>
     </div>
     <div class="containe">
-       
-        <div class="cards managed">
-            <div class="headers">
-                <img src="images/domain.png" alt="icon" class="icon"> Managed Services
-            </div>
-            <ul>
-                <ul>
-                    <li>Execution through proactive management</li>
-                <li>Control through outcomes, SLAs, KPIs</li>
-                <li>Full ownership for delivery</li>
-                <li>Cost of service is pre-agreed/fixed</li>
-                <li>Drive efficiency through CI, automation</li>
-                </ul>
-            </ul>
-            <div class="benefits">Benefits:</div>
-            <ul>
-                <ul>
-                    <li>Outcome-based engagement</li>
-                <li>Fill skill gaps while running processes</li>
-                <li>Continuous improvement</li>
-                <li>Flexibility</li>
-                <li>Less supervision required</li>
-                </ul>
-            </ul>
+      <div class="cards managed">
+        <div class="headers">
+          <img src="images/domain.png" alt="icon" class="icon" /> Managed
+          Services
         </div>
-        <div class="cards project">
-            <div class="headers">
-                <img src="images/success.png" alt="icon" class="icon"> Project / Outcome Based
-            </div>
-            <ul>
-                <ul>
-                    <li>One-time or ad-hoc support</li>
-                <li>Short duration services (2-12 weeks)</li>
-                <li>Deployment of technology, data, domain expertise</li>
-                </ul>
-            </ul><br><Br><br><br>
-            <div class="benefits">Benefits:</div>
-            <ul>
-                <ul>
-                    <li>Flexibility</li>
-                <li>Resource mix for multiple projects</li>
-                <li>Mitigation for resource attrition</li>
-                </ul>
-            </ul>
+        <ul>
+          <ul>
+            <li>Execution through proactive management</li>
+            <li>Control through outcomes, SLAs, KPIs</li>
+            <li>Full ownership for delivery</li>
+            <li>Cost of service is pre-agreed/fixed</li>
+            <li>Drive efficiency through CI, automation</li>
+          </ul>
+        </ul>
+        <div class="benefits">Benefits:</div>
+        <ul>
+          <ul>
+            <li>Outcome-based engagement</li>
+            <li>Fill skill gaps while running processes</li>
+            <li>Continuous improvement</li>
+            <li>Flexibility</li>
+            <li>Less supervision required</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="cards project">
+        <div class="headers">
+          <img src="images/success.png" alt="icon" class="icon" /> Project /
+          Outcome Based
         </div>
-        <div class="cards embedded">
-            <div class="headers">
-                <img src="images/high.png" alt="icon" class="icon"> Embedded Team
-            </div>
-            <ul>
-                <ul>
-                    <li>Augment missing in-house skills</li>
-                <li>Ongoing process requiring business knowledge</li>
-                <li>Basket of work with similar skills</li>
-                <li>Fully integrated with client's team</li>
-                </ul>
-            </ul><br><br><br>
-            <div class="benefits">Benefits:</div>
-            <ul>
-                <ul>
-                    <li>Dedicated resources</li>
-                <li>Provisioning of lacking skills</li>
-                <li>Business knowledge retention</li>
-                <li>Cost arbitrage</li>
-                <li>Better control</li>
-                </ul>
-            </ul>
+        <ul>
+          <ul>
+            <li>One-time or ad-hoc support</li>
+            <li>Short duration services (2-12 weeks)</li>
+            <li>Deployment of technology, data, domain expertise</li>
+          </ul>
+        </ul>
+        <br /><br /><br /><br />
+        <div class="benefits">Benefits:</div>
+        <ul>
+          <ul>
+            <li>Flexibility</li>
+            <li>Resource mix for multiple projects</li>
+            <li>Mitigation for resource attrition</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="cards embedded">
+        <div class="headers">
+          <img src="images/high.png" alt="icon" class="icon" /> Embedded Team
         </div>
-        <div class="cards subscription">
-            <div class="headers">
-                <img src="images/model.png" alt="icon" class="icon"> Subscription Based
-            </div>
-            <ul><ul>
-                <li>Access to product/solution</li>
-                <li>Pricing through licenses, usage volume</li>
-            </ul></ul><br><br><br><Br><Br>
-            <div class="benefits">Benefits:</div>
-            <ul><ul>
-                <li>Better predictability</li>
-                <li>Lower cost for committed engagement</li></ul>
-            </ul>
+        <ul>
+          <ul>
+            <li>Augment missing in-house skills</li>
+            <li>Ongoing process requiring business knowledge</li>
+            <li>Basket of work with similar skills</li>
+            <li>Fully integrated with client's team</li>
+          </ul>
+        </ul>
+        <br /><br /><br />
+        <div class="benefits">Benefits:</div>
+        <ul>
+          <ul>
+            <li>Dedicated resources</li>
+            <li>Provisioning of lacking skills</li>
+            <li>Business knowledge retention</li>
+            <li>Cost arbitrage</li>
+            <li>Better control</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="cards subscription">
+        <div class="headers">
+          <img src="images/model.png" alt="icon" class="icon" /> Subscription
+          Based
         </div>
-    </div>.
-
-
-
+        <ul>
+          <ul>
+            <li>Access to product/solution</li>
+            <li>Pricing through licenses, usage volume</li>
+          </ul>
+        </ul>
+        <br /><br /><br /><br /><br />
+        <div class="benefits">Benefits:</div>
+        <ul>
+          <ul>
+            <li>Better predictability</li>
+            <li>Lower cost for committed engagement</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+    .
 
     <!--footer-->
     <div class="footer">
-        <div class="container">
-            <div class="column">
-                <h3>Solutions</h3>
-                <ul>
-                    <li><a href="solution(tracking).html">Asset/ Inventory Tracking</a></li>
-                    <li><a href="solution(anti).html">Anti-Counterfeit Solutions</a></li>
-                    <li><a href="solution(freight).html">Freight Optimization</a></li>
-                    <li><a href="solution(packaging).html">Packaging Optimization</a></li>
-                    <li><a href="solution(route).html">Route Optimization</a></li>
-                    <li><a href="solution(workforce).html">Workforce Scheduling</a></li>
-                    <li><a href="solution(price).html">Price Optimization and Revenue Management</a></li>
-                    <li><a href="solution(sales).html">Sales & Operations Planning</a></li>
-                    <li><a href="solution(scaas).html">Supply Chain As a Service (SCAAS)</a></li>
-                    <li><a href="solution(tms).html">Transport Management System (TMS)</a></li>
-                    <li><a href="solution(wms).html">Warehouse Management System (WMS)</a></li>
-                    <li><a href="solution(digitization).html">Supply Chain Digitization</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="supply-chain-design.html">Supply Chain Design</a></li>
-                    <li><a href="inventory.html">Inventory Strategy</a></li>
-                    <li><a href="demand-planning.html">Demand Planning</a></li>
-                    <li><a href="production-planning.html">Production Planning & Scheduling</a></li>
-                    <li><a href="logistics-planning.html">Logistics Planning & Sourcing</a></li>
-                    <li><a href="services(dashboard).html">Performance Dashboard Design</a></li>
-                    <li><a href="services(assessment).html">Supply Chain Risk Assessment</a></li>
-                    <li><a href="modelling.html">Supply Chain Modelling & Simulation</a></li>
-                    <li><a href="analytics.html">Supply Chain Analytics</a></li>
-                </ul>
-                <h3>Training</h3>
-                <ul>
-                    <li><a href="training(management).html">Supply Chain Management</a></li>
-                    <li><a href="training(manging).html">Managing Logistics Effectively</a></li>
-                    <li><a href="training(demand).html">Demand Planning & Management</a></li>
-                </ul>
-            </div>
-            <div class="column contact-info">
-                <h3>Contact Us</h3>
-                <p>Mr. Mohit Gauba</p>
-                <p>+91 98186 97696</p>
-                <p><a style="color: white;" href="mailto:mohit.gauba@scmconnect.in">mohit.gauba@scmconnect.in</a>
-                </p><br>
-                <h3>Stay Connected</h3>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/company/scmconnect/"><img src="./images/linkdinn.png" , alt="img"
-                            height="40"> </a>
-                    <a href="https://www.facebook.com/connectscm/"><img src="./images/fbb.png" , alt="img" height="40">
-                    </a>
-                    <a href="https://x.com/ConnectScm?mx=2"><img src="./images/twitterr.png" , alt="img" height="40">
-                    </a>
-                    <a
-                        href="https://www.instagram.com/scmconnect?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
-                            src="./images/ins.png" , alt="img" height="40"> </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="column">
+          <h3>Solutions</h3>
+          <ul>
+            <li>
+              <a href="solution(tracking).html">Asset/ Inventory Tracking</a>
+            </li>
+            <li>
+              <a href="solution(anti).html">Anti-Counterfeit Solutions</a>
+            </li>
+            <li><a href="solution(freight).html">Freight Optimization</a></li>
+            <li>
+              <a href="solution(packaging).html">Packaging Optimization</a>
+            </li>
+            <li><a href="solution(route).html">Route Optimization</a></li>
+            <li><a href="solution(workforce).html">Workforce Scheduling</a></li>
+            <li>
+              <a href="solution(price).html"
+                >Price Optimization and Revenue Management</a
+              >
+            </li>
+            <li>
+              <a href="solution(sales).html">Sales & Operations Planning</a>
+            </li>
+            <li>
+              <a href="solution(scaas).html"
+                >Supply Chain As a Service (SCAAS)</a
+              >
+            </li>
+            <li>
+              <a href="solution(tms).html">Transport Management System (TMS)</a>
+            </li>
+            <li>
+              <a href="solution(wms).html">Warehouse Management System (WMS)</a>
+            </li>
+            <li>
+              <a href="solution(digitization).html"
+                >Supply Chain Digitization</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="bottom-bar">
-            Copyright © SCM 2025 Design & Development by <a
-                href="https://www.linkedin.com/in/monika-swami-4b70232b6"><b>Monika Swami</b></a> | <a href="#">Privacy
-                Policy</a>
+        <div class="column">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="supply-chain-design.html">Supply Chain Design</a></li>
+            <li><a href="inventory.html">Inventory Strategy</a></li>
+            <li><a href="demand-planning.html">Demand Planning</a></li>
+            <li>
+              <a href="production-planning.html"
+                >Production Planning & Scheduling</a
+              >
+            </li>
+            <li>
+              <a href="logistics-planning.html"
+                >Logistics Planning & Sourcing</a
+              >
+            </li>
+            <li>
+              <a href="services(dashboard).html"
+                >Performance Dashboard Design</a
+              >
+            </li>
+            <li>
+              <a href="services(assessment).html"
+                >Supply Chain Risk Assessment</a
+              >
+            </li>
+            <li>
+              <a href="modelling.html">Supply Chain Modelling & Simulation</a>
+            </li>
+            <li><a href="analytics.html">Supply Chain Analytics</a></li>
+          </ul>
+          <h3>Training</h3>
+          <ul>
+            <li>
+              <a href="training(management).html">Supply Chain Management</a>
+            </li>
+            <li>
+              <a href="training(manging).html"
+                >Managing Logistics Effectively</a
+              >
+            </li>
+            <li>
+              <a href="training(demand).html">Demand Planning & Management</a>
+            </li>
+          </ul>
         </div>
+        <div class="column contact-info">
+          <h3>Contact Us</h3>
+          <p>Mr. Mohit Gauba</p>
+          <p>+91 98186 97696</p>
+          <p>
+            <a style="color: white" href="mailto:mohit.gauba@scmconnect.in"
+              >mohit.gauba@scmconnect.in</a
+            >
+          </p>
+          <br />
+          <h3>Stay Connected</h3>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/company/scmconnect/"
+              ><img src="./images/linkdinn.png" , alt="img" height="40" />
+            </a>
+            <a href="https://www.facebook.com/connectscm/"
+              ><img src="./images/fbb.png" , alt="img" height="40" />
+            </a>
+            <a href="https://x.com/ConnectScm?mx=2"
+              ><img src="./images/twitterr.png" , alt="img" height="40" />
+            </a>
+            <a
+              href="https://www.instagram.com/scmconnect?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              ><img src="./images/ins.png" , alt="img" height="40" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        Copyright © SCM 2025 Design & Development by
+        <a href="https://www.linkedin.com/in/monika-swami-4b70232b6"
+          ><b>Monika Swami</b></a
+        >
+        | <a href="#">Privacy Policy</a>
+      </div>
     </div>
 
     <!--enquire buttom-->
     <div class="enquire-button">
-        <a href="about(contact).html" class="enquire-link">ENQUIRE NOW </a>
+      <a href="about(contact).html" class="enquire-link">ENQUIRE NOW </a>
     </div>
 
     <!--Bottom to top button-->
@@ -1356,129 +1802,129 @@ color: #005599; margin-left: 27px; margin-right: 54px;"  ><b>TESTIMONIAL</b></p>
     <button class="back-to-top" id="backToTop"></button>
 
     <script>
-        const backToTopButton = document.getElementById('backToTop');
+      const backToTopButton = document.getElementById("backToTop");
 
-        // Show button when scrolling down
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 200) {
-                backToTopButton.classList.add('show');
-            } else {
-                backToTopButton.classList.remove('show');
-            }
-        });
+      // Show button when scrolling down
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          backToTopButton.classList.add("show");
+        } else {
+          backToTopButton.classList.remove("show");
+        }
+      });
 
-        // Scroll to top when button is clicked
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+      // Scroll to top when button is clicked
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
         });
+      });
     </script>
-
 
     <!--chaging expactation-->
     <script>
-        const track = document.querySelector('.carousel-track');
-        const items = Array.from(track.children);
-        const prevButton = document.querySelector('.carousel-button.prev');
-        const nextButton = document.querySelector('.carousel-button.next');
-        const itemWidth = items[0].getBoundingClientRect().width + 20; // Include margin
-        let currentIndex = -1;
-        console.log(items)
-        // Function to update the position of the carousel
-        function updateCarousel() {
-            track.style.transition = 'transform 0.5s ease';
-            track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+      const track = document.querySelector(".carousel-track");
+      const items = Array.from(track.children);
+      const prevButton = document.querySelector(".carousel-button.prev");
+      const nextButton = document.querySelector(".carousel-button.next");
+      const itemWidth = items[0].getBoundingClientRect().width + 20; // Include margin
+      let currentIndex = -1;
+      console.log(items);
+      // Function to update the position of the carousel
+      function updateCarousel() {
+        track.style.transition = "transform 0.5s ease";
+        track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+      }
+
+      // Function to move to the next item
+      nextButton.addEventListener("click", () => {
+        currentIndex++;
+        if (currentIndex === items.length - 1) {
+          setTimeout(() => {
+            currentIndex = 1;
+            track.style.transition = "none"; // Disable transition for immediate jump
+            updateCarousel();
+          }, 500); // Wait for the slide transition to complete before jumping
         }
+        updateCarousel();
+      });
 
-        // Function to move to the next item
-        nextButton.addEventListener('click', () => {
-            currentIndex++;
-            if (currentIndex === items.length - 1) {
-                setTimeout(() => {
-                    currentIndex = 1;
-                    track.style.transition = 'none'; // Disable transition for immediate jump
-                    updateCarousel();
-                }, 500); // Wait for the slide transition to complete before jumping
-            }
+      // Function to move to the previous item
+      prevButton.addEventListener("click", () => {
+        currentIndex--;
+        if (currentIndex < 0) {
+          setTimeout(() => {
+            currentIndex = items.length - 2;
+            track.style.transition = "none"; // Disable transition for immediate jump
             updateCarousel();
-        });
-
-        // Function to move to the previous item
-        prevButton.addEventListener('click', () => {
-            currentIndex--;
-            if (currentIndex < 0) {
-                setTimeout(() => {
-                    currentIndex = items.length - 2;
-                    track.style.transition = 'none'; // Disable transition for immediate jump
-                    updateCarousel();
-                }, 500); // Wait for the slide transition to complete before jumping
-            }
-            updateCarousel();
-        });
-
-        // Function for auto-rotation
-        function autoRotate() {
-            currentIndex++;
-            if (currentIndex === items.length - 3) {
-                setTimeout(() => {
-                    currentIndex = 0;
-                    track.style.transition = 'none'; // Disable transition for immediate jump
-                    updateCarousel();
-                }, 500);
-            }
-            updateCarousel();
+          }, 500); // Wait for the slide transition to complete before jumping
         }
+        updateCarousel();
+      });
 
-        // Set auto-rotation to run every 3 seconds
-        setInterval(autoRotate, 3000); // Rotate every 3 seconds
+      // Function for auto-rotation
+      function autoRotate() {
+        currentIndex++;
+        if (currentIndex === items.length - 3) {
+          setTimeout(() => {
+            currentIndex = 0;
+            track.style.transition = "none"; // Disable transition for immediate jump
+            updateCarousel();
+          }, 500);
+        }
+        updateCarousel();
+      }
+
+      // Set auto-rotation to run every 3 seconds
+      setInterval(autoRotate, 3000); // Rotate every 3 seconds
     </script>
     <script src=".\navbar.js"></script>
 
     <!--our alliances-->
     <script>
-        const slider = document.getElementById('slider');
-        const sliderIndicators = document.getElementById('sliderIndicators').children;
-        const totalSliderItems = slider.children.length;
-        let currentSliderIndex = 0;
+      const slider = document.getElementById("slider");
+      const sliderIndicators =
+        document.getElementById("sliderIndicators").children;
+      const totalSliderItems = slider.children.length;
+      let currentSliderIndex = 0;
 
-        function updateSlider() {
-            slider.style.transform = `translateX(-${currentSliderIndex * 100}%)`;
-            for (let i = 0; i < sliderIndicators.length; i++) {
-                sliderIndicators[i].classList.remove('active');
-            }
-            sliderIndicators[currentSliderIndex].classList.add('active');
+      function updateSlider() {
+        slider.style.transform = `translateX(-${currentSliderIndex * 100}%)`;
+        for (let i = 0; i < sliderIndicators.length; i++) {
+          sliderIndicators[i].classList.remove("active");
         }
+        sliderIndicators[currentSliderIndex].classList.add("active");
+      }
 
-        document.getElementById('prevBtn').addEventListener('click', () => {
-            currentSliderIndex = (currentSliderIndex - 1 + totalSliderItems) % totalSliderItems;
-            updateSlider();
-        });
+      document.getElementById("prevBtn").addEventListener("click", () => {
+        currentSliderIndex =
+          (currentSliderIndex - 1 + totalSliderItems) % totalSliderItems;
+        updateSlider();
+      });
 
-        document.getElementById('nextBtn').addEventListener('click', () => {
-            currentSliderIndex = (currentSliderIndex + 1) % totalSliderItems;
-            updateSlider();
-        });
-        // List of dropdown items and their links
+      document.getElementById("nextBtn").addEventListener("click", () => {
+        currentSliderIndex = (currentSliderIndex + 1) % totalSliderItems;
+        updateSlider();
+      });
+      // List of dropdown items and their links
 
-        setInterval(() => {
-            currentSliderIndex = (currentSliderIndex + 1) % totalSliderItems;
-            updateSlider();
-        }, 3000);
+      setInterval(() => {
+        currentSliderIndex = (currentSliderIndex + 1) % totalSliderItems;
+        updateSlider();
+      }, 3000);
     </script>
     <script>
-        const hamburger = document.getElementById("hamburger");
-        const drawer = document.getElementById("drawer");
+      const hamburger = document.getElementById("hamburger");
+      const drawer = document.getElementById("drawer");
 
-        hamburger.addEventListener("click", () => {
-            if (drawer.style.left === "0px") {
-                drawer.style.left = "-35rem";
-            } else {
-                drawer.style.left = "0px";
-            }
-        });
+      hamburger.addEventListener("click", () => {
+        if (drawer.style.left === "0px") {
+          drawer.style.left = "-35rem";
+        } else {
+          drawer.style.left = "0px";
+        }
+      });
     </script>
-
-</body>
+  </body>
 </html>

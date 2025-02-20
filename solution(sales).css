@@ -260,16 +260,19 @@ nav {
 .main-content p {
   margin-bottom: 20px;
   text-align: justify;
+  font-size: 16px;
 }
 
 .main-content ul {
   margin: 0;
   padding: 0 20px;
   list-style-type: circle;
+  font-size: 16px;
 }
 
 .main-content ul li {
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
 

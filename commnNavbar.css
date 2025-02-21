@@ -192,10 +192,11 @@ list-style:decimal!important;
     display: flex;
 }
 .carousel-item {
-    min-width: 19.33%;
+    min-width: 22.33%;
     box-sizing: border-box;
     padding: 10px;
     text-align: left;
+    border: 1px solid #bdbcbc;
 }
 .carousel-item img {
     width: 100%;

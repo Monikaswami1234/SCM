@@ -344,6 +344,7 @@ nav {
           width: 100%;
           height:auto ;
           gap: 100px;
+          padding: 14px;
         }
         .solution {
             background-color: #fff;

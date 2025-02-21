@@ -958,8 +958,8 @@ nav {
 
     padding: 29px;
     /* width: ; */
-    background-color: #efefef;
-    border-radius: 10px;
+    background-color: #f5f2f2;
+    border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;

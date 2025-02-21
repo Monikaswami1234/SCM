@@ -521,15 +521,21 @@ height: auto;
 }
 .rev-cont{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     flex-direction: column;
+    position: relative;
+    padding-top: 0.5rem;
+    padding-left: 0.1rem;
+    border-radius: 3px;
 }
 .rev-container .rev-card {
     width: 320px;
-    height: 180px;
+    height: 170px;
     background: #fff;
     display: flex;
+    border-radius: 3px;
+
     /*padding: 10px;*/
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }

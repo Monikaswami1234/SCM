@@ -339,6 +339,7 @@ nav {
 
 .left img {
     /* width: %; */
+    padding-left: 54px;
 }
 
 .left h1 {
@@ -795,7 +796,7 @@ nav {
 
 .cards {
     background: white;
-    border: 2px solid #ddd;
+    border: 2px solid #857c7c;
     border-radius: 10px;
     padding: 25px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -812,8 +813,8 @@ nav {
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 60px;
 }
 
 .managed {
@@ -1086,7 +1087,7 @@ nav {
         }*/
 body {
 
-    background-color: #f7f7f7;
+    /*background-color: #f7f7f7;*/
 }
 
 .contain {
@@ -1456,10 +1457,11 @@ body {
     width: 100%;
     height: auto;
     gap: 100px;
+    padding: 14px;
 }
 
 .solution {
-    background-color: #fff;
+   /* background-color: #fff;*/
     padding: 20px;
     width: 150px;
     /*border-radius: 8px;*/
@@ -1915,6 +1917,7 @@ body {
 
     .left img {
         width: 87vw;
+        
     }
 
     .slider-container {

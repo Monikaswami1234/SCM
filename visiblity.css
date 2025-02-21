@@ -179,7 +179,7 @@ nav {
             padding: 20px;
             text-align: left;
             border: 0px solid #ddd;
-            padding-left: 100px;
+            padding-left: 72px;
     padding-bottom: 55px;
         }
 
@@ -475,6 +475,7 @@ nav {
          width: 100%;
          height:auto ;
          gap: 100px;
+         padding: 14px;
        }
        .solution {
            background-color: #fff;

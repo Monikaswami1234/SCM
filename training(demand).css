@@ -348,6 +348,7 @@ nav {
 }
 .details-item:not(:last-child) {
     border-right: 1px solid #f5e2e2;
+    height: 120px;
 }
 
 .p {

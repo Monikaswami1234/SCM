@@ -150,12 +150,12 @@ nav {
 }
 
 
-/*Service Section*/
+/*Service Section*
 .service-swipe {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	/*align-items: center;*/
+	/*align-items: center;*
 	background-image:  linear-gradient(rgba(2,0,0,0),rgba(0,0,0,0.7)), url(./images/Visual.jpg);
 	background-size: cover;
 	background-attachment: fixed;
@@ -169,11 +169,11 @@ nav {
 }	
 
 .content-img{
-	    /*margin: -7px;*/
+	    /*margin: -7px;*
 	    padding: 200px;
 	     padding-top: 67px;
          padding-bottom: 56px;
-}
+}*/
 		
 		  .sidebar {
             flex: 1;

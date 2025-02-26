@@ -1210,7 +1210,7 @@ body {
 }
 
 .card:nth-child(3) {
-    border-top: 5px solid rgb(128, 118, 118);
+   /* border-top: 5px solid rgb(128, 118, 118);*/
 }
 
 .card:nth-child(1):hover {
@@ -2013,7 +2013,7 @@ body {
 }
 
 .slide-container {
-    width: 96%;
+    width: 92%;
     padding: 40px 4rem;
   }
   
@@ -2027,7 +2027,7 @@ body {
     border-radius:15px;
     background-color: #FFF;
     border: 1px solid #c8c8c8;
-    min-height: 30rem !important;
+    min-height: 25rem !important;
   }
   
   .image-content,
@@ -2055,7 +2055,7 @@ body {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #4070F4;
+    /*background-color: #4070F4;*/
     border-radius: 15px 15px 0 15px;
   }
   
@@ -2067,7 +2067,7 @@ body {
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color: #4070F4;
+   /* background-color: #4070F4;*/
   }
   
   .overlay::after {

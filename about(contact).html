@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href=".\about(contact).css">
   <link rel="stylesheet" type="text/css" href=".\commnNavbar.css">
   <link rel="stylesheet" type="text/css" href=".\header.css">
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>-->
 </head>
 <body>
 	 <!-- Navigation Bar -->
@@ -275,7 +275,8 @@
      </div>
     <div class="form-container">
       <!--<h1>CONTACT US</h1>-->
-      <form id="email-form">
+      <form action="https://api.web3forms.com/submit" method="POST" >
+        <input type="hidden" name="access_key" value="78483c68-66fb-41b1-9ea5-2a94382b5bad`">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
@@ -316,13 +317,13 @@
               <label><input type="checkbox" name="services" value="Supply Chain Diagnostics" id="checkbox2"> Supply Chain Diagnostics</label>
               <label><input type="checkbox" name="services" value="Supply Chain Modelling & Simulation" id="checkbox2"> Supply Chain Modelling & Simulation</label>
               <label><input type="checkbox" name="services" value="Supply Chain Analytics" id="checkbox2"> Supply Chain Analytics</label>
-          </div>
+              </div>
 
-          <div  class="checkbox-group">
+          <div class="checkbox-group">
               <label>Training</label>
-              <label><input type="checkbox" name="services" value="Supply Chain Design" id="checkbox3"> Case Study On Supply Chain Management</label>
-              <label><input type="checkbox" name="services" value="Inventory Strategy" id="checkbox3">Managing logistics Effectively</label>
-              <label><input type="checkbox" name="services" value="Demand Planning" id="checkbox3"> Demand Planning & Management</label>
+              <label><input type="checkbox" name="training" value="Case Study On Supply Chain Management" id="checkbox3"> Case Study On Supply Chain Management</label>
+              <label><input type="checkbox" name="training" value="Managing logistics Effectively" id="checkbox3">Managing logistics Effectively</label>
+              <label><input type="checkbox" name="training" value=" Demand Planning & Management" id="checkbox3"> Demand Planning & Management</label>
           </div>
 
           <label for="message">Comments</label>
@@ -563,7 +564,7 @@
           }
       }
   </script> -->
-   <script>
+   <!--<script>
     // Initialize EmailJS with your Public Key
     emailjs.init("8FZEdhTJF4lVvQfus");  // Replace with your actual public key
 
@@ -594,7 +595,7 @@
           alert("Failed to send email. Check console for details.");
         });
     });
-  </script>
+  </script>-->
 
 <script src=".\navbar.js"></script>
 

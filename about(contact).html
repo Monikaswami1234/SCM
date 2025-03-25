@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href=".\about(contact).css">
   <link rel="stylesheet" type="text/css" href=".\commnNavbar.css">
   <link rel="stylesheet" type="text/css" href=".\header.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
 	 <!-- Navigation Bar -->
@@ -275,7 +275,7 @@
      </div>
     <div class="form-container">
       <!--<h1>CONTACT US</h1>-->
-      <form onsubmit="sendEmail(event)">
+      <form id="email-form">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
@@ -291,42 +291,42 @@
           <label for="designation">Designation</label>
           <input type="text" id="designation" name="designation" placeholder="Enter your designation">
 
-          
+        
 
           <div class="checkbox-group">
               <label>Solutions</label>
-              <label><input type="checkbox" name="solutions" value="Asset/Inventory tracking"> Asset/Inventory Tracking</label>
-              <label><input type="checkbox" name="solutions" value="Anti-Counterfeit Solutions"> Anti-Counterfeit Solutions</label>
-              <label><input type="checkbox" name="solutions" value="Supply Chain Optimization"> Supply Chain Optimization</label>
-              <label><input type="checkbox" name="solutions" value="Sales & Operations Planning"> Sales & Operations Planning</label>
-              <label><input type="checkbox" name="solutions" value="Supply Chain As a Service (SCAAS)"> Supply Chain As a Service (SCAAS)</label>
-              <label><input type="checkbox" name="solutions" value="Transport Management System (TMS)"> Transport Management System (TMS)</label>
-              <label><input type="checkbox" name="solutions" value="Warehouse Management System (WMS)"> Warehouse Management System (WMS)</label>
-              <label><input type="checkbox" name="solutions" value="Supply Chain Digitization"> Supply Chain Digitization</label>
+              <label><input type="checkbox" name="solutions" value="Asset/Inventory tracking" id="checkbox1"> Asset/Inventory Tracking</label>
+              <label><input type="checkbox" name="solutions" value="Anti-Counterfeit Solutions" id="checkbox1"> Anti-Counterfeit Solutions</label>
+              <label><input type="checkbox" name="solutions" value="Supply Chain Optimization" id="checkbox1"> Supply Chain Optimization</label>
+              <label><input type="checkbox" name="solutions" value="Sales & Operations Planning" id="checkbox1"> Sales & Operations Planning</label>
+              <label><input type="checkbox" name="solutions" value="Supply Chain As a Service (SCAAS)" id="checkbox1"> Supply Chain As a Service (SCAAS)</label>
+              <label><input type="checkbox" name="solutions" value="Transport Management System (TMS)" id="checkbox1"> Transport Management System (TMS)</label>
+              <label><input type="checkbox" name="solutions" value="Warehouse Management System (WMS)" id="checkbox1"> Warehouse Management System (WMS)</label>
+              <label><input type="checkbox" name="solutions" value="Supply Chain Digitization" id="checkbox1"> Supply Chain Digitization</label>
           </div>
 
-          <div style="    margin-left: 361px;
+          <div style="margin-left: 361px;
     margin-top: -269px;" class="checkbox-group">
               <label>Services</label>
-              <label><input type="checkbox" name="services" value="Supply Chain Design"> Supply Chain Design</label>
-              <label><input type="checkbox" name="services" value="Inventory Strategy"> Inventory Strategy</label>
-              <label><input type="checkbox" name="services" value="Demand Planning"> Demand Planning</label>
-              <label><input type="checkbox" name="services" value="Production Planning & Scheduling"> Production Planning & Scheduling</label>
-              <label><input type="checkbox" name="services" value="Logistics Planning & Sourcing"> Logistics Planning & Sourcing</label>
-              <label><input type="checkbox" name="services" value="Supply Chain Diagnostics"> Supply Chain Diagnostics</label>
-              <label><input type="checkbox" name="services" value="Supply Chain Modelling & Simulation"> Supply Chain Modelling & Simulation</label>
-              <label><input type="checkbox" name="services" value="Supply Chain Analytics"> Supply Chain Analytics</label>
+              <label><input type="checkbox" name="services" value="Supply Chain Design" id="checkbox2"> Supply Chain Design</label>
+              <label><input type="checkbox" name="services" value="Inventory Strategy" id="checkbox2"> Inventory Strategy</label>
+              <label><input type="checkbox" name="services" value="Demand Planning" id="checkbox2"> Demand Planning</label>
+              <label><input type="checkbox" name="services" value="Production Planning & Scheduling" id="checkbox2"> Production Planning & Scheduling</label>
+              <label><input type="checkbox" name="services" value="Logistics Planning & Sourcing" id="checkbox2"> Logistics Planning & Sourcing</label>
+              <label><input type="checkbox" name="services" value="Supply Chain Diagnostics" id="checkbox2"> Supply Chain Diagnostics</label>
+              <label><input type="checkbox" name="services" value="Supply Chain Modelling & Simulation" id="checkbox2"> Supply Chain Modelling & Simulation</label>
+              <label><input type="checkbox" name="services" value="Supply Chain Analytics" id="checkbox2"> Supply Chain Analytics</label>
           </div>
 
           <div  class="checkbox-group">
               <label>Training</label>
-              <label><input type="checkbox" name="services" value="Supply Chain Design"> Case Study On Supply Chain Management</label>
-              <label><input type="checkbox" name="services" value="Inventory Strategy">Managing logistics Effectively</label>
-              <label><input type="checkbox" name="services" value="Demand Planning"> Demand Planning & Management</label>
+              <label><input type="checkbox" name="services" value="Supply Chain Design" id="checkbox3"> Case Study On Supply Chain Management</label>
+              <label><input type="checkbox" name="services" value="Inventory Strategy" id="checkbox3">Managing logistics Effectively</label>
+              <label><input type="checkbox" name="services" value="Demand Planning" id="checkbox3"> Demand Planning & Management</label>
           </div>
 
-          <label for="comments">Comments</label>
-          <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+          <label for="message">Comments</label>
+          <textarea id="message" name="comments" placeholder="Enter your comments"></textarea>
 
           <button type="submit">Submit</button>
       </form>
@@ -516,7 +516,7 @@
           </script>
 
     <!--form data-->
-    <script>
+    <!-- <script>
       async function sendEmail(event) {
           event.preventDefault();
   
@@ -555,13 +555,45 @@
                   // alert("Email sent successfully!");
               } else {
                   const error = await response.json();
-                  alert(`Failed to send email: ${error.text}`);
+                  alert(Failed to send email: ${error.text});
               }
           } catch (err) {
               console.error("Error:", err);
               alert("Failed to send email. Please try again later.");
           }
       }
+  </script> -->
+   <script>
+    // Initialize EmailJS with your Public Key
+    emailjs.init("8FZEdhTJF4lVvQfus");  // Replace with your actual public key
+
+    document.getElementById("email-form").addEventListener("submit", function(event) {
+      event.preventDefault();  // Prevent the form from refreshing the page
+
+      // Get form values
+      const formData = {
+        name:document.getElementById("name").value,
+        email:document.getElementById("email").value,
+        organization:document.getElementById("organization").value,
+        designation:document.getElementById("designation").value,
+        solution:document.getElementById("checkbox1").value,
+        services:document.getElementById("checkbox2").value,
+        tarining:document.getElementById("checkbox3").value,
+        mobile:document.getElementById("mobile").value,
+        message:document.getElementById("message").value
+      }
+            
+
+      console.log(formData);
+      // Send email using EmailJS
+      emailjs.send("service_tklwpxp", "template_uzgr0im", formData)
+        .then(function(response) {
+          alert("Email sent successfully!");
+        }, function(error) {
+          console.error("Error sending email:", error);
+          alert("Failed to send email. Check console for details.");
+        });
+    });
   </script>
 
 <script src=".\navbar.js"></script>

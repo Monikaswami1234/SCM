@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Email with JavaScript</title>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+  <h2>Send Email</h2>
+  <form id="email-form">
+    <label for="user_name">Your Name:</label>
+    <input type="text" id="user_name" required><br><br>
+
+    <label for="user_email">Your Email:</label>
+    <input type="email" id="user_email" required><br><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" required></textarea><br><br>
+
+    <button type="submit">Send Email</button>
+  </form>
+
+  <script>
+    // Initialize EmailJS with your Public Key
+    emailjs.init("8FZEdhTJF4lVvQfus");  // Replace with your actual public key
+
+    document.getElementById("email-form").addEventListener("submit", function(event) {
+      event.preventDefault();  // Prevent the form from refreshing the page
+
+      // Get form values
+      const formData = {
+        user_name: document.getElementById("user_name").value,
+        user_email: document.getElementById("user_email").value,
+        message: document.getElementById("message").value,
+      };
+
+      // Send email using EmailJS
+      emailjs.send("service_tklwpxp", "template_uzgr0im", formData)
+        .then(function(response) {
+          alert("Email sent successfully!");
+        }, function(error) {
+          console.error("Error sending email:", error);
+          alert("Failed to send email. Check console for details.");
+        });
+    });
+  </script>
+
+</body>
+</html>

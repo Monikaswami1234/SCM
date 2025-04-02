@@ -577,3 +577,18 @@ p {
             }
         }
         
+
+        @media screen and (min-device-width: 321px) and (max-device-width: 520px) {
+            .mobileResponse, .container1 {
+                display: flex !important;
+                flex-direction: column !important ;
+            }
+            .details-item {
+                flex: 2;
+                padding: 0 20px;
+                position: relative;
+            }
+            .form-container {
+                width: 100% !important;
+            }
+        }      
